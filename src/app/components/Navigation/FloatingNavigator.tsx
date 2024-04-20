@@ -28,15 +28,15 @@ const FloatingNavigator = () => {
             initial={{ opacity: 0, scale: 0.001 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.001 }}
-            className="hidden md:block fixed top-7 right-7 z-50 cursor-pointer border bg-white rounded-lg p-1"
+            className="hidden md:block fixed top-7 right-7 z-50 cursor-pointer bg-neutral-950 rounded-full p-4"
             onClick={() => alert("hi")}
           >
-            <CgMenu className="h-8 w-auto" />
+            <CgMenu className="text-white h-8 w-auto" />
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="block md:hidden fixed top-7 right-7 z-50 cursor-pointer border bg-white rounded-lg p-1">
-        <CgMenu className="h-8 w-auto" />
+      <div className="block md:hidden fixed top-7 right-7 z-50 cursor-pointer bg-neutral-950 rounded-full p-4">
+        <CgMenu className="text-whit h-8 w-auto" />
       </div>
     </>
   );
