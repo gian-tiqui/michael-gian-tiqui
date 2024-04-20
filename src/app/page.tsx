@@ -1,10 +1,17 @@
+import Image from "next/image";
 import React from "react";
-import Motion from "./components/Motion";
+import gian from "./assets/michael-gian-tiqui.png";
 
 const Home = () => {
   return (
-    <div>
-      <Motion />
+    <div className="h-[1000px]">
+      <Image
+        height={10000}
+        width={10000}
+        src={gian}
+        alt="Michael Gian Tiqui"
+        className="h-full w-auto mx-auto"
+      />
     </div>
   );
 };
