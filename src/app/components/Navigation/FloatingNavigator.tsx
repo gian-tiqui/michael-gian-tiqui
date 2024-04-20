@@ -35,10 +35,7 @@ const FloatingNavigator = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <div
-        className="block md:hidden fixed top-7 right-7 z-50 cursor-pointer border bg-white rounded-lg p-1"
-        onClick={() => alert("hi")}
-      >
+      <div className="block md:hidden fixed top-7 right-7 z-50 cursor-pointer border bg-white rounded-lg p-1">
         <CgMenu className="h-8 w-auto" />
       </div>
     </>

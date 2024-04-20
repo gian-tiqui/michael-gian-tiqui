@@ -6,9 +6,8 @@ const Motion = () => {
   return (
     <div>
       <motion.div
-        className="m-96"
+        className="h-52 w-52 bg-black"
         animate={{
-          scale: [1, 1.5, 1],
           opacity: [0, 1],
           rotate: [0, 360],
         }}
@@ -17,9 +16,7 @@ const Motion = () => {
           ease: "easeInOut",
           loop: Infinity,
         }}
-      >
-        hi
-      </motion.div>
+      ></motion.div>
     </div>
   );
 };
