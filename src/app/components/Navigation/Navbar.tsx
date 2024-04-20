@@ -6,10 +6,10 @@ import { TbPokeball } from "react-icons/tb";
 const Navbar = () => {
   return (
     <nav className="hidden h-14 pt-14 md:flex md:justify-center">
-      <div className="rounded-lg shadow-2xl bg-neutral-950 h-14 flex items-center justify-between gap-10 px-20">
+      <div className="rounded-full shadow-2xl bg-neutral-950 h-14 flex items-center justify-between gap-10 px-20">
         {routesMapping.map((route, index) => (
           <Link
-            className="font-mono text-white text-xl"
+            className="font-mono text-white text-xl hover:underline"
             href={route.path}
             key={index}
           >

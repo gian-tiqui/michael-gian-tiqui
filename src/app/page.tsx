@@ -1,9 +1,17 @@
-import Image from "next/image";
 import React from "react";
-import gian from "./assets/michael-gian-tiqui.png";
 
 const Home = () => {
-  return <div className="overflow-hidden h-[1500px]"></div>;
+  return (
+    <div className="h-[1500px] p-48">
+      <div className="max-w-[950px] mx-auto">
+        <p className="font-mono text-7xl text-justify text-white font-extrabold leading-tight">
+          Hey, I am <span className="text-blue-500">Michael Gian Tiqui</span>.
+          An Aspiring Software Engineer from City of San Pedro, Laguna,
+          Philippines
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
