@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import gian from "../../assets/michael-gian-tiqui.png";
+import Link from "next/link";
 
 const Introduction = () => {
   return (
@@ -10,6 +12,7 @@ const Introduction = () => {
           src={gian}
           className="rounded-full bg-gray-400 h-72 w-72 pt-10"
           alt="Michael Gian M. Tiqui"
+          priority
         />
         <div className="flex flex-col gap-4 items-center justify-center">
           <p className="font-mono text-white text-sm md:text-lg">
@@ -21,6 +24,12 @@ const Introduction = () => {
           <p className="font-mono text-white text-md md:text-xl font-bold">
             An Aspiring Software Engineer
           </p>
+          <Link
+            href={"/"}
+            className="text-white font-mono cursor-pointer text-lg bg-indigo-500 hover:bg-indigo-600 font-extrabold w-32 h-10 rounded-md flex items-center justify-center"
+          >
+            Learn more
+          </Link>
         </div>
       </div>
     </div>
