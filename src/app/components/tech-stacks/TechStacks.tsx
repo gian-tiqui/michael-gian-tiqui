@@ -167,6 +167,16 @@ const techStacks: TechStacksInterface[] = [
   },
 ];
 
+/*
+
+  TASK:
+
+  On Mobile View, do not show all the tech stacks then add a show more button that will expand 
+  the list of tech stacks.
+
+  
+*/
+
 const TechStacks = () => {
   return (
     <div className="mt-32">
