@@ -3,7 +3,6 @@ import { AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import SidebarToggler from "./components/SidebarToggler";
-import exp from "constants";
 import Sidebar from "../sidebar/Sidebar";
 
 const FloatingNavigator = () => {
