@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "./components/Navigation/navbar/Navbar";
 import FloatingNavigator from "./components/Navigation/floating-navigator/FloatingNavigator";
 import "./globals.css";
+import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black`}>
+      <body className={`${inter.className} bg-neutral-950`}>
         <Navbar />
         <FloatingNavigator />
         {children}
+        <Footer />
       </body>
     </html>
   );
