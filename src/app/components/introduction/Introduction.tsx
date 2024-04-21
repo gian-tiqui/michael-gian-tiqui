@@ -24,12 +24,6 @@ const Introduction = () => {
           <p className="font-mono text-white text-md md:text-xl font-bold">
             An Aspiring Software Engineer
           </p>
-          <Link
-            href={"/"}
-            className="text-white font-mono cursor-pointer text-lg bg-indigo-500 hover:bg-indigo-600 font-extrabold w-32 h-10 rounded-md flex items-center justify-center"
-          >
-            Learn more
-          </Link>
         </div>
       </div>
     </div>
