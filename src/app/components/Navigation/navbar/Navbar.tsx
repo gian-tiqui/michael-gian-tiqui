@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="hidden h-14 pt-14 md:flex md:justify-center">
-      <div className="rounded-full shadow-2xl bg-neutral-900 h-14 flex items-center justify-between gap-10 px-20">
+      <div className="rounded-full bg-neutral-900 h-14 flex items-center justify-between gap-10 px-20">
         {routesMapping.map((route, index) => (
           <Link
             className="font-mono text-white text-xl hover:underline"
