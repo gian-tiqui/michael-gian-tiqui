@@ -9,24 +9,29 @@ import { CgCopyright } from "react-icons/cg";
 interface IconsRouteInterface {
   icon: ReactNode;
   path: string;
+  name: string;
 }
 
-const iconsMapping: IconsRouteInterface[] = [
+export const iconsMapping: IconsRouteInterface[] = [
   {
     icon: <FaFacebook className="h-6 w-auto" />,
-    path: "/",
+    path: "https://www.facebook.com/michaelgiantiqui/",
+    name: "Facebook",
   },
   {
     icon: <BsTwitterX className="h-6 w-auto" />,
-    path: "/",
+    path: "https://twitter.com/gian_tiqui",
+    name: "Twitter",
   },
   {
     icon: <FaInstagram className="h-6 w-auto" />,
-    path: "/",
+    path: "https://www.instagram.com/giantiquiii/",
+    name: "Instagram",
   },
   {
     icon: <FaGithub className="h-6 w-auto" />,
-    path: "/",
+    path: "https://github.com/gian-tiqui",
+    name: "Github",
   },
 ];
 
@@ -41,7 +46,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex flex-wrap gap-3 md:gap-2 items-center">
           {routesMapping.map((route, index) => (
             <React.Fragment key={index}>
               <Link
@@ -51,7 +56,7 @@ const Footer = () => {
                 {route.name}
               </Link>
               {index + 1 !== routesMapping.length && (
-                <BsDot className="text-white" />
+                <BsDot className="text-white hidden md:block" />
               )}
             </React.Fragment>
           ))}
