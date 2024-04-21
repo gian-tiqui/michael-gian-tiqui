@@ -26,7 +26,7 @@ const Navbar = () => {
       transition={{ duration: 0.3 }}
       className="hidden fixed top-0 left-0 w-full h-14 pt-14 md:flex md:justify-center"
     >
-      <div className="rounded-full bg-neutral-900 h-14 flex items-center justify-between gap-10 px-20">
+      <div className="rounded-full bg-neutral-900 h-14 flex items-center justify-between gap-10 px-20 shadow-md">
         {routesMapping.map((route, index) => (
           <Link
             className="font-mono text-white text-xl hover:underline"
