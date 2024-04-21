@@ -2,10 +2,17 @@
 import { AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { CgMenu } from "react-icons/cg";
+import SidebarToggler from "./components/SidebarToggler";
+import exp from "constants";
+import Sidebar from "../sidebar/Sidebar";
 
 const FloatingNavigator = () => {
   const [scrolledDown, setScrolledDown] = useState<boolean>(false);
+  const [expanded, setExpanded] = useState<boolean>(false);
+
+  const handleExpand = () => {
+    setExpanded((prevVal) => !prevVal);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +27,10 @@ const FloatingNavigator = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setExpanded(false);
+  }, [scrolledDown]);
+
   return (
     <>
       <AnimatePresence>
@@ -28,16 +39,18 @@ const FloatingNavigator = () => {
             initial={{ opacity: 0, scale: 0.001 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.001 }}
-            className="hidden md:block fixed top-7 right-7 z-50 cursor-pointer bg-neutral-950 rounded-full p-4"
-            onClick={() => alert("hi")}
+            className={`fixed top-7 right-7 z-50 cursor-pointer rounded-full p-4 ${
+              expanded ? "bg-black" : "bg-neutral-900"
+            }`}
+            onClick={handleExpand}
           >
-            <CgMenu className="text-white h-8 w-auto" />
+            <SidebarToggler expanded={expanded} />
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="block md:hidden fixed top-7 right-7 z-50 cursor-pointer bg-neutral-950 rounded-full p-4">
-        <CgMenu className="text-whit h-8 w-auto" />
-      </div>
+      <AnimatePresence>
+        {expanded && scrolledDown && <Sidebar />}
+      </AnimatePresence>
     </>
   );
 };
