@@ -10,7 +10,6 @@ const Home = () => {
       <div className="inset-0 absolute -left-5 top-72">
         <Location />
       </div>
-      <IgnorePicture />
       <Introduction />
       <TechStacks />
     </div>

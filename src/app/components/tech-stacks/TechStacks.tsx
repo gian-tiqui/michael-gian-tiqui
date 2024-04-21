@@ -5,25 +5,32 @@ import {
   SiArduino,
   SiExpress,
   SiJquery,
+  SiMaterialdesign,
+  SiPrisma,
   SiSpringboot,
   SiTailwindcss,
   SiTensorflow,
-  SiVite,
+  SiVercel,
 } from "react-icons/si";
 import TechStackContainer from "./components/TechStackContainer";
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 import {
-  DiCss3,
+  TbBrandFramerMotion,
+  TbBrandNextjs,
+  TbBrandReactNative,
+} from "react-icons/tb";
+import {
   DiDjango,
+  DiDocker,
   DiDotnet,
   DiFirebase,
-  DiHtml5,
+  DiGithub,
   DiMaterializecss,
   DiMongodb,
   DiMysql,
   DiPostgresql,
 } from "react-icons/di";
 import { BsBootstrap } from "react-icons/bs";
+import { FiFigma } from "react-icons/fi";
 
 export interface TechStacksInterface {
   icon: ReactNode;
@@ -53,6 +60,21 @@ const techStacks: TechStacksInterface[] = [
     link: "/",
   },
   {
+    icon: <DiGithub className="h-10 w-auto text-white" />,
+    name: "Github",
+    link: "/",
+  },
+  {
+    icon: <SiVercel className="h-10 w-auto text-white" />,
+    name: "Vercel",
+    link: "/",
+  },
+  {
+    icon: <TbBrandFramerMotion className="h-10 w-auto text-white" />,
+    name: "Framer Motion",
+    link: "/",
+  },
+  {
     icon: <SiSpringboot className="h-10 w-auto text-white" />,
     name: "Spring Boot",
     link: "/",
@@ -73,13 +95,8 @@ const techStacks: TechStacksInterface[] = [
     link: "/",
   },
   {
-    icon: <DiHtml5 className="h-10 w-auto text-white" />,
-    name: "HTML5",
-    link: "/",
-  },
-  {
-    icon: <DiCss3 className="h-10 w-auto text-white" />,
-    name: "CSS3",
+    icon: <SiPrisma className="h-10 w-auto text-white" />,
+    name: "Prisma",
     link: "/",
   },
   {
@@ -143,14 +160,30 @@ const techStacks: TechStacksInterface[] = [
     name: "Tensorflow",
     link: "/",
   },
+  {
+    icon: <FiFigma className="h-10 w-auto text-white" />,
+    name: "Figma",
+    link: "/",
+  },
 ];
+
+/*
+
+  TASK:
+
+  On Mobile View, do not show all the tech stacks then add a show more button that will expand 
+  the list of tech stacks.
+
+  
+*/
 
 const TechStacks = () => {
   return (
-    <div className="mt-24">
-      <h1 className="font-mono text-3xl font-extrabold text-white text-center mb-6">
-        These are my <span className="text-gray-400">Tech Stacks</span>
+    <div className="mt-32">
+      <h1 className="font-mono text-5xl font-extrabold text-white mb-6">
+        Tech Stacks
       </h1>
+      <hr className="border-t border-t-gray-500 mb-12 mx-auto" />
       <div className="flex flex-wrap gap-5 justify-center">
         {techStacks.map((techStack, index) => (
           <TechStackContainer
