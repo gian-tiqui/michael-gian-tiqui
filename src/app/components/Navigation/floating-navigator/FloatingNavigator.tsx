@@ -3,7 +3,6 @@ import { AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import SidebarToggler from "./components/SidebarToggler";
-import exp from "constants";
 import Sidebar from "../sidebar/Sidebar";
 
 const FloatingNavigator = () => {
@@ -51,6 +50,12 @@ const FloatingNavigator = () => {
       <AnimatePresence>
         {expanded && scrolledDown && <Sidebar />}
       </AnimatePresence>
+      {expanded && (
+        <div
+          className="h-screen w-screen bg-black opacity-70 inset-0 fixed z-10"
+          onClick={handleExpand}
+        ></div>
+      )}
     </>
   );
 };
