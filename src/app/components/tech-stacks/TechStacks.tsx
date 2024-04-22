@@ -175,22 +175,22 @@ const TechStacks = () => {
         Tech Stacks
       </h1>
       <hr className="border-t border-t-gray-500 mb-12 mx-auto" />
-      <div className="flex flex-wrap gap-5 justify-center">
+      <div className="flex flex-wrap gap-5 justify-center mb-20">
         {techStacks.slice(0, shownItems).map((techStack, index) => (
           <TechStackContainer name={techStack.name} key={index}>
             {techStack.icon}
           </TechStackContainer>
         ))}
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-center gap-10">
         <button
-          className="text-white font-mono dark:text-black"
+          className="text-white font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-12 w-52 dark:bg-white shadow-xl"
           onClick={increaseItems}
         >
           {shownItems === techStacks.length ? "Show All" : "Show More"}
         </button>
         <button
-          className="text-white font-mono dark:text-black"
+          className="text-white font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-12 w-52 dark:bg-white shadow-xl"
           disabled={shownItems <= 5}
           onClick={decreaseItems}
         >
