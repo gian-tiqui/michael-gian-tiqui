@@ -40,104 +40,112 @@ export interface TechStacksInterface {
 
 const techStacks: TechStacksInterface[] = [
   {
-    icon: <FaReact className="h-10 w-auto text-white" />,
+    icon: <FaReact className="h-10 w-auto text-white dark:text-black" />,
     name: "React",
   },
   {
-    icon: <TbBrandNextjs className="h-10 w-auto text-white" />,
+    icon: <TbBrandNextjs className="h-10 w-auto text-white dark:text-black" />,
     name: "NextJs",
   },
   {
-    icon: <FaLaravel className="h-10 w-auto text-white" />,
+    icon: <FaLaravel className="h-10 w-auto text-white dark:text-black" />,
     name: "Laravel",
   },
   {
-    icon: <SiTailwindcss className="h-10 w-auto text-white" />,
+    icon: <SiTailwindcss className="h-10 w-auto text-white dark:text-black" />,
     name: "Tailwind CSS",
   },
   {
-    icon: <DiGithub className="h-10 w-auto text-white" />,
+    icon: <DiGithub className="h-10 w-auto text-white dark:text-black" />,
     name: "Github",
   },
   {
-    icon: <SiVercel className="h-10 w-auto text-white" />,
+    icon: <SiVercel className="h-10 w-auto text-white dark:text-black" />,
     name: "Vercel",
   },
   {
-    icon: <TbBrandFramerMotion className="h-10 w-auto text-white" />,
+    icon: (
+      <TbBrandFramerMotion className="h-10 w-auto text-white dark:text-black" />
+    ),
     name: "Framer Motion",
   },
   {
-    icon: <SiSpringboot className="h-10 w-auto text-white" />,
+    icon: <SiSpringboot className="h-10 w-auto text-white dark:text-black" />,
     name: "Spring Boot",
   },
   {
-    icon: <DiDjango className="h-10 w-auto text-white" />,
+    icon: <DiDjango className="h-10 w-auto text-white dark:text-black" />,
     name: "Django",
   },
   {
-    icon: <DiDotnet className="h-10 w-auto text-white" />,
+    icon: <DiDotnet className="h-10 w-auto text-white dark:text-black" />,
     name: ".Net",
   },
   {
-    icon: <SiArduino className="h-10 w-auto text-white" />,
+    icon: <SiArduino className="h-10 w-auto text-white dark:text-black" />,
     name: "Arduino",
   },
   {
-    icon: <SiPrisma className="h-10 w-auto text-white" />,
+    icon: <SiPrisma className="h-10 w-auto text-white dark:text-black" />,
     name: "Prisma",
   },
   {
-    icon: <DiMongodb className="h-10 w-auto text-white" />,
+    icon: <DiMongodb className="h-10 w-auto text-white dark:text-black" />,
     name: "MongoDB",
   },
   {
-    icon: <DiPostgresql className="h-10 w-auto text-white" />,
+    icon: <DiPostgresql className="h-10 w-auto text-white dark:text-black" />,
     name: "PostgreSQL",
   },
   {
-    icon: <DiMysql className="h-10 w-auto text-white" />,
+    icon: <DiMysql className="h-10 w-auto text-white dark:text-black" />,
     name: "MySQL",
   },
   {
-    icon: <DiFirebase className="h-10 w-auto text-white" />,
+    icon: <DiFirebase className="h-10 w-auto text-white dark:text-black" />,
     name: "Firebase",
   },
   {
-    icon: <SiAndroidstudio className="h-10 w-auto text-white" />,
+    icon: (
+      <SiAndroidstudio className="h-10 w-auto text-white dark:text-black" />
+    ),
     name: "Android Studio",
   },
   {
-    icon: <TbBrandReactNative className="h-10 w-auto text-white" />,
+    icon: (
+      <TbBrandReactNative className="h-10 w-auto text-white dark:text-black" />
+    ),
     name: "React Native",
   },
   {
-    icon: <FaNodeJs className="h-10 w-auto text-white" />,
+    icon: <FaNodeJs className="h-10 w-auto text-white dark:text-black" />,
     name: "NodeJs",
   },
   {
-    icon: <SiExpress className="h-10 w-auto text-white" />,
+    icon: <SiExpress className="h-10 w-auto text-white dark:text-black" />,
     name: "ExpressJs",
   },
   {
-    icon: <SiJquery className="h-10 w-auto text-white" />,
+    icon: <SiJquery className="h-10 w-auto text-white dark:text-black" />,
     name: "Jquery",
   },
   {
-    icon: <BsBootstrap className="h-10 w-auto text-white" />,
+    icon: <BsBootstrap className="h-10 w-auto text-white dark:text-black" />,
     name: "Bootstrap",
   },
 
   {
-    icon: <DiMaterializecss className="h-10 w-auto text-white" />,
+    icon: (
+      <DiMaterializecss className="h-10 w-auto text-white dark:text-black" />
+    ),
     name: "Material UI",
   },
   {
-    icon: <SiTensorflow className="h-10 w-auto text-white" />,
+    icon: <SiTensorflow className="h-10 w-auto text-white dark:text-black" />,
     name: "Tensorflow",
   },
   {
-    icon: <FiFigma className="h-10 w-auto text-white" />,
+    icon: <FiFigma className="h-10 w-auto text-white dark:text-black" />,
     name: "Figma",
   },
 ];
@@ -155,7 +163,7 @@ const techStacks: TechStacksInterface[] = [
 const TechStacks = () => {
   return (
     <div className="mt-32">
-      <h1 className="font-mono text-5xl font-extrabold text-white mb-6">
+      <h1 className="font-mono text-5xl font-extrabold text-white mb-6 dark:text-black">
         Tech Stacks
       </h1>
       <hr className="border-t border-t-gray-500 mb-12 mx-auto" />

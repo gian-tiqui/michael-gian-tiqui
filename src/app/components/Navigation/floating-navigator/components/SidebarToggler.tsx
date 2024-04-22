@@ -10,9 +10,9 @@ const SidebarToggler: React.FC<SidebarTogglerProps> = ({ expanded }) => {
   return (
     <>
       {expanded ? (
-        <CgClose className="text-white h-8 w-auto" />
+        <CgClose className="text-white h-8 w-auto dark:text-black" />
       ) : (
-        <CgMenu className="text-white h-8 w-auto" />
+        <CgMenu className="text-white h-8 w-auto dark:text-black" />
       )}
     </>
   );

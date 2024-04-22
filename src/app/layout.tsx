@@ -4,7 +4,6 @@ import Navbar from "./components/Navigation/navbar/Navbar";
 import FloatingNavigator from "./components/Navigation/floating-navigator/FloatingNavigator";
 import "./globals.css";
 import Footer from "./components/footer/Footer";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-neutral-950`}>
+      <body className={`${inter.className} bg-neutral-950 dark:bg-neutral-200`}>
         <Navbar />
         <FloatingNavigator />
         {children}
