@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
 
-interface RoutesInterface {
+export interface RoutesInterface {
   name: string;
   path: string;
+  icon?: ReactNode;
 }
 
 export const routesMapping: RoutesInterface[] = [
