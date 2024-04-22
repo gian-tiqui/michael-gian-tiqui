@@ -163,35 +163,37 @@ const TechStacks = () => {
     }
   };
 
+  const decreaseItems = () => {
+    if (shownItems > 5) {
+      setShownItems((prevVal) => prevVal - 3);
+    }
+  };
+
   return (
     <div className="mt-32">
       <h1 className="font-mono text-3xl md:text-5xl font-extrabold text-white mb-3 md:mb-6 dark:text-black">
         Tech Stacks
       </h1>
       <hr className="border-t border-t-gray-500 mb-12 mx-auto" />
-      <div className="md:hidden flex flex-wrap gap-5 justify-center">
+      <div className="flex flex-wrap gap-5 justify-center">
         {techStacks.slice(0, shownItems).map((techStack, index) => (
           <TechStackContainer name={techStack.name} key={index}>
             {techStack.icon}
           </TechStackContainer>
         ))}
       </div>
-
-      <div className="hidden md:flex flex-wrap gap-5 justify-center">
-        {techStacks.map((techStack, index) => (
-          <TechStackContainer name={techStack.name} key={index}>
-            {techStack.icon}
-          </TechStackContainer>
-        ))}
-      </div>
-      <div className="md:hidden flex justify-between">
+      <div className="flex justify-between">
         <button
           className="text-white font-mono dark:text-black"
           onClick={increaseItems}
         >
-          Show More
+          {shownItems === techStacks.length ? "Show All" : "Show More"}
         </button>
-        <button className="text-white font-mono dark:text-black">
+        <button
+          className="text-white font-mono dark:text-black"
+          disabled={shownItems <= 5}
+          onClick={decreaseItems}
+        >
           Show Less
         </button>
       </div>
