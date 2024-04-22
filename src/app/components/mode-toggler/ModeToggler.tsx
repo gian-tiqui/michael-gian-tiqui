@@ -2,11 +2,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
+import ModeTransition from "../mode-transition/ModeTransition";
 
 const ModeToggler = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [scrolledDown, setScrolledDown] = useState<boolean>(false);
   const [opacity, setOpacity] = useState<number>(0.7);
+  const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
 
   const increaseOpacity = () => {
     setOpacity(1);
@@ -18,7 +20,12 @@ const ModeToggler = () => {
 
   const changeMode = () => {
     setDarkMode((prevMode) => !prevMode);
-    document.documentElement.classList.toggle("dark");
+    setTimeout(() => {
+      document.documentElement.classList.toggle("dark");
+    }, 500);
+
+    setIsTransitioning(true);
+    setTimeout(() => setIsTransitioning(false), 1000);
   };
 
   useEffect(() => {
@@ -35,25 +42,31 @@ const ModeToggler = () => {
   }, []);
 
   return (
-    scrolledDown && (
+    <>
+      {scrolledDown && (
+        <AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.001 }}
+            animate={{ opacity: opacity, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.001 }}
+            onMouseEnter={increaseOpacity}
+            onMouseLeave={decreaseOpacity}
+            className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center fixed bottom-7 right-7 dark:hover:bg-neutral-700 bg-neutral-200 dark:bg-black hover:bg-neutral-100"
+            onClick={changeMode}
+          >
+            {darkMode ? (
+              <IoMoon className="text-white h-7 w-auto" />
+            ) : (
+              <IoSunny className="h-7 w-auto text-black" />
+            )}
+          </motion.div>
+        </AnimatePresence>
+      )}
+
       <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.001 }}
-          animate={{ opacity: opacity, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.001 }}
-          onMouseEnter={increaseOpacity}
-          onMouseLeave={decreaseOpacity}
-          className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center fixed bottom-7 right-7 dark:hover:bg-neutral-700 bg-neutral-200 dark:bg-black hover:bg-neutral-100"
-          onClick={changeMode}
-        >
-          {darkMode ? (
-            <IoMoon className="text-white h-7 w-auto" />
-          ) : (
-            <IoSunny className="h-7 w-auto text-black" />
-          )}
-        </motion.div>
+        {isTransitioning && <ModeTransition darkMode={darkMode} />}
       </AnimatePresence>
-    )
+    </>
   );
 };
 
