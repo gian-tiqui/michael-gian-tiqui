@@ -32,6 +32,7 @@ import {
 } from "react-icons/di";
 import { BsBootstrap } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
+import { AnimatePresence } from "framer-motion";
 
 export interface TechStacksInterface {
   icon: ReactNode;
@@ -175,13 +176,15 @@ const TechStacks = () => {
       </div>
 
       <div className="md:hidden">
-        <div className="flex flex-wrap gap-5 justify-center mb-20">
-          {techStacks.slice(0, shownItems).map((techStack, index) => (
-            <TechStackContainer name={techStack.name} key={index}>
-              {techStack.icon}
-            </TechStackContainer>
-          ))}
-        </div>
+        <AnimatePresence>
+          <div className="flex flex-wrap gap-5 justify-center mb-20">
+            {techStacks.slice(0, shownItems).map((techStack, index) => (
+              <TechStackContainer name={techStack.name} key={index}>
+                {techStack.icon}
+              </TechStackContainer>
+            ))}
+          </div>
+        </AnimatePresence>
 
         <div className="flex justify-center gap-5 md:gap-10 inset-0">
           <button
