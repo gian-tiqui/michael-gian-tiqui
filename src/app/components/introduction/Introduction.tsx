@@ -1,8 +1,6 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 import gian from "../../assets/michael-gian-tiqui.png";
-import Link from "next/link";
 
 const Introduction = () => {
   return (
@@ -15,13 +13,13 @@ const Introduction = () => {
           priority
         />
         <div className="flex flex-col gap-4 items-center justify-center">
-          <p className="font-mono text-white text-sm md:text-lg">
+          <p className="font-serif text-white text-sm md:text-lg">
             Hey there 👋, I am
           </p>
-          <h2 className="font-mono font-extrabold text-2xl md:text-4xl text-indigo-500">
+          <h2 className="font-sans font-extrabold text-2xl md:text-4xl text-indigo-500">
             Michael Gian Tiqui
           </h2>
-          <p className="font-mono text-white text-md md:text-xl font-bold">
+          <p className="font-serif text-white text-md md:text-xl font-bold">
             An Aspiring Software Engineer
           </p>
         </div>
