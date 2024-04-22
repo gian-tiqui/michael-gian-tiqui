@@ -27,10 +27,12 @@ const Location = () => {
         >
           <Link
             href={"https://maps.app.goo.gl/DxebjfqgY2GWzihk9"}
-            className="hidden text-white h-16 w-52 bg-neutral-900 -rotate-6 rounded-e-full md:flex justify-center items-center gap-2"
+            className="hidden text-white h-16 w-52 bg-neutral-900 -rotate-6 rounded-e-full md:flex justify-center items-center gap-2 dark:bg-white shadow-md"
           >
-            <BiGlobe className="text-white h-12 w-auto" />
-            <p className="font-serif text-white text-lg">Locate me</p>
+            <BiGlobe className="text-white h-12 w-auto dark:text-black" />
+            <p className="font-serif text-white text-lg dark:text-black">
+              Locate me
+            </p>
           </Link>
         </motion.div>
       )}

@@ -39,7 +39,9 @@ const FloatingNavigator = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.001 }}
             className={`fixed top-7 right-7 z-50 cursor-pointer rounded-full p-4 shadow-md ${
-              expanded ? "bg-black" : "bg-neutral-900"
+              expanded
+                ? "bg-black dark:bg-neutral-200"
+                : "bg-neutral-900 dark:bg-white"
             }`}
             onClick={handleExpand}
           >
