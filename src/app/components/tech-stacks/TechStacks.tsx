@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode } from "react";
 import { FaLaravel, FaNodeJs, FaReact } from "react-icons/fa";
 import {

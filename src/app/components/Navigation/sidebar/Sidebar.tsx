@@ -31,7 +31,7 @@ const Sidebar = () => {
         </ul>
       </div>
       <div>
-        <p className="text-gray-400 font-mono mb-3">Stay Connected</p>
+        <p className="text-gray-400 font-serif mb-3">Stay Connected</p>
         <div className="flex gap-3">
           {iconsMapping.map((icon, index) => (
             <Link
