@@ -6,7 +6,7 @@ import TechStacks from "./components/tech-stacks/TechStacks";
 
 const Home = () => {
   return (
-    <div className="px-10 pt-24 md:px-24 md:pt-64 md: pb-32">
+    <div className="px-10 pt-24 md:pt-64 md: pb-32">
       <div className="inset-0 absolute -left-5 top-72">
         <Location />
       </div>

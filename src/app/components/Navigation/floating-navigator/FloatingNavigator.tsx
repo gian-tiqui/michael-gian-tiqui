@@ -50,7 +50,7 @@ const FloatingNavigator = () => {
         )}
       </AnimatePresence>
       <AnimatePresence>
-        {expanded && scrolledDown && <Sidebar />}
+        {expanded && scrolledDown && <Sidebar handleExpand={handleExpand} />}
       </AnimatePresence>
       {expanded && (
         <div

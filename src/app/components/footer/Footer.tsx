@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import IconContainer from "./components/IconContainer";
-import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsDot, BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 import { routesMapping } from "@/app/utils/Routes";
@@ -19,14 +19,9 @@ export const iconsMapping: IconsRouteInterface[] = [
     name: "Facebook",
   },
   {
-    icon: <BsTwitterX className="h-6 w-auto dark:text-white" />,
-    path: "https://twitter.com/gian_tiqui",
-    name: "Twitter",
-  },
-  {
-    icon: <FaInstagram className="h-6 w-auto dark:text-white" />,
+    icon: <FaLinkedin className="h-6 w-auto dark:text-white" />,
     path: "https://www.instagram.com/giantiquiii/",
-    name: "Instagram",
+    name: "LinkedIn",
   },
   {
     icon: <FaGithub className="h-6 w-auto dark:text-white" />,

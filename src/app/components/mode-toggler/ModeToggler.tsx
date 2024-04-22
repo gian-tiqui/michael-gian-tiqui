@@ -43,7 +43,7 @@ const ModeToggler = () => {
           exit={{ opacity: 0, scale: 0.001 }}
           onMouseEnter={increaseOpacity}
           onMouseLeave={decreaseOpacity}
-          className="w-16 h-16 rounded-full flex items-center justify-center fixed bottom-7 right-7 dark:hover:bg-neutral-700 bg-neutral-200 dark:bg-black hover:bg-neutral-100"
+          className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center fixed bottom-7 right-7 dark:hover:bg-neutral-700 bg-neutral-200 dark:bg-black hover:bg-neutral-100"
           onClick={changeMode}
         >
           {darkMode ? (

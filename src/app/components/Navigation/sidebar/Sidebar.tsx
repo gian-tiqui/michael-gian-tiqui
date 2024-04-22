@@ -5,7 +5,11 @@ import { routesMapping } from "@/app/utils/Routes";
 import Link from "next/link";
 import { iconsMapping } from "../../footer/Footer";
 
-const Sidebar = () => {
+interface SidebarProps {
+  handleExpand: () => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ handleExpand }) => {
   return (
     <motion.div
       className="fixed w-full top-0 right-0 h-screen md:w-96 bg-neutral-900 z-20 pt-32 pb-16 px-20 flex flex-col justify-between dark:bg-white"
@@ -42,6 +46,7 @@ const Sidebar = () => {
               className="font-serif text-white hover:underline text-sm dark:text-black"
               href={icon.path}
               key={index}
+              onClick={handleExpand}
             >
               {icon.name}
             </Link>
