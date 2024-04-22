@@ -144,16 +144,6 @@ const techStacks: TechStacksInterface[] = [
   },
 ];
 
-/*
-
-  TASK: Ongoing
-
-  On Mobile View, do not show all the tech stacks then add a show more button that will expand 
-  the list of tech stacks.
-
-  
-*/
-
 const TechStacks = () => {
   const [shownItems, setShownItems] = useState<number>(5);
 
@@ -170,32 +160,44 @@ const TechStacks = () => {
   };
 
   return (
-    <div className="mt-32">
-      <h1 className="font-mono text-3xl md:text-5xl font-extrabold text-white mb-3 md:mb-6 dark:text-black">
+    <div className="mt-36">
+      <h1 className="font-mono text-2xl md:text-5xl font-extrabold text-white mb-3 md:mb-6 dark:text-black">
         Tech Stacks
       </h1>
       <hr className="border-t border-t-gray-500 mb-12 mx-auto" />
-      <div className="flex flex-wrap gap-5 justify-center mb-20">
-        {techStacks.slice(0, shownItems).map((techStack, index) => (
+
+      <div className="hidden md:flex flex-wrap gap-5 justify-center mb-20">
+        {techStacks.map((techStack, index) => (
           <TechStackContainer name={techStack.name} key={index}>
             {techStack.icon}
           </TechStackContainer>
         ))}
       </div>
-      <div className="flex justify-center gap-10">
-        <button
-          className="text-white font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-12 w-52 dark:bg-white shadow-xl"
-          onClick={increaseItems}
-        >
-          {shownItems === techStacks.length ? "Show All" : "Show More"}
-        </button>
-        <button
-          className="text-white font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-12 w-52 dark:bg-white shadow-xl"
-          disabled={shownItems <= 5}
-          onClick={decreaseItems}
-        >
-          Show Less
-        </button>
+
+      <div className="md:hidden">
+        <div className="flex flex-wrap gap-5 justify-center mb-20">
+          {techStacks.slice(0, shownItems).map((techStack, index) => (
+            <TechStackContainer name={techStack.name} key={index}>
+              {techStack.icon}
+            </TechStackContainer>
+          ))}
+        </div>
+
+        <div className="flex justify-center gap-5 md:gap-10 inset-0">
+          <button
+            className="text-white text-lg font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-10 md:h-12 w-32 md:w-40 dark:bg-white shadow-xl"
+            onClick={increaseItems}
+          >
+            {shownItems === techStacks.length ? "Show All" : "Show More"}
+          </button>
+          <button
+            className="text-white text-lg  font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-10 md:h-12 w-32 md:w-40 dark:bg-white shadow-xl"
+            disabled={shownItems <= 5}
+            onClick={decreaseItems}
+          >
+            Show Less
+          </button>
+        </div>
       </div>
     </div>
   );
