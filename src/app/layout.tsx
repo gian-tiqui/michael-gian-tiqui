@@ -4,6 +4,7 @@ import Navbar from "./components/Navigation/navbar/Navbar";
 import FloatingNavigator from "./components/Navigation/floating-navigator/FloatingNavigator";
 import "./globals.css";
 import Footer from "./components/footer/Footer";
+import ModeToggler from "./components/mode-toggler/ModeToggler";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Navbar />
         <FloatingNavigator />
         {children}
+        <ModeToggler />
         <Footer />
       </body>
     </html>
