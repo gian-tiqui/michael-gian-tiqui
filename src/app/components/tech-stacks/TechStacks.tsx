@@ -33,6 +33,7 @@ import {
 import { BsBootstrap } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
 import { AnimatePresence } from "framer-motion";
+import TechStacksController from "./components/TechStacksController";
 
 export interface TechStacksInterface {
   icon: ReactNode;
@@ -160,6 +161,14 @@ const TechStacks = () => {
     }
   };
 
+  const showAllItems = () => {
+    setShownItems(techStacks.length);
+  };
+
+  const collapseItems = () => {
+    setShownItems(5);
+  };
+
   return (
     <div className="mt-36">
       <h1 className="font-mono text-2xl md:text-5xl font-extrabold text-white mb-3 md:mb-6 ml-10 dark:text-black">
@@ -177,7 +186,7 @@ const TechStacks = () => {
 
       <div className="md:hidden">
         <AnimatePresence>
-          <div className="flex flex-wrap gap-5 justify-center mb-20">
+          <div className="flex flex-wrap gap-5 justify-center mb-16">
             {techStacks.slice(0, shownItems).map((techStack, index) => (
               <TechStackContainer name={techStack.name} key={index}>
                 {techStack.icon}
@@ -186,21 +195,12 @@ const TechStacks = () => {
           </div>
         </AnimatePresence>
 
-        <div className="flex justify-center gap-5 md:gap-10 inset-0">
-          <button
-            className="text-white text-lg font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-10 md:h-12 w-32 md:w-40 dark:bg-white shadow-xl"
-            onClick={increaseItems}
-          >
-            {shownItems === techStacks.length ? "Show All" : "Show More"}
-          </button>
-          <button
-            className="text-white text-lg  font-mono font-bold dark:text-black bg-neutral-900 rounded-md h-10 md:h-12 w-32 md:w-40 dark:bg-white shadow-xl"
-            disabled={shownItems <= 5}
-            onClick={decreaseItems}
-          >
-            Show Less
-          </button>
-        </div>
+        <TechStacksController
+          increaseItems={increaseItems}
+          decreaseItems={decreaseItems}
+          showAllItems={showAllItems}
+          collapseItems={collapseItems}
+        />
       </div>
     </div>
   );
