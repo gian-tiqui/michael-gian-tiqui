@@ -12,7 +12,7 @@ const ModeToggler = () => {
 
   return (
     <div
-      className="w-16 h-16 rounded-full bg-black flex items-center justify-center"
+      className="w-16 h-16 rounded-full flex items-center justify-center fixed bottom-7 right-7 dark:hover:bg-gray-800 bg-neutral-900 hover:bg-neutral-800"
       onClick={changeMode}
     >
       {darkMode ? (
