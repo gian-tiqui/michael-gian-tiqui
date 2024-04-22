@@ -9,9 +9,9 @@ const TechStackContainer = ({
   name: string;
 }) => {
   return (
-    <div className="rounded-xl bg-neutral-900 h-20 px-10 w-64 flex justify-center shadow-xl items-center gap-3 dark:bg-white">
+    <div className="rounded-xl bg-neutral-900 w-32 h-14 px-3 md:h-20 md:px-10 md:w-64 flex md:justify-center shadow-xl items-center gap-3 dark:bg-white">
       {children}
-      <p className="text-white font-mono text-2xl font-bold dark:text-black">
+      <p className="text-white font-mono md:text-2xl md:font-bold dark:text-black">
         {name}
       </p>
     </div>

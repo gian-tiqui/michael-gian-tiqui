@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import { FaLaravel, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiAndroidstudio,
@@ -38,121 +38,115 @@ export interface TechStacksInterface {
   name: string;
 }
 
+const iconStyle = "h-7 md:h-10 w-auto text-white dark:text-black";
+
 const techStacks: TechStacksInterface[] = [
   {
-    icon: <FaReact className="h-10 w-auto text-white dark:text-black" />,
+    icon: <FaReact className={iconStyle} />,
     name: "React",
   },
   {
-    icon: <TbBrandNextjs className="h-10 w-auto text-white dark:text-black" />,
+    icon: <TbBrandNextjs className={iconStyle} />,
     name: "NextJs",
   },
   {
-    icon: <FaLaravel className="h-10 w-auto text-white dark:text-black" />,
+    icon: <FaLaravel className={iconStyle} />,
     name: "Laravel",
   },
   {
-    icon: <SiTailwindcss className="h-10 w-auto text-white dark:text-black" />,
+    icon: <SiTailwindcss className={iconStyle} />,
     name: "Tailwind CSS",
   },
   {
-    icon: <DiGithub className="h-10 w-auto text-white dark:text-black" />,
+    icon: <DiGithub className={iconStyle} />,
     name: "Github",
   },
   {
-    icon: <SiVercel className="h-10 w-auto text-white dark:text-black" />,
+    icon: <SiVercel className={iconStyle} />,
     name: "Vercel",
   },
   {
-    icon: (
-      <TbBrandFramerMotion className="h-10 w-auto text-white dark:text-black" />
-    ),
+    icon: <TbBrandFramerMotion className={iconStyle} />,
     name: "Framer Motion",
   },
   {
-    icon: <SiSpringboot className="h-10 w-auto text-white dark:text-black" />,
+    icon: <SiSpringboot className={iconStyle} />,
     name: "Spring Boot",
   },
   {
-    icon: <DiDjango className="h-10 w-auto text-white dark:text-black" />,
+    icon: <DiDjango className={iconStyle} />,
     name: "Django",
   },
   {
-    icon: <DiDotnet className="h-10 w-auto text-white dark:text-black" />,
+    icon: <DiDotnet className={iconStyle} />,
     name: ".Net",
   },
   {
-    icon: <SiArduino className="h-10 w-auto text-white dark:text-black" />,
+    icon: <SiArduino className={iconStyle} />,
     name: "Arduino",
   },
   {
-    icon: <SiPrisma className="h-10 w-auto text-white dark:text-black" />,
+    icon: <SiPrisma className={iconStyle} />,
     name: "Prisma",
   },
   {
-    icon: <DiMongodb className="h-10 w-auto text-white dark:text-black" />,
+    icon: <DiMongodb className={iconStyle} />,
     name: "MongoDB",
   },
   {
-    icon: <DiPostgresql className="h-10 w-auto text-white dark:text-black" />,
-    name: "PostgreSQL",
+    icon: <DiPostgresql className={iconStyle} />,
+    name: "Postgre SQL",
   },
   {
-    icon: <DiMysql className="h-10 w-auto text-white dark:text-black" />,
+    icon: <DiMysql className={iconStyle} />,
     name: "MySQL",
   },
   {
-    icon: <DiFirebase className="h-10 w-auto text-white dark:text-black" />,
+    icon: <DiFirebase className={iconStyle} />,
     name: "Firebase",
   },
   {
-    icon: (
-      <SiAndroidstudio className="h-10 w-auto text-white dark:text-black" />
-    ),
+    icon: <SiAndroidstudio className={iconStyle} />,
     name: "Android Studio",
   },
   {
-    icon: (
-      <TbBrandReactNative className="h-10 w-auto text-white dark:text-black" />
-    ),
+    icon: <TbBrandReactNative className={iconStyle} />,
     name: "React Native",
   },
   {
-    icon: <FaNodeJs className="h-10 w-auto text-white dark:text-black" />,
+    icon: <FaNodeJs className={iconStyle} />,
     name: "NodeJs",
   },
   {
-    icon: <SiExpress className="h-10 w-auto text-white dark:text-black" />,
+    icon: <SiExpress className={iconStyle} />,
     name: "ExpressJs",
   },
   {
-    icon: <SiJquery className="h-10 w-auto text-white dark:text-black" />,
+    icon: <SiJquery className={iconStyle} />,
     name: "Jquery",
   },
   {
-    icon: <BsBootstrap className="h-10 w-auto text-white dark:text-black" />,
+    icon: <BsBootstrap className={iconStyle} />,
     name: "Bootstrap",
   },
 
   {
-    icon: (
-      <DiMaterializecss className="h-10 w-auto text-white dark:text-black" />
-    ),
+    icon: <DiMaterializecss className={iconStyle} />,
     name: "Material UI",
   },
   {
-    icon: <SiTensorflow className="h-10 w-auto text-white dark:text-black" />,
-    name: "Tensorflow",
+    icon: <SiTensorflow className={iconStyle} />,
+    name: "Tensor flow",
   },
   {
-    icon: <FiFigma className="h-10 w-auto text-white dark:text-black" />,
+    icon: <FiFigma className={iconStyle} />,
     name: "Figma",
   },
 ];
 
 /*
 
-  TASK:
+  TASK: Ongoing
 
   On Mobile View, do not show all the tech stacks then add a show more button that will expand 
   the list of tech stacks.
@@ -161,18 +155,47 @@ const techStacks: TechStacksInterface[] = [
 */
 
 const TechStacks = () => {
+  const [shownItems, setShownItems] = useState<number>(5);
+
+  const increaseItems = () => {
+    if (shownItems < techStacks.length) {
+      setShownItems((prevVal) => prevVal + 3);
+    }
+  };
+
+  const decreaseItems = () => {
+    if (shownItems > 5) {
+      setShownItems((prevVal) => prevVal - 3);
+    }
+  };
+
   return (
     <div className="mt-32">
-      <h1 className="font-mono text-5xl font-extrabold text-white mb-6 dark:text-black">
+      <h1 className="font-mono text-3xl md:text-5xl font-extrabold text-white mb-3 md:mb-6 dark:text-black">
         Tech Stacks
       </h1>
       <hr className="border-t border-t-gray-500 mb-12 mx-auto" />
       <div className="flex flex-wrap gap-5 justify-center">
-        {techStacks.map((techStack, index) => (
+        {techStacks.slice(0, shownItems).map((techStack, index) => (
           <TechStackContainer name={techStack.name} key={index}>
             {techStack.icon}
           </TechStackContainer>
         ))}
+      </div>
+      <div className="flex justify-between">
+        <button
+          className="text-white font-mono dark:text-black"
+          onClick={increaseItems}
+        >
+          {shownItems === techStacks.length ? "Show All" : "Show More"}
+        </button>
+        <button
+          className="text-white font-mono dark:text-black"
+          disabled={shownItems <= 5}
+          onClick={decreaseItems}
+        >
+          Show Less
+        </button>
       </div>
     </div>
   );
