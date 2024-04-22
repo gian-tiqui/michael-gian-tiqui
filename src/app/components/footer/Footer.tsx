@@ -20,7 +20,7 @@ export const iconsMapping: IconsRouteInterface[] = [
   },
   {
     icon: <FaLinkedin className="h-6 w-auto dark:text-white" />,
-    path: "https://www.instagram.com/giantiquiii/",
+    path: "https://www.linkedin.com/in/michael-gian-tiqui-780344283/",
     name: "LinkedIn",
   },
   {

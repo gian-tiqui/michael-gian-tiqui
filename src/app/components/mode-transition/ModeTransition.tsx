@@ -32,7 +32,7 @@ const ModeTransition: React.FC<ModeTransitionProps> = ({ darkMode }) => {
             darkMode ? "text-black" : "text-white"
           } font-mono text-xl md:text-3xl font-bold text-center`}
         >
-          Switching to {darkMode ? "Light Mode" : "Dark Mode"}
+          Switching to {darkMode ? "Light Mode" : "Dark Mode"}...
         </p>
       </div>
     </motion.div>
