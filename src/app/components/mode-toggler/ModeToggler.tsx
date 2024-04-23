@@ -25,7 +25,7 @@ const ModeToggler = () => {
     }, 500);
 
     setIsTransitioning(true);
-    setTimeout(() => setIsTransitioning(false), 1000);
+    setTimeout(() => setIsTransitioning(false), 700);
   };
 
   useEffect(() => {
