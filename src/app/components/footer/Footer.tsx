@@ -41,7 +41,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="flex flex-wrap gap-3 md:gap-2 items-center">
+        <div className="flex flex-wrap justify-center px-3 md:px-0 gap-3 md:gap-2 items-center">
           {routesMapping.map((route, index) => (
             <React.Fragment key={index}>
               <Link
