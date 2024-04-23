@@ -8,15 +8,12 @@ const GetInTouch = () => {
       <p className="font-mono text-2xl md:text-3xl font-extrabold text-white mb-3 dark:text-black">
         Get in touch
       </p>
-      <hr className="border-t border-t-gray-500 mb-12" />
-      <h1 className="font-mono text-2xl md:text-5xl font-extrabold text-white mb-3 dark:text-black max-w-96 md:max-w-[660px] text-start">
-        Got any ideas, questions or projects you need help with?
-      </h1>
-      <h1 className="font-mono text-2xl md:text-5xl font-extrabold mb-10 md:mb-32 text-white dark:text-black max-w-96 md:max-w-[600px] text-start">
-        Contact me!
+      <hr className="border-t border-t-gray-500 mb-12 md:mb-24" />
+      <h1 className="mx-auto font-serif text-2xl md:text-5xl font-extrabold text-white mb-10 md:mb-20 dark:text-black max-w-96 md:max-w-[660px]">
+        Got any ideas, questions or projects you need help with? Contact me!
       </h1>
 
-      <div className="flex-col md:flex-row items-center md:flex md:justify-between md:items-end">
+      <div className="flex flex-col items-center gap-5 md:gap-10">
         <ContactContainer />
         <ContactMeButton />
       </div>
