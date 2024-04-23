@@ -27,10 +27,10 @@ const Location = () => {
         >
           <Link
             href={"https://maps.app.goo.gl/XcrqQ9deFkXtfisP6"}
-            className="hidden text-white h-16 w-52 bg-neutral-900 -rotate-6 hover:rotate-6 rounded-e-full md:flex justify-center items-center gap-2 dark:bg-white shadow-md"
+            className="hidden text-white h-16 w-52 bg-neutral-900 -rotate-6 rounded-e-full md:flex justify-center items-center gap-2 dark:bg-white shadow-md"
           >
             <BiGlobe className="text-white h-12 w-auto dark:text-black" />
-            <p className="font-serif text-white text-lg dark:text-black">
+            <p className="font-serif text-white text-lg dark:text-black hover:underline">
               Locate me
             </p>
           </Link>
