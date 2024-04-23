@@ -16,15 +16,15 @@ const ContactContainer = () => {
     },
     {
       name: "facebook",
-      path: "/",
+      path: "https://www.facebook.com/michaelgiantiqui/",
     },
     {
       name: "linkedin",
-      path: "/",
+      path: "https://www.linkedin.com/in/michael-gian-tiqui-780344283/",
     },
     {
       name: "github",
-      path: "/",
+      path: "https://github.com/gian-tiqui",
     },
   ];
 

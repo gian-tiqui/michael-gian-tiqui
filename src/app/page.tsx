@@ -12,8 +12,8 @@ const Home = () => {
         <Location />
       </div>
       <Introduction />
-      <GetInTouch />
       <TechStacks />
+      <GetInTouch />
     </div>
   );
 };

@@ -170,7 +170,7 @@ const TechStacks = () => {
   };
 
   return (
-    <div className="mt-20 md:mt-36">
+    <div className="mt-40 md:mt-36">
       <h1 className="font-mono text-2xl md:text-3xl font-extrabold text-white mb-3 dark:text-black">
         Tech Stacks
       </h1>
