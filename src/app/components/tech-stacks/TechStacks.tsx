@@ -171,7 +171,7 @@ const TechStacks = () => {
 
   return (
     <div className="mt-36">
-      <h1 className="font-mono text-2xl md:text-5xl font-extrabold text-white mb-3 md:mb-6 ml-10 dark:text-black">
+      <h1 className="font-mono text-2xl md:text-5xl font-extrabold text-white mb-3 dark:text-black">
         Tech Stacks
       </h1>
       <hr className="border-t border-t-gray-500 mb-12" />

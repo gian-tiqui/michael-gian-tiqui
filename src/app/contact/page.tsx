@@ -1,7 +1,7 @@
 import React from "react";
 
 const Contact = () => {
-  return <div className="h-[1000px]"></div>;
+  return <div></div>;
 };
 
 export default Contact;
