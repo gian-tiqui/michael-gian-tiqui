@@ -3,6 +3,7 @@ import Introduction from "./components/introduction/Introduction";
 import Location from "./components/location/Location";
 import IgnorePicture from "./components/ignore-picture/IgnorePicture";
 import TechStacks from "./components/tech-stacks/TechStacks";
+import GetInTouch from "./components/get-in-touch/GetInTouch";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Location />
       </div>
       <Introduction />
+      <GetInTouch />
       <TechStacks />
     </div>
   );
