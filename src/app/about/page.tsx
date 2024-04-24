@@ -1,4 +1,12 @@
+import { Metadata } from "next";
 import React from "react";
+import Introduction from "./components/Introduction";
+import ThingsIDo from "./components/ThingsIDo";
+
+export const metadata: Metadata = {
+  title: "Gian • About",
+  description: "The Story of Gian",
+};
 
 const About = () => {
   const birthDate = new Date(2001, 4, 7);
@@ -17,14 +25,8 @@ const About = () => {
 
   return (
     <div className="pt-52 mb-20">
-      <div className="flex flex-col items-center md:flex-row justify-center gap-5">
-        <div className="grid place-content-center">
-          <div className="h-52 w-52 md:h-96 md:w-96 bg-neutral-900 dark:bg-white rounded-3xl"></div>
-        </div>
-        <div className="grid place-content-center">
-          <div className="h-52 w-52 md:h-96 md:w-96 bg-neutral-900 dark:bg-white rounded-3xl"></div>
-        </div>
-      </div>
+      <Introduction />
+      <ThingsIDo />
     </div>
   );
 };

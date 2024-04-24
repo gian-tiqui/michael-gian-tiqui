@@ -13,8 +13,8 @@ import IconContainer from "../components/footer/components/IconContainer";
 import { GoLocation } from "react-icons/go";
 
 export const metadata: Metadata = {
-  title: "Contact Gian",
-  description: "This is where you Gian",
+  title: "Gian • Contact",
+  description: "Michael Gian Tiqui's Contact Details",
 };
 
 export interface ContactInfoInterface {
