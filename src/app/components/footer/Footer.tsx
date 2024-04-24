@@ -45,7 +45,7 @@ const Footer = () => {
           {routesMapping.map((route, index) => (
             <React.Fragment key={index}>
               <Link
-                className="font-mono text-white text-md hover:underline dark:text-black"
+                className="font-sans text-white text-md hover:underline dark:text-black"
                 href={route.path}
               >
                 {route.name}
@@ -58,11 +58,9 @@ const Footer = () => {
         </div>
         <hr className="border-t border-t-gray-500 w-72" />
         <div className="flex gap-2 items-center">
-          <p className="text-white font-mono dark:text-black">
+          <p className="text-white font-sans dark:text-black">
             Michael Gian Tiqui
           </p>
-          <CgCopyright className="text-white dark:text-black" />
-          <p className="text-white font-mono dark:text-black">2024</p>
         </div>
       </div>
     </footer>

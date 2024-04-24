@@ -1,22 +1,16 @@
 import { Metadata } from "next";
 import React, { ReactNode, useContext } from "react";
 import ContactForm from "./components/ContactForm";
-import { BiPhoneCall, BiSolidPhoneCall } from "react-icons/bi";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import InfoContainer from "./components/InfoContainer";
-import {
-  BsFillPhoneFill,
-  BsPhoneFill,
-  BsTelephone,
-  BsTelephoneInbound,
-  BsWhatsapp,
-} from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { CiLocationOn } from "react-icons/ci";
-import { TbLocationFilled } from "react-icons/tb";
-import { FaLocationPin } from "react-icons/fa6";
+
+import { FaMobileScreenButton } from "react-icons/fa6";
 import { IconsRouteInterface } from "../components/footer/Footer";
 import Link from "next/link";
 import IconContainer from "../components/footer/components/IconContainer";
+import { GoLocation } from "react-icons/go";
 
 export const metadata: Metadata = {
   title: "Contact Gian",
@@ -58,7 +52,7 @@ const contactInfo: ContactInfoInterface[] = [
   {
     name: "Phone",
     info: "+63 923-180-3011",
-    icon: <BiSolidPhoneCall className={iconStyle} />,
+    icon: <FaMobileScreenButton className={iconStyle} />,
   },
   {
     name: "Telephone",
@@ -67,8 +61,8 @@ const contactInfo: ContactInfoInterface[] = [
   },
   {
     name: "Location",
-    info: "Philippines",
-    icon: <FaLocationPin className={iconStyle} />,
+    info: "San Pedro, Laguna, Philippines",
+    icon: <GoLocation className={iconStyle} />,
   },
 ];
 
