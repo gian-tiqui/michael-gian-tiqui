@@ -19,8 +19,8 @@ import Link from "next/link";
 import IconContainer from "../components/footer/components/IconContainer";
 
 export const metadata: Metadata = {
-  title: "Contact Michael Gian Tiqui",
-  description: "This is where you contact me",
+  title: "Contact Gian",
+  description: "This is where you Gian",
 };
 
 export interface ContactInfoInterface {

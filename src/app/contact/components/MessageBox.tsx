@@ -26,8 +26,6 @@ const MessageBox = () => {
     console.log(data);
   };
 
-  const { darkMode } = useContext(ModeContext);
-
   return (
     <>
       <form
