@@ -80,7 +80,7 @@ const Contact = () => {
       </h1>
       <p className="px-7 md:px-0 md:text-xl mx-auto text-center font-sans text-white dark:text-black md:max-w-[600px] mb-5">
         Send your ideas, questions or projects you need help with here. I will
-        try to respond as much as possible.
+        try to respond as soon as possible.
       </p>
       <div className="flex flex-col gap-14 md:gap-0 md:flex-row md:justify-between mt-14">
         <div className="flex justify-between items-start pl-8 md:pl-32 flex-col flex-1 pt-6">
