@@ -1,11 +1,12 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import ModeTransition from "../mode-transition/ModeTransition";
+import { ModeContext } from "@/app/context-provider/ContextProvider";
 
 const ModeToggler = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const { darkMode, setDarkMode } = useContext(ModeContext);
   const [scrolledDown, setScrolledDown] = useState<boolean>(false);
   const [opacity, setOpacity] = useState<number>(0.7);
   const [isTransitioning, setIsTransitioning] = useState<boolean>(false);

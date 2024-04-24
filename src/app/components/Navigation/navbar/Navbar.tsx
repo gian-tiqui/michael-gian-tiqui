@@ -56,7 +56,7 @@ const Navbar = () => {
       animate={{ opacity: scrolledDown ? 0 : 1, y: scrolledDown ? 0 : "50%" }}
       exit={{ opacity: 0, y: 0 }}
       transition={{ duration: 0.3 }}
-      className={`fixed top-0 left-0 z-50 md:z-0 w-full pt-96 h-14 md:pt-14 flex justify-center ${
+      className={`fixed top-0 left-0 z-50 md:z-0 w-full h-14 pt-2 md:pt-14 flex justify-center ${
         scrolledDown && "hidden"
       }`}
     >

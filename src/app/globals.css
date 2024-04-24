@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.contact-form {
+  position: relative;
+  background: repeating-conic-gradient(from var(--a),
+      #2dd4bf 0%,
+      #2dd4bf 10%,
+      transparent 10%,
+      transparent 50%);
+  animation: animate 6s linear infinite;
+}
+
+.contact-form::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from var(--a),
+      #2dd4bf 0%,
+      #2dd4bf 10%,
+      transparent 10%,
+      transparent 50%);
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.contact-form::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 20px solid #0a0a0a;
+  background: #171717;
+}
+
+.contact-form-light {
+  position: relative;
+  background: repeating-conic-gradient(from var(--a),
+      #2563eb 0%,
+      #2563eb 10%,
+      transparent 10%,
+      transparent 50%);
+  animation: animate 6s linear infinite;
+}
+
+.contact-form-light::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from var(--a),
+      #2563eb 0%,
+      #2563eb 10%,
+      transparent 10%,
+      transparent 50%);
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.contact-form-light::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 20px solid #e5e5e5;
+  background: #fff;
+}
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+
+  100% {
+    --a: 360deg;
+  }
+}

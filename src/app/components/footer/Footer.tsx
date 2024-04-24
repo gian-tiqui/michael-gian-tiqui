@@ -6,7 +6,7 @@ import Link from "next/link";
 import { routesMapping } from "@/app/utils/Routes";
 import { CgCopyright } from "react-icons/cg";
 
-interface IconsRouteInterface {
+export interface IconsRouteInterface {
   icon: ReactNode;
   path: string;
   name: string;
