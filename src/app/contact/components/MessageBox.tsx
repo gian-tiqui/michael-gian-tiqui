@@ -46,6 +46,7 @@ const MessageBox = () => {
             <input
               type="text"
               id="name"
+              placeholder="Type your name"
               {...register("name", { required: "Name is required" })}
               className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500 bg-neutral-800 dark:bg-neutral-100 text-white dark:text-black"
             />
@@ -62,6 +63,7 @@ const MessageBox = () => {
             <input
               type="email"
               id="email"
+              placeholder="Type your email"
               {...register("email", {
                 required: "Email is required",
                 pattern: {
@@ -83,6 +85,7 @@ const MessageBox = () => {
             </label>
             <textarea
               id="message"
+              placeholder="Your message"
               {...register("message", { required: "Message is required" })}
               className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500 md:h-40 bg-neutral-800 dark:bg-neutral-100 text-white dark:text-black"
             />
