@@ -1,6 +1,7 @@
 "use client";
 import { ModeContext } from "@/app/context-provider/ContextProvider";
 import React, { useContext, useEffect, useState } from "react";
+import MessageBox from "./MessageBox";
 
 const ContactForm = () => {
   const { darkMode } = useContext(ModeContext);
@@ -18,8 +19,8 @@ const ContactForm = () => {
         delayedDarkMode ? "contact-form-light" : "contact-form"
       } h-[500px] w-80 md:h-[600px] md:w-[500px]`}
     >
-      <div className="relative z-10 m-6">
-        <form className=""></form>
+      <div className="relative z-10 m-5">
+        <MessageBox />
       </div>
     </div>
   );
