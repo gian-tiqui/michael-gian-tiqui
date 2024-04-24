@@ -4,9 +4,10 @@ import { FaLaravel, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiAndroidstudio,
   SiArduino,
+  SiDotnet,
+  SiElectron,
   SiExpress,
   SiJquery,
-  SiMaterialdesign,
   SiPrisma,
   SiSpringboot,
   SiTailwindcss,
@@ -21,8 +22,6 @@ import {
 } from "react-icons/tb";
 import {
   DiDjango,
-  DiDocker,
-  DiDotnet,
   DiFirebase,
   DiGithub,
   DiMaterializecss,
@@ -32,7 +31,7 @@ import {
 } from "react-icons/di";
 import { BsBootstrap } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import TechStacksController from "./components/TechStacksController";
 
 export interface TechStacksInterface {
@@ -80,7 +79,7 @@ const techStacks: TechStacksInterface[] = [
     name: "Django",
   },
   {
-    icon: <DiDotnet className={iconStyle} />,
+    icon: <SiDotnet className={iconStyle} />,
     name: ".Net",
   },
   {
@@ -131,7 +130,10 @@ const techStacks: TechStacksInterface[] = [
     icon: <BsBootstrap className={iconStyle} />,
     name: "Bootstrap",
   },
-
+  {
+    icon: <SiElectron className={iconStyle} />,
+    name: "Electron",
+  },
   {
     icon: <DiMaterializecss className={iconStyle} />,
     name: "Material UI",
@@ -170,7 +172,17 @@ const TechStacks = () => {
   };
 
   return (
-    <div className="mt-40 md:mt-36">
+    <motion.div
+      initial={{
+        opacity: 0,
+        transform: "translateY(10%)",
+      }}
+      whileInView={{
+        opacity: 1,
+        transform: "translateY(0)",
+      }}
+      className="mt-40 md:mt-36"
+    >
       <h1 className="font-sans text-center text-2xl md:text-3xl font-extrabold text-white mb-10 dark:text-black">
         Tech Stacks
       </h1>
@@ -202,7 +214,7 @@ const TechStacks = () => {
           collapseItems={collapseItems}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,6 +5,8 @@ import FloatingNavigator from "./components/Navigation/floating-navigator/Floati
 import "./globals.css";
 import Footer from "./components/footer/Footer";
 import ModeToggler from "./components/mode-toggler/ModeToggler";
+import { createContext } from "vm";
+import ContextProvider from "./context-provider/ContextProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,11 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-neutral-950 dark:bg-neutral-200`}>
-        <Navbar />
-        <FloatingNavigator />
-        {children}
-        <ModeToggler />
-        <Footer />
+        <ContextProvider>
+          <Navbar />
+          <FloatingNavigator />
+          {children}
+          <ModeToggler />
+          <Footer />
+        </ContextProvider>
       </body>
     </html>
   );
