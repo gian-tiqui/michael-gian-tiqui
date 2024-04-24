@@ -1,6 +1,5 @@
 import React from "react";
 import Introduction from "./components/introduction/Introduction";
-import IgnorePicture from "./components/ignore-picture/IgnorePicture";
 import TechStacks from "./components/tech-stacks/TechStacks";
 import GetInTouch from "./components/get-in-touch/GetInTouch";
 
