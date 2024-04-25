@@ -10,12 +10,12 @@ const GetInTouch = () => {
   return (
     <motion.div
       initial={{
+        y: 20,
         opacity: 0,
-        transform: "translateY(10%)",
       }}
       whileInView={{
+        y: 0,
         opacity: 1,
-        transform: "translateY(0)",
       }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
       className="mt-24"

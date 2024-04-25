@@ -1,12 +1,24 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Introduction = () => {
   return (
     <>
-      <h1 className="text-white dark:text-black text-center md:text-5xl font-sans font-bold mb-20">
+      <motion.h1
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.75 }}
+        className="text-white dark:text-black text-center md:text-5xl font-sans font-bold mb-20"
+      >
         I&apos;m Gian
-      </h1>
-      <div className="flex flex-col items-center md:items-start md:flex-row justify-center gap-20 mb-20">
+      </motion.h1>
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.75 }}
+        className="flex flex-col items-center md:items-start md:flex-row justify-center gap-20 mb-20"
+      >
         <div className="grid place-content-center">
           <div className="h-52 w-52 md:h-[400px] md:w-[400px] bg-neutral-900 dark:bg-white rounded-3xl"></div>
         </div>
@@ -30,7 +42,7 @@ const Introduction = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
