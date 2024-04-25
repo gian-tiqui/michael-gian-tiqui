@@ -9,22 +9,8 @@ export const metadata: Metadata = {
 };
 
 const About = () => {
-  const birthDate = new Date(2001, 4, 7);
-  const currentDate = new Date();
-
-  let age = currentDate.getFullYear() - birthDate.getFullYear();
-
-  const hasHadBirthday =
-    currentDate.getMonth() > birthDate.getMonth() ||
-    (currentDate.getMonth() === birthDate.getMonth() &&
-      currentDate.getDate() >= birthDate.getDate());
-
-  if (!hasHadBirthday) {
-    age--;
-  }
-
   return (
-    <div className="pt-52 mb-20">
+    <div className="pt-52 mb-20 px-7 md:px-20">
       <Introduction />
       <ThingsIDo />
     </div>
