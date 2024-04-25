@@ -7,6 +7,7 @@ import {
   SiDotnet,
   SiElectron,
   SiExpress,
+  SiFastapi,
   SiJquery,
   SiPrisma,
   SiSpringboot,
@@ -77,6 +78,10 @@ const techStacks: TechStacksInterface[] = [
   {
     icon: <DiDjango className={iconStyle} />,
     name: "Django",
+  },
+  {
+    icon: <SiFastapi className={iconStyle} />,
+    name: "FastAPI",
   },
   {
     icon: <SiDotnet className={iconStyle} />,
@@ -181,6 +186,7 @@ const TechStacks = () => {
         opacity: 1,
         transform: "translateY(0)",
       }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
       className="mt-40 md:mt-36"
     >
       <h1 className="font-sans text-center text-2xl md:text-3xl font-extrabold text-white mb-10 dark:text-black">
