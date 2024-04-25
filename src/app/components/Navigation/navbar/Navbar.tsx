@@ -60,7 +60,7 @@ const Navbar = () => {
         scrolledDown && "hidden"
       }`}
     >
-      <div className="rounded-full bg-neutral-900 h-14 flex items-center justify-between gap-7 md:gap-14 px-7 md:px-20 shadow-md dark:bg-white">
+      <div className="rounded-full bg-neutral-900 h-14 flex items-center justify-between gap-7 md:gap-14 px-7 md:px-20 shadow-md hover:shadow-xl dark:bg-white">
         {routesMappingV2.map((route, index) => (
           <Link href={route.path} key={index}>
             <p className="hidden md:block font-sans font-bold text-white text-xl hover:underline dark:text-black">
