@@ -8,7 +8,7 @@ const InfoContainer: React.FC<ContactInfoInterface> = ({
 }) => {
   return (
     <div className="flex gap-3">
-      <div className="md:h-12 md:w-12 p-2 bg-teal-400 dark:bg-blue-600">
+      <div className="h-12 md:w-12 p-2 bg-teal-400 dark:bg-blue-600">
         {icon}
       </div>
       <div>

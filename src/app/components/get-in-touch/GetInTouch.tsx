@@ -17,6 +17,7 @@ const GetInTouch = () => {
         opacity: 1,
         transform: "translateY(0)",
       }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
       className="mt-24"
     >
       <p className="font-sans text-center text-2xl md:text-3xl font-extrabold text-white mb-10 dark:text-black">
