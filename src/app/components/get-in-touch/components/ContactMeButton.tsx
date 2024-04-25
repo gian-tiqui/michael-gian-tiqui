@@ -19,7 +19,7 @@ const ContactMeButton = () => {
     >
       <Link
         href={"/contact"}
-        className="bg-neutral-900 dark:bg-white md:h-14 px-2 w-32 h-10 md:w-52 mx-auto flex justify-center items-center rounded-xl hover:bg-neutral-800 gap-x-2 md:gap-x-5 dark:hover:bg-gray-100"
+        className="bg-neutral-800 dark:bg-white md:h-14 px-2 w-32 h-10 md:w-52 mx-auto flex justify-center items-center rounded-xl hover:bg-neutral-700 gap-x-2 md:gap-x-5 dark:hover:bg-gray-100"
       >
         <p className="font-mono text-sm md:text-lg font-bold text-white dark:text-black">
           Contact me
