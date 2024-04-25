@@ -68,7 +68,7 @@ const TechStacksController: React.FC<TTControllerInterface> = ({
       {controllers.map((controller, index) => (
         <div
           onClick={controller}
-          className={`w-full h-full bg-neutral-900 dark:bg-white flex ${positioning[index]} ${rounding[index]}`}
+          className={`w-full h-full bg-neutral-800 dark:bg-white flex ${positioning[index]} ${rounding[index]}`}
           key={index}
         >
           <p className="font-mono text-white dark:text-black text-sm font-extrabold">

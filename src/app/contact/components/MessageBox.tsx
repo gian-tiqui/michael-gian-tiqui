@@ -46,7 +46,7 @@ const MessageBox = () => {
               id="name"
               placeholder="Type your name"
               {...register("name", { required: "Name is required" })}
-              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-800 dark:bg-neutral-100 text-white dark:text-black"
+              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
             />
             {errors.name && (
               <span className="text-red-500 text-sm">
@@ -69,7 +69,7 @@ const MessageBox = () => {
                   message: "Invalid email address",
                 },
               })}
-              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-800 dark:bg-neutral-100 text-white dark:text-black"
+              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
             />
             {errors.email && (
               <span className="text-red-500 text-sm">
@@ -85,7 +85,7 @@ const MessageBox = () => {
               id="message"
               placeholder="Your message"
               {...register("message", { required: "Message is required" })}
-              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 md:h-40 bg-neutral-800 dark:bg-neutral-100 text-white dark:text-black"
+              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 md:h-40 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
             />
             {errors.email && (
               <span className="text-red-500 text-sm">

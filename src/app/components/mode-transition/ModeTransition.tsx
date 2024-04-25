@@ -16,7 +16,7 @@ const ModeTransition: React.FC<ModeTransitionProps> = ({ darkMode }) => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0, x: 0, y: 0 }}
       className={`inset-0 z-50 fixed h-screen w-screen flex justify-center items-center ${
-        darkMode ? "bg-neutral-200" : "bg-black"
+        darkMode ? "bg-neutral-200" : "bg-neutral-900"
       }`}
     >
       <div>

@@ -20,7 +20,7 @@ const Introduction = () => {
         className="flex flex-col items-center md:items-start md:flex-row justify-center gap-20 mb-20"
       >
         <div className="grid place-content-center">
-          <div className="h-52 w-52 md:h-[400px] md:w-[400px] bg-neutral-900 dark:bg-white rounded-3xl"></div>
+          <div className="h-52 w-52 md:h-[400px] md:w-[400px] bg-neutral-800 dark:bg-white rounded-3xl"></div>
         </div>
         <div className="md:pt-3">
           <div className="md:max-w-[600px]">

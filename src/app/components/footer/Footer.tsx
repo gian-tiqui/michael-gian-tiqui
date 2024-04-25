@@ -32,7 +32,7 @@ export const iconsMapping: IconsRouteInterface[] = [
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 h-80 grid place-items-center dark:bg-white">
+    <footer className="bg-neutral-800 h-80 grid place-items-center dark:bg-white">
       <div className="flex flex-col gap-7 items-center">
         <div className="flex gap-6">
           {iconsMapping.map((iconMap, index) => (
