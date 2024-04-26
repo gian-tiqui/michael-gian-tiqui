@@ -22,20 +22,24 @@ const TextContainer: React.FC<TextContainerProps> = ({
       <Lolipop />
       <div className="mb-10 w-full">
         <div className="flex justify-between">
-          <h4 className="text-white dark:text-black font-bold md:text-lg">
+          <h4 className="font-sans text-white dark:text-black font-bold md:text-lg">
             {name}
           </h4>
           {link && (
             <Link href={link}>
-              <p className="text-white dark:text-black underline md:text-md font-bold">
+              <p className="font-sans text-white dark:text-black underline md:text-md font-bold">
                 {playlist ? "View Playlist" : "Visit"}
               </p>
             </Link>
           )}
         </div>
 
-        <p className="text-white dark:text-black md:text-sm mb-4">{year}</p>
-        <p className="text-white dark:text-black">{content}</p>
+        <p className="font-sans text-white dark:text-black md:text-sm mb-4">
+          {year}
+        </p>
+        <p className="font-sans text-neutral-300 dark:text-neutral-800">
+          {content}
+        </p>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Introduction = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 0.75, delay: 0.1 }}
-            className="font-serif text-white text-sm md:text-lg dark:text-black"
+            className="font-sans text-white text-sm md:text-lg dark:text-black"
           >
             Hey there 👋, I am
           </motion.p>
@@ -42,7 +42,7 @@ const Introduction = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
-            className="font-serif text-white text-md md:text-xl font-bold dark:font-light dark:text-black"
+            className="font-sans text-white text-md md:text-xl font-bold dark:font-light dark:text-black"
           >
             An Aspiring Software Engineer
           </motion.p>

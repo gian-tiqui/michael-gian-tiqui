@@ -4,9 +4,8 @@ import TechStacks from "./components/tech-stacks/TechStacks";
 
 const Home = () => {
   return (
-    <div className="px-10 pt-24 md:pt-64 md: pb-32">
+    <div className="pt-40 pb-5 md:pb-10">
       <Introduction />
-      <TechStacks />
     </div>
   );
 };

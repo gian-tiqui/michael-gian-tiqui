@@ -43,14 +43,14 @@ export const education: Education[] = [
     year: "2018 - 2020",
     link: "https://feualabang.edu.ph/",
     content:
-      "Before entering the FEU Alabang, I had to take an entrance exam first. But since I hadn't took academics in the previous years, I was kind of nervous. But luckily, I passed and was able to enter FEU Alabang. I took Science, Technology, Engineering, and Mathematics. I took it because I kept on convincing myself that I want to be an engineer. But I knew I was not that interested in it since I haven't explored other fields. But I kept on going, I encountered subjects like physics, chemistry, biology, and subjects related to engineering. I felt interested in physics and thought I had a future in fields that requires it but I had to accept that I did not have it. Though I learned some concepts in SHS which I was able to utilize in my college.",
+      "Before entering the FEU Alabang, I had to take an entrance exam first. But since I hadn't took academics seriously in the previous years, I was kind of nervous. But luckily, I passed and was able to enter FEU Alabang. I took Science, Technology, Engineering, and Mathematics (STEM). I took it because I kept on convincing myself that I want to be an Mechanical Engineer. But I knew I was not that interested in it since I haven't explored other fields. I encountered subjects like physics, chemistry, biology, and subjects related to engineering. I felt interested in physics because from what I understood from it, it can explain every motion in this world. Though I learned some concepts in SHS which I was able to utilize in my college.",
   },
   {
     name: "Pamantasan ng Lungsod ng Muntinlupa (Tertiary)",
     year: "2020 - Present",
     link: "https://www.plmun.edu.ph/",
     content:
-      "So this is where everything started for me. In my first year (2020), I was introduced to programming subjects specifically Fundamentals of Programming. I had no background of what programming is and I had no friends in our section. So in our midterms exam I can't say that I did good. But that pushed me to try programming and I realized that there are a lot of things I can do with programming and that is when I became interested in programming. I had a goal in mind to collect a lot of languages. But in my third year, I realized that it was not a good idea to collect a lot of programming languages because they have different learning curves. I had my regrets of doing that and was able to do the proper learning late. But now I know what tech stacks to use to create different applications. But I can also say that learning a lot of languages before helped in improving my adaptability to different tech stacks.",
+      "So this is where everything started for me. In my first year (2020), I was introduced the Programming Subjects specifically Fundamentals of Programming. I had no background of what Programming is and I had no friends in our block. So in our Midterms Exam I didn't do well. But it pushed me to try Programming and I realized that there are a lot of things I can do and that is when I became interested in it. I had a goal in mind to collect a lot of Programming Languages. But in my third year, I realized that it was not a good idea to collect a lot of it due to different learning curves. I had my regrets of doing that and was able to do the proper learning late. But now I know what Tech Stacks to use to create different Applications. But I can also say that learning a lot of languages before helped in improving my Adaptability to different Tech Stacks.",
   },
 ];
 
@@ -61,15 +61,25 @@ export const playlist: Playlist[] = [
     content: "Discover your new chill pop songs. Cover: Luke Hemmings",
   },
   {
-    name: "Today's Top Hits",
-
-    link: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=1e6ed584512a44c0",
-    content: "Hozier is on the Hottest 50!",
+    name: "This is Shawn Mendez",
+    link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4mwRSU?si=2be7010fbb854220",
+    content: "This is Shawn Mendez. The essential Tracks, all in one playlist.",
   },
   {
-    name: "Chill Mix",
-    link: "https://open.spotify.com/playlist/37i9dQZF1EVHGWrwldPRtj?si=cfc72f6f878c4e55",
-    content: "lullaboy, JHIN, Henrik and more",
+    name: "This is TWICE",
+    link: "https://open.spotify.com/playlist/37i9dQZF1DWYlCv3D85m6m?si=b513985dd89549ab",
+    content: "One in a million! TWICE!",
+  },
+  {
+    name: "This is LE SSERAFIM",
+    link: "https://open.spotify.com/playlist/37i9dQZF1DX7pEH2GWGnSP?si=94376cc188e24b48",
+    content:
+      "Hear all of LE SSERAFIM's biggest and best hits in one playlist.... DODODOK!",
+  },
+  {
+    name: "This is Marshmello",
+    link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3Adu8w?si=cfe6ae8993004214",
+    content: "This is Marshmello. The essential Tracks, all in one playlist.",
   },
 ];
 
@@ -84,8 +94,8 @@ export const hobbies: Hobby[] = [
     content: "I like playing basketball and badminton.",
   },
   {
-    name: "Trying concepts through programming",
+    name: "Experiments (Programming)",
     content:
-      "When I become curious on how something works, I try to visualize it and implement it using programming languages. But I frequently use Java or C++ for it.",
+      "When I become curious on how something works, I try to visualize it and implement it using programming languages as well as using Data Structures and Algorithms if necessary. But I frequently use Java or C++ for it.",
   },
 ];

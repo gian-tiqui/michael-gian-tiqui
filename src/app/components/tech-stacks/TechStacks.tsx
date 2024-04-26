@@ -12,7 +12,6 @@ import {
   SiPrisma,
   SiSpringboot,
   SiTailwindcss,
-  SiTensorflow,
   SiVercel,
 } from "react-icons/si";
 import TechStackContainer from "./components/TechStackContainer";
