@@ -87,11 +87,11 @@ export const hobbies: Hobby[] = [
   {
     name: "Gaming",
     content:
-      "When I have nothing to do, you might catch me playing Honkai Star Rail, Genshin Impact, Valheim, Valorant, or Chess.",
+      "When I have nothing to do, you might catch me playing Honkai Star Rail, Genshin Impact, Valheim, Valorant, Pokemon or Chess.",
   },
   {
     name: "Sports",
-    content: "I like playing basketball and badminton.",
+    content: "I like playing Basketball and Badminton.",
   },
   {
     name: "Experiments (Programming)",
