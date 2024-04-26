@@ -5,7 +5,6 @@ import FloatingNavigator from "./components/Navigation/floating-navigator/Floati
 import "./globals.css";
 import Footer from "./components/footer/Footer";
 import ModeToggler from "./components/mode-toggler/ModeToggler";
-import { createContext } from "vm";
 import ContextProvider from "./context-provider/ContextProvider";
 const inter = Inter({ subsets: ["latin"] });
 

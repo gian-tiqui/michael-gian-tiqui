@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { RoutesInterface, routesMapping } from "@/app/utils/Routes";
 import { HiHome } from "react-icons/hi";
-import { IoCall, IoSchool } from "react-icons/io5";
+import { IoCall } from "react-icons/io5";
 import { TbChecklist } from "react-icons/tb";
 import { BsPersonCircle } from "react-icons/bs";
 
@@ -14,11 +14,7 @@ export const routesMappingV2: RoutesInterface[] = [
     path: "/",
     icon: <HiHome className="h-7 w-auto text-white dark:text-black" />,
   },
-  {
-    name: "Education",
-    path: "/education",
-    icon: <IoSchool className="h-7 w-auto text-white dark:text-black" />,
-  },
+
   {
     name: "About",
     path: "/about",

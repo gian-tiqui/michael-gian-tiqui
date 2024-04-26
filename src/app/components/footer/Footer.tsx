@@ -1,10 +1,9 @@
 import React, { ReactNode } from "react";
 import IconContainer from "./components/IconContainer";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsDot, BsTwitterX } from "react-icons/bs";
+import { BsDot } from "react-icons/bs";
 import Link from "next/link";
 import { routesMapping } from "@/app/utils/Routes";
-import { CgCopyright } from "react-icons/cg";
 
 export interface IconsRouteInterface {
   icon: ReactNode;
