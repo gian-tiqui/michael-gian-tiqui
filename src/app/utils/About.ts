@@ -29,28 +29,28 @@ export const education: Education[] = [
     year: "2007 - 2008",
     link: "https://www.materecclesiaeschool.edu.ph/",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, consequat et efficitur a, mattis laoreet nulla. Sed iaculis placerat erat id scelerisque. Sed a tristique velit. Quisque faucibus lectus ut lorem dapibus, a imperdiet augue semper. Morbi vitae tempor tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. In in odio sem. Sed vitae mollis urna, quis mattis justo. Integer tempus tellus est. Mauris ante mauris, scelerisque at vestibulum consequat, scelerisque sit amet nisi. Ut malesuada consequat ex sed suscipit.",
+      "The year 2007 was my first year at Mater Ecclesiae School, A Private Catholic School located at Villa Olympia in City of San Pedro, Laguna. The School was founded by Fr. Francesco Piccone and Mother Teresa Vallerga. The thing I could recall in my prepatory year in Mater was the boys scout activities where theres a day where we do scout activities on half day.",
   },
   {
     name: "Mater Ecclesiae School (Primary)",
     year: "2008 - 2018",
     link: "https://www.materecclesiaeschool.edu.ph/",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, consequat et efficitur a, mattis laoreet nulla. Sed iaculis placerat erat id scelerisque. Sed a tristique velit. Quisque faucibus lectus ut lorem dapibus, a imperdiet augue semper. Morbi vitae tempor tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. In in odio sem. Sed vitae mollis urna, quis mattis justo. Integer tempus tellus est. Mauris ante mauris, scelerisque at vestibulum consequat, scelerisque sit amet nisi. Ut malesuada consequat ex sed suscipit.",
+      "From the year 2008, That is where grade 1 starts and the teachers taught us how to read, pronounce, write word. The school also gave us diaries to write daily reminders in it. Everyday it will be checked by our Advisers if we copied what is written on the board's reminder section. During my elementary years, I was not that good listener and I always zone out during lessons. I never took subjects seriously until my SHS years. But I met a lot of good friends and built memories during those years.",
   },
   {
     name: "Far Eastern University Alabang (Senior High School)",
     year: "2018 - 2020",
     link: "https://feualabang.edu.ph/",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, consequat et efficitur a, mattis laoreet nulla. Sed iaculis placerat erat id scelerisque. Sed a tristique velit. Quisque faucibus lectus ut lorem dapibus, a imperdiet augue semper. Morbi vitae tempor tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. In in odio sem. Sed vitae mollis urna, quis mattis justo. Integer tempus tellus est. Mauris ante mauris, scelerisque at vestibulum consequat, scelerisque sit amet nisi. Ut malesuada consequat ex sed suscipit.",
+      "Before entering the FEU Alabang, I had to take an entrance exam first. But since I hadn't took academics in the previous years, I was kind of nervous. But luckily, I passed and was able to enter FEU Alabang. I took Science, Technology, Engineering, and Mathematics. I took it because I kept on convincing myself that I want to be an engineer. But I knew I was not that interested in it since I haven't explored other fields. But I kept on going, I encountered subjects like physics, chemistry, biology, and subjects related to engineering. I felt interested in physics and thought I had a future in fields that requires it but I had to accept that I did not have it. Though I learned some concepts in SHS which I was able to utilize in my college.",
   },
   {
     name: "Pamantasan ng Lungsod ng Muntinlupa (Tertiary)",
     year: "2020 - Present",
     link: "https://www.plmun.edu.ph/",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex massa, consequat et efficitur a, mattis laoreet nulla. Sed iaculis placerat erat id scelerisque. Sed a tristique velit. Quisque faucibus lectus ut lorem dapibus, a imperdiet augue semper. Morbi vitae tempor tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. In in odio sem. Sed vitae mollis urna, quis mattis justo. Integer tempus tellus est. Mauris ante mauris, scelerisque at vestibulum consequat, scelerisque sit amet nisi. Ut malesuada consequat ex sed suscipit.",
+      "So this is where everything started for me. In my first year (2020), I was introduced to programming subjects specifically Fundamentals of Programming. I had no background of what programming is and I had no friends in our section. So in our midterms exam I can't say that I did good. But that pushed me to try programming and I realized that there are a lot of things I can do with programming and that is when I became interested in programming. I had a goal in mind to collect a lot of languages. But in my third year, I realized that it was not a good idea to collect a lot of programming languages because they have different learning curves. I had my regrets of doing that and was able to do the proper learning late. But now I know what tech stacks to use to create different applications. But I can also say that learning a lot of languages before helped in improving my adaptability to different tech stacks.",
   },
 ];
 
@@ -77,11 +77,11 @@ export const hobbies: Hobby[] = [
   {
     name: "Gaming",
     content:
-      "When I have nothing to do, you might catch me playing Honkai Star Rail, Genshin Impact, Valheim, Valorant, or Chess",
+      "When I have nothing to do, you might catch me playing Honkai Star Rail, Genshin Impact, Valheim, Valorant, or Chess.",
   },
   {
     name: "Sports",
-    content: "I like playing basketball and badminton",
+    content: "I like playing basketball and badminton.",
   },
   {
     name: "Trying concepts through programming",
