@@ -1,8 +1,10 @@
 import { Metadata } from "next";
 import React from "react";
 import Introduction from "./components/Introduction";
-import TextContainer from "./components/TextContainer";
 import MotionTemplate from "../components/motion/MotionTemplate";
+import Education from "./components/Education";
+import Playlist from "./components/Playlist";
+import Hobbies from "./components/Hobbies";
 
 export const metadata: Metadata = {
   title: "Gian • About",
@@ -14,10 +16,9 @@ const About = () => {
     <div className="pt-52 mb-20 px-7 md:px-44">
       <MotionTemplate>
         <Introduction />
-        <TextContainer />
-        <TextContainer />
-        <TextContainer />
-        <TextContainer />
+        <Education />
+        <Playlist />
+        <Hobbies />
       </MotionTemplate>
     </div>
   );

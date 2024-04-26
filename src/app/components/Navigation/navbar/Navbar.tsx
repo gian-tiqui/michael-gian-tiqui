@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { RoutesInterface, routesMapping } from "@/app/utils/Routes";
 import { HiHome } from "react-icons/hi";
@@ -56,12 +56,14 @@ const Navbar = () => {
         scrolledDown && "hidden"
       }`}
     >
-      <div className="rounded-full bg-neutral-800 h-14 flex items-center justify-between gap-7 md:gap-14 px-7 md:px-20 shadow-md hover:shadow-xl dark:bg-white">
+      <div className="rounded-full bg-neutral-800 h-14 flex items-center justify-between gap-5 md:gap-14 px-7 md:px-20 shadow-md hover:shadow-xl dark:bg-white">
         {routesMappingV2.map((route, index) => (
           <Link href={route.path} key={index}>
-            <p className="hidden md:block font-sans font-bold text-white text-xl hover:underline dark:text-black">
-              {route.name}
-            </p>
+            <motion.div className="hover:border-t hover:border-t-white hover:border-b hover:border-b-white px-1">
+              <p className="hidden md:block font-sans font-bold text-white text-xl dark:text-black">
+                {route.name}
+              </p>
+            </motion.div>
             <span className="md:hidden">{route.icon}</span>
           </Link>
         ))}

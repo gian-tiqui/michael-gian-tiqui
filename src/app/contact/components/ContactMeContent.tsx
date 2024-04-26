@@ -9,6 +9,7 @@ import { GoLocation } from "react-icons/go";
 import { ContactInfoInterface } from "../page";
 import { IconsRouteInterface } from "@/app/components/footer/Footer";
 import InfoContainer from "./InfoContainer";
+import { SiGmail } from "react-icons/si";
 
 const iconsMapping: IconsRouteInterface[] = [
   {
@@ -31,6 +32,11 @@ const iconsMapping: IconsRouteInterface[] = [
 const iconStyle: string = "dark:text-white text-neutral-800 h-8 w-auto";
 
 const contactInfo: ContactInfoInterface[] = [
+  {
+    name: "Gmail",
+    info: "meow@gmail.com",
+    icon: <SiGmail className={iconStyle} />,
+  },
   {
     name: "WhatsApp",
     info: "+63 923-180-3011",

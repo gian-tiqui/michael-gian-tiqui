@@ -182,7 +182,7 @@ const TechStacks = () => {
       </h1>
       <hr className="border-t border-t-gray-500 mb-12 w-full" />
 
-      <div className="hidden md:flex flex-wrap gap-5 justify-center mb-20">
+      <div className="hidden md:flex flex-wrap gap-5 justify-center">
         {techStacks.map((techStack, index) => (
           <TechStackContainer name={techStack.name} key={index}>
             {techStack.icon}
