@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
 import IconContainer from "./components/IconContainer";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsDot } from "react-icons/bs";
 import Link from "next/link";
-import { routesMapping } from "@/app/utils/Routes";
+import { FaInstagram } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
 
 export interface IconsRouteInterface {
   icon: ReactNode;
@@ -11,19 +11,31 @@ export interface IconsRouteInterface {
   name: string;
 }
 
+const iconStyle = "h-5 w-auto dark:text-white";
+
 export const iconsMapping: IconsRouteInterface[] = [
   {
-    icon: <FaFacebook className="h-6 w-auto dark:text-white" />,
+    icon: <FaFacebook className={iconStyle} />,
     path: "https://www.facebook.com/michaelgiantiqui/",
     name: "Facebook",
   },
   {
-    icon: <FaLinkedin className="h-6 w-auto dark:text-white" />,
+    icon: <FaInstagram className={iconStyle} />,
+    path: "https://www.instagram.com/giantiquiii/",
+    name: "Instagram",
+  },
+  {
+    icon: <BsTwitterX className={iconStyle} />,
+    path: "https://twitter.com/gian_tiqui",
+    name: "Twitter",
+  },
+  {
+    icon: <FaLinkedin className={iconStyle} />,
     path: "https://www.linkedin.com/in/michael-gian-tiqui-780344283/",
     name: "LinkedIn",
   },
   {
-    icon: <FaGithub className="h-6 w-auto dark:text-white" />,
+    icon: <FaGithub className={iconStyle} />,
     path: "https://github.com/gian-tiqui",
     name: "Github",
   },
@@ -31,37 +43,12 @@ export const iconsMapping: IconsRouteInterface[] = [
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-800 h-80 grid place-items-center dark:bg-white">
-      <div className="flex flex-col gap-7 items-center">
-        <div className="flex gap-6">
-          {iconsMapping.map((iconMap, index) => (
-            <Link href={iconMap.path} key={index}>
-              <IconContainer>{iconMap.icon}</IconContainer>
-            </Link>
-          ))}
-        </div>
-        <div className="flex flex-wrap justify-center px-3 md:px-0 gap-3 md:gap-2 items-center">
-          {routesMapping.map((route, index) => (
-            <React.Fragment key={index}>
-              <Link
-                className="font-sans text-white text-md hover:underline dark:text-black"
-                href={route.path}
-              >
-                {route.name}
-              </Link>
-              {index + 1 !== routesMapping.length && (
-                <BsDot className="text-white hidden md:block dark:text-black" />
-              )}
-            </React.Fragment>
-          ))}
-        </div>
-        <hr className="border-t border-t-gray-500 w-72" />
-        <div className="flex gap-2 items-center">
-          <p className="text-white font-sans dark:text-black">
-            Michael Gian Tiqui
-          </p>
-        </div>
-      </div>
+    <footer className="flex flex-wrap justify-center md:flex md:justify-start mb-7 px-10 md:px-44 gap-6">
+      {iconsMapping.map((iconMap, index) => (
+        <Link href={iconMap.path} key={index}>
+          <IconContainer>{iconMap.icon}</IconContainer>
+        </Link>
+      ))}
     </footer>
   );
 };

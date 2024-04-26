@@ -3,6 +3,7 @@ import React, { ReactNode, useContext } from "react";
 
 import HeaderText from "./components/HeaderText";
 import ContactMeContent from "./components/ContactMeContent";
+import MotionTemplate from "../components/motion/MotionTemplate";
 
 export const metadata: Metadata = {
   title: "Gian • Contact",
@@ -18,8 +19,10 @@ export interface ContactInfoInterface {
 const Contact = () => {
   return (
     <div className="pt-52 mb-20">
-      <HeaderText />
-      <ContactMeContent />
+      <MotionTemplate>
+        <HeaderText />
+        <ContactMeContent />
+      </MotionTemplate>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import HeaderText from "./components/HeaderText";
+import MotionTemplate from "../components/motion/MotionTemplate";
 
 export const metadata: Metadata = {
   title: "Gian • Projects",
@@ -10,7 +11,9 @@ export const metadata: Metadata = {
 const Projects = () => {
   return (
     <div className="pt-52 mb-20">
-      <HeaderText />
+      <MotionTemplate>
+        <HeaderText />
+      </MotionTemplate>
     </div>
   );
 };
