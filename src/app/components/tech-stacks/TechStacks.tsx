@@ -92,10 +92,6 @@ const techStacks: TechStacksInterface[] = [
     name: "Arduino",
   },
   {
-    icon: <SiPrisma className={iconStyle} />,
-    name: "Prisma",
-  },
-  {
     icon: <DiMongodb className={iconStyle} />,
     name: "MongoDB",
   },
@@ -128,10 +124,6 @@ const techStacks: TechStacksInterface[] = [
     name: "ExpressJs",
   },
   {
-    icon: <SiJquery className={iconStyle} />,
-    name: "Jquery",
-  },
-  {
     icon: <BsBootstrap className={iconStyle} />,
     name: "Bootstrap",
   },
@@ -142,10 +134,6 @@ const techStacks: TechStacksInterface[] = [
   {
     icon: <DiMaterializecss className={iconStyle} />,
     name: "Material UI",
-  },
-  {
-    icon: <SiTensorflow className={iconStyle} />,
-    name: "Tensor flow",
   },
   {
     icon: <FiFigma className={iconStyle} />,
