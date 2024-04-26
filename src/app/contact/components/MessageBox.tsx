@@ -37,7 +37,10 @@ const MessageBox = () => {
         </h1>
         <div className="flex flex-col items-start">
           <div className="flex flex-col gap-2 mb-2 w-full">
-            <label htmlFor="name" className="text-white dark:text-black">
+            <label
+              htmlFor="name"
+              className="font-sans text-white dark:text-black"
+            >
               Name:
             </label>
 
@@ -46,16 +49,19 @@ const MessageBox = () => {
               id="name"
               placeholder="Type your name"
               {...register("name", { required: "Name is required" })}
-              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
+              className="font-sans border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
             />
             {errors.name && (
-              <span className="text-red-500 text-sm">
+              <span className="font-sans text-red-500 text-sm">
                 {errors.name.message}
               </span>
             )}
           </div>
           <div className="flex flex-col gap-2 mb-2 w-full">
-            <label htmlFor="email" className="dark:text-black text-white">
+            <label
+              htmlFor="email"
+              className="font-sans dark:text-black text-white"
+            >
               Email:
             </label>
             <input
@@ -69,26 +75,29 @@ const MessageBox = () => {
                   message: "Invalid email address",
                 },
               })}
-              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
+              className="font-sans border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
             />
             {errors.email && (
-              <span className="text-red-500 text-sm">
+              <span className="font-sans text-red-500 text-sm">
                 {errors.email.message}
               </span>
             )}
           </div>
           <div className="flex flex-col gap-2 mb-2  w-full">
-            <label htmlFor="message" className="dark:text-black text-white">
+            <label
+              htmlFor="message"
+              className="font-sans dark:text-black text-white"
+            >
               Message:
             </label>
             <textarea
               id="message"
               placeholder="Your message"
               {...register("message", { required: "Message is required" })}
-              className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 md:h-40 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
+              className="font-sans border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:ring-teal-400 dark:focus:ring-blue-500 md:h-40 bg-neutral-700 dark:bg-neutral-100 text-white dark:text-black"
             />
             {errors.email && (
-              <span className="text-red-500 text-sm">
+              <span className="font-sans text-red-500 text-sm">
                 {errors.email.message}
               </span>
             )}
@@ -97,7 +106,7 @@ const MessageBox = () => {
 
         <button
           type="submit"
-          className="bg-teal-400 dark:bg-blue-600 hover:bg-teal-500 dark:hover:bg-blue-700 text-white px-4 py-2 rounded w-full font-bold"
+          className="font-sans bg-teal-400 dark:bg-blue-600 hover:bg-teal-500 dark:hover:bg-blue-700 text-white px-4 py-2 rounded w-full font-bold"
         >
           Submit
         </button>

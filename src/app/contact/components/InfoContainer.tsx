@@ -12,10 +12,10 @@ const InfoContainer: React.FC<ContactInfoInterface> = ({
         {icon}
       </div>
       <div>
-        <p className="font-bold text-teal-400 dark:text-blue-600 mb-1">
+        <p className="font-sans font-bold text-teal-400 dark:text-blue-600 mb-1">
           {name}
         </p>
-        <p className="text-white dark:text-black max-w-52">{info}</p>
+        <p className="font-sans text-white dark:text-black max-w-52">{info}</p>
       </div>
     </div>
   );
