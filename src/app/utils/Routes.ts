@@ -12,10 +12,6 @@ export const routesMapping: RoutesInterface[] = [
     path: "/",
   },
   {
-    name: "Education",
-    path: "/education",
-  },
-  {
     name: "About",
     path: "/about",
   },
