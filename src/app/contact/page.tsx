@@ -6,7 +6,7 @@ import ContactMeContent from "./components/ContactMeContent";
 import MotionTemplate from "../components/motion/MotionTemplate";
 
 export const metadata: Metadata = {
-  title: "Gian • Contact",
+  title: "Contact • Michael Gian Tiqui",
   description: "Michael Gian Tiqui's Contact Details",
 };
 

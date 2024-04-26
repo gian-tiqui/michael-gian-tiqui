@@ -7,7 +7,7 @@ import Playlist from "./components/Playlist";
 import Hobbies from "./components/Hobbies";
 
 export const metadata: Metadata = {
-  title: "Gian • About",
+  title: "About • Michael Gian Tiqui",
   description: "Gian's Background",
 };
 
