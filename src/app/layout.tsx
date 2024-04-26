@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-neutral-900 dark:bg-neutral-200`}>
+      <body
+        className={`${inter.className} bg-neutral-900 dark:bg-neutral-200 md:px-32`}
+      >
         <ContextProvider>
           <Navbar />
           <FloatingNavigator />

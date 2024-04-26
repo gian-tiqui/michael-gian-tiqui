@@ -5,13 +5,10 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMobileScreenButton } from "react-icons/fa6";
-import Link from "next/link";
 import { GoLocation } from "react-icons/go";
 import { ContactInfoInterface } from "../page";
 import { IconsRouteInterface } from "@/app/components/footer/Footer";
 import InfoContainer from "./InfoContainer";
-import IconContainer from "@/app/components/footer/components/IconContainer";
-import { motion } from "framer-motion";
 
 const iconsMapping: IconsRouteInterface[] = [
   {
@@ -58,40 +55,18 @@ const contactInfo: ContactInfoInterface[] = [
 
 const ContactMeContent = () => {
   return (
-    <div className="flex flex-col gap-14 md:gap-0 md:flex-row md:justify-between mt-14">
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.75, delay: 0.15 }}
-        className="flex justify-between items-start pl-8 md:pl-32 flex-col flex-1 pt-6"
-      >
+    <div className="flex flex-col gap-14 md:gap-0 md:flex-row md:justify-between mt-14 mx-10">
+      <div className="flex justify-between items-start pl-8 md:pl-32 flex-col flex-1 pt-6">
         <div className="flex flex-col gap-6">
           {contactInfo.map((info, index) => (
             <InfoContainer {...info} key={index} />
           ))}
         </div>
-        <div className="pt-10 md:pt-0">
-          <p className="md:px-0 md:text-xl font-sans text-white dark:text-black md:max-w-[600px] mb-5">
-            Stay Connected
-          </p>
-          <div className="flex gap-3">
-            {iconsMapping.map((iconMap, index) => (
-              <Link href={iconMap.path} key={index}>
-                <IconContainer>{iconMap.icon}</IconContainer>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="flex justify-center flex-1"
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.75, delay: 0.15 }}
-      >
+      <div className="flex justify-center flex-1">
         <ContactForm />
-      </motion.div>
+      </div>
     </div>
   );
 };

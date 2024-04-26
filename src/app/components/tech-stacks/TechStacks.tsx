@@ -180,7 +180,7 @@ const TechStacks = () => {
       <h1 className="font-sans text-center text-2xl md:text-3xl font-extrabold text-white mb-10 dark:text-black">
         Tech Stacks
       </h1>
-      <hr className="border-t border-t-gray-500 mb-12" />
+      <hr className="border-t border-t-gray-500 mb-12 w-full" />
 
       <div className="hidden md:flex flex-wrap gap-5 justify-center mb-20">
         {techStacks.map((techStack, index) => (

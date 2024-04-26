@@ -42,7 +42,7 @@ const Sidebar: React.FC<SidebarProps> = ({ handleExpand }) => {
         </p>
         <hr className="border-t border-t-gray-400 dark:border-t-gray-700 mb-2" />
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 flex-wrap">
           {iconsMapping.map((icon, index) => (
             <Link
               className="font-sans text-white hover:underline text-sm dark:text-black"
