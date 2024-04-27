@@ -12,8 +12,8 @@ const sections: SectionsInterface[] = [
     sectionName: "projects",
   },
   {
-    name: "Tech Stacks",
-    sectionName: "tech-stacks",
+    name: "Expertise",
+    sectionName: "expertise",
   },
   {
     name: "Dev Tools",
@@ -30,7 +30,7 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ setSelectedSection }) => {
-  const [selected, setSelected] = useState<string>("");
+  const [selected, setSelected] = useState<string>("projects");
 
   return (
     <nav className="rounded-full bg-neutral-800 h-10 md:h-12 flex items-center justify-between gap-3 md:gap-7 px-7 md:px-12 shadow-md hover:shadow-xl dark:bg-white">
