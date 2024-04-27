@@ -1,53 +1,41 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import gian from "../../assets/michael-gian-tiqui.png";
-import { motion } from "framer-motion";
+import gian from "../../assets/michael-gian-tiqui-bg.jpg";
+import NextButton from "../next-button/NextButton";
 
 const Introduction = () => {
   return (
-    <div className="md:max-w-[950px] mx-auto">
-      <div className="flex flex-col items-center md:justify-center gap-9">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.75 }}
-        >
-          <Image
-            src={gian}
-            className="rounded-full bg-gray-400 h-72 w-72 pt-10"
-            alt="Michael Gian M. Tiqui"
-            priority
-          />
-        </motion.div>
-
-        <div className="flex flex-col gap-4 items-center justify-center">
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ ease: "easeInOut", duration: 0.75, delay: 0.1 }}
-            className="font-sans text-white text-sm md:text-lg dark:text-black"
-          >
-            Hey there 👋, I am
-          </motion.p>
-          <motion.h2
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ ease: "easeInOut", duration: 0.75, delay: 0.15 }}
-            className="font-sans font-extrabold text-2xl md:text-4xl text-white dark:text-black"
-          >
+    <div className="px-7 md:px-44 md:pt-14">
+      <div className="flex gap-3 md:gap-7 mb-12">
+        <Image
+          src={gian}
+          className="rounded-full h-24 w-24 md:h-32 md:w-32"
+          alt="Michael Gian M. Tiqui"
+          priority
+        />
+        <div className="flex flex-col gap-3">
+          <p className="font-sans md:text-3xl text-white dark:text-black">
+            Hello there 👋, my name is
+          </p>
+          <p className="font-sans font-bold text-3xl md:text-6xl text-white dark:text-black">
             Michael Gian Tiqui
-          </motion.h2>
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
-            className="font-sans text-white text-md md:text-xl font-bold dark:font-light dark:text-black"
-          >
-            An Aspiring Software Engineer
-          </motion.p>
+          </p>
         </div>
       </div>
+
+      <p className="font-sans md:text-2xl text-justify text-white dark:text-black mb-10">
+        Welcome to my portfolio website, I am{" "}
+        <span className="font-bold">Gian</span>. An aspiring{" "}
+        <span className="font-bold">Software Engineer</span> from the
+        Philippines. I create things for the Web and Mobile. I find it fun
+        learning new concepts, libraries, and frameworks which I can utilize in
+        developing apps. You might catch me playing Online Games, Sports or
+        doing expirements on something through coding. Well, those are just my
+        hobbies.
+      </p>
+
+      <NextButton link="/about" name="Know more about Gian" />
     </div>
   );
 };

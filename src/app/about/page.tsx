@@ -5,6 +5,7 @@ import MotionTemplate from "../components/motion/MotionTemplate";
 import Education from "./components/Education";
 import Playlist from "./components/Playlist";
 import Hobbies from "./components/Hobbies";
+import NextButton from "../components/next-button/NextButton";
 
 export const metadata: Metadata = {
   title: "About • Michael Gian Tiqui",
@@ -13,12 +14,13 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="pt-40 md:pt-52 mb-20 px-7 md:px-44">
+    <div className="pt-40 md:pt-52 mb-10 px-7 md:px-44">
       <MotionTemplate>
         <Introduction />
         <Education />
         <Playlist />
         <Hobbies />
+        <NextButton link="/projects" name="See Gian's projects" />
       </MotionTemplate>
     </div>
   );
