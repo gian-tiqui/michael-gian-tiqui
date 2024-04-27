@@ -13,14 +13,16 @@ const ExpertiseContainer: React.FC<ExpertiseContainerProps> = ({
   title,
 }) => {
   return (
-    <div className="border border-white p-7 w-full grid place-items-center">
-      <div className="flex gap-3 items-center mb-7">
+    <div className="border border-white dark:border-black py-20 md:py-7 px-7 w-full">
+      <div className="flex gap-3 items-center mb-5">
         {icon}
         <p className="font-bold md:text-lg font-sans text-white dark:text-black">
           {title}
         </p>
       </div>
-      <p className="font-sans text-white dark:text-black">{content}</p>
+      <p className="font-sans text-neutral-300 dark:text-neutral-800">
+        {content}
+      </p>
     </div>
   );
 };
