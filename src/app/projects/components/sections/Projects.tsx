@@ -1,7 +1,7 @@
 import MotionTemplate from "@/app/components/motion/MotionTemplate";
 import React from "react";
 
-const Tools = () => {
+const Projects = () => {
   return (
     <MotionTemplate>
       <div className="grid grid-cols-3 gap-y-2 place-items-center">
@@ -15,4 +15,4 @@ const Tools = () => {
   );
 };
 
-export default Tools;
+export default Projects;

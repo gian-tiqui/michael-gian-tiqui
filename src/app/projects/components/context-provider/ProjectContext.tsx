@@ -17,7 +17,7 @@ export const SelectedSectionContext = createContext<SelectedSectionInterface>({
 });
 
 const ProjectContext: React.FC<ProjectContextProps> = ({ children }) => {
-  const [selectedSection, setSelectedSection] = useState<string>("tech-stacks");
+  const [selectedSection, setSelectedSection] = useState<string>("projects");
 
   return (
     <SelectedSectionContext.Provider
