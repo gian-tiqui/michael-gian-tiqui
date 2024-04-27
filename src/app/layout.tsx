@@ -6,6 +6,7 @@ import "./globals.css";
 import Footer from "./components/footer/Footer";
 import ModeToggler from "./components/mode-toggler/ModeToggler";
 import ContextProvider from "./context-provider/ContextProvider";
+import MotionTemplate from "./components/motion/MotionTemplate";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,11 +25,13 @@ export default function RootLayout({
         className={`${inter.className} bg-neutral-900 dark:bg-neutral-200 md:px-32`}
       >
         <ContextProvider>
-          <Navbar />
-          <FloatingNavigator />
-          {children}
-          <ModeToggler />
-          <Footer />
+          <MotionTemplate>
+            <Navbar />
+            <FloatingNavigator />
+            {children}
+            <ModeToggler />
+            <Footer />
+          </MotionTemplate>
         </ContextProvider>
       </body>
     </html>

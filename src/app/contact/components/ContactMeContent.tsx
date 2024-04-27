@@ -61,7 +61,7 @@ const contactInfo: ContactInfoInterface[] = [
 
 const ContactMeContent = () => {
   return (
-    <div className="flex flex-col gap-14 md:gap-0 md:flex-row md:justify-between mt-14 mx-10">
+    <div className="flex flex-col gap-14 md:gap-0 md:flex-row md:justify-center mt-14 mx-10">
       <div className="flex justify-between items-start pl-8 md:pl-32 flex-col flex-1 pt-6">
         <div className="flex flex-col gap-6">
           {contactInfo.map((info, index) => (
