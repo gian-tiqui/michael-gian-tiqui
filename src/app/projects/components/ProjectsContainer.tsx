@@ -4,8 +4,6 @@ import Menu from "./menu/Menu";
 import ProjectContext, {
   SelectedSectionContext,
 } from "./context-provider/ProjectContext";
-import Tools from "./sections/Tools";
-import Techstacks from "./sections/Techstacks";
 import ProjectsContent from "./ProjectsContent";
 
 const ProjectsContainer = () => {
@@ -15,8 +13,10 @@ const ProjectsContainer = () => {
 
   return (
     <ProjectContext>
-      <div className="w-full">
+      <div className="w-full flex flex-col items-center">
         <Menu setSelectedSection={setSelectedSection} />
+      </div>
+      <div>
         <ProjectsContent selectedSection={selectedSection} />
       </div>
     </ProjectContext>

@@ -18,7 +18,7 @@ export interface ContactInfoInterface {
 
 const Contact = () => {
   return (
-    <div className="pt-52 mb-20">
+    <div className="pt-40 md:pt-52 mb-20">
       <MotionTemplate>
         <HeaderText />
         <ContactMeContent />

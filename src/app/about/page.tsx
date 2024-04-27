@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="pt-52 mb-20 px-7 md:px-44">
+    <div className="pt-40 md:pt-52 mb-20 px-7 md:px-44">
       <MotionTemplate>
         <Introduction />
         <Education />
