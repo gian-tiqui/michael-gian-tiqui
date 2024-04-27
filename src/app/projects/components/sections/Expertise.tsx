@@ -4,11 +4,10 @@ import ExpertiseContainer, {
   ExpertiseContainerProps,
 } from "./components/ExpertiseContainer";
 import { CiMobile3, CiMonitor } from "react-icons/ci";
-import { BiMobile } from "react-icons/bi";
 import { DiReact } from "react-icons/di";
 import { TbApi } from "react-icons/tb";
-import { VscCode } from "react-icons/vsc";
 import { BsDatabase } from "react-icons/bs";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 const iconStyle: string = "md:h-10 w-auto text-white dark:text-black";
 
@@ -38,10 +37,10 @@ const expertises: ExpertiseContainerProps[] = [
     icon: <CiMobile3 className={iconStyle} />,
   },
   {
-    title: "Full-Stack Development",
+    title: "Machine Learning",
     content:
-      "Over 2 years of Development experience integrating Front-end and Back-end Frameworks to create Full-Stack Web Applications/Websites.",
-    icon: <VscCode className={iconStyle} />,
+      "Our chosen Capstone Project made a bridge for me to get ideas on how Machine Learning works throughout the development period of our project.",
+    icon: <GiArtificialIntelligence className={iconStyle} />,
   },
   {
     title: "Software Development",

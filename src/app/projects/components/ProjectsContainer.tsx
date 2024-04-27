@@ -16,7 +16,7 @@ const ProjectsContainer = () => {
       <div className="w-full flex flex-col items-center">
         <Menu setSelectedSection={setSelectedSection} />
       </div>
-      <div>
+      <div className="mb-12">
         <ProjectsContent selectedSection={selectedSection} />
       </div>
     </ProjectContext>

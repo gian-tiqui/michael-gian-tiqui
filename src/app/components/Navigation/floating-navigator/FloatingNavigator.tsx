@@ -16,9 +16,7 @@ const FloatingNavigator = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const threshold = 100;
-
-      setScrolledDown(scrollY > threshold);
+      setScrolledDown(scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
