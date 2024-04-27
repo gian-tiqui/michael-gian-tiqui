@@ -4,7 +4,9 @@ import React from "react";
 const Projects = () => {
   return (
     <MotionTemplate>
-      <div className="text-white dark:text-black">projects</div>
+      <div className="text-white dark:text-black">
+        this is underdevelopment so view my projects on my github first hehe
+      </div>
     </MotionTemplate>
   );
 };

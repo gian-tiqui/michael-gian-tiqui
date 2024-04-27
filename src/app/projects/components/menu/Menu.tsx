@@ -16,12 +16,8 @@ const sections: SectionsInterface[] = [
     sectionName: "expertise",
   },
   {
-    name: "Dev Tools",
-    sectionName: "tools",
-  },
-  {
-    name: "Others",
-    sectionName: "others",
+    name: "Skills",
+    sectionName: "skills",
   },
 ];
 

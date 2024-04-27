@@ -1,5 +1,5 @@
 import React from "react";
-import { TechStacksInterface } from "../Expertise";
+import { TechStacksInterface } from "../Skills";
 
 interface CategorizedTechsProps {
   category: string;
