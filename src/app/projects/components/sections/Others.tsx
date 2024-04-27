@@ -4,7 +4,7 @@ import React from "react";
 const Others = () => {
   return (
     <MotionTemplate>
-      <div className="text-white">Others</div>
+      <div className="text-white">others</div>
     </MotionTemplate>
   );
 };
