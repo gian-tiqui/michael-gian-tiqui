@@ -1,6 +1,5 @@
 import React from "react";
 import Introduction from "./components/introduction/Introduction";
-import TechStacks from "./components/tech-stacks/TechStacks";
 
 const Home = () => {
   return (
