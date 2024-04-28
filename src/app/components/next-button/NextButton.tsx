@@ -13,7 +13,7 @@ const NextButton: React.FC<NextButtonProps> = ({ name, link }) => {
     <ScrollMotionTemplate>
       <Link
         href={link}
-        className="flex gap-2 items-center text-white dark:text-black"
+        className="flex gap-2 items-center text-white dark:text-black w-52"
       >
         <p className=" hover:underline font-sans">{name}</p>
         <span className="rotate-90">

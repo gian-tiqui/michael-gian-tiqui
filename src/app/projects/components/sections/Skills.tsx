@@ -53,7 +53,7 @@ import { FaGolang } from "react-icons/fa6";
 export interface TechStacksInterface {
   icon: ReactNode;
   name: string;
-  category: string;
+  category?: string;
 }
 
 export const categories: string[] = [
