@@ -6,7 +6,7 @@ import NextButton from "../next-button/NextButton";
 
 const Introduction = () => {
   return (
-    <div className="px-7 md:px-44 md:pt-14">
+    <div className="px-7 mb-16 md:mb-0 md:px-44 md:pt-14">
       <div className="flex gap-3 md:gap-7 mb-12">
         <Image
           src={gian}

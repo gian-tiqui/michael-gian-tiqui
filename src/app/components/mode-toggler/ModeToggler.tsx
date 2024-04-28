@@ -32,9 +32,7 @@ const ModeToggler = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const threshold = 100;
-
-      setScrolledDown(scrollY > threshold);
+      setScrolledDown(scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -45,21 +43,23 @@ const ModeToggler = () => {
   return (
     <>
       <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.001 }}
-          animate={{ opacity: opacity, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.001 }}
-          onMouseEnter={increaseOpacity}
-          onMouseLeave={decreaseOpacity}
-          className="w-12 h-12 md:w-16 md:h-16 rounded-full hover:shadow-xl flex items-center justify-center fixed bottom-7 right-7 dark:hover:bg-neutral-700 bg-neutral-200 dark:bg-black hover:bg-neutral-100"
-          onClick={changeMode}
-        >
-          {darkMode ? (
-            <IoMoon className="text-white h-7 w-auto" />
-          ) : (
-            <IoSunny className="h-7 w-auto text-black" />
-          )}
-        </motion.div>
+        {scrolledDown && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.001 }}
+            animate={{ opacity: opacity, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.001 }}
+            onMouseEnter={increaseOpacity}
+            onMouseLeave={decreaseOpacity}
+            className="w-12 h-12 md:w-16 md:h-16 rounded-full hover:shadow-xl flex items-center justify-center fixed bottom-7 right-7 dark:hover:bg-neutral-700 bg-neutral-200 dark:bg-black hover:bg-neutral-100"
+            onClick={changeMode}
+          >
+            {darkMode ? (
+              <IoMoon className="text-white h-7 w-auto" />
+            ) : (
+              <IoSunny className="h-7 w-auto text-black" />
+            )}
+          </motion.div>
+        )}
       </AnimatePresence>
 
       <AnimatePresence>

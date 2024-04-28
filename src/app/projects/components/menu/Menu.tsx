@@ -33,7 +33,7 @@ const Menu: React.FC<MenuProps> = ({ setSelectedSection }) => {
       {sections.map((section, index) => (
         <p
           key={index}
-          className={`text-xs md:text-lg font-bold text-white dark:text-black cursor-pointer hover:border-y hover:border-y-white dark:hover:border-y dark:hover:border-y-black px-1 ${
+          className={`text-md md:text-lg font-bold text-white dark:text-black cursor-pointer hover:border-y hover:border-y-white dark:hover:border-y dark:hover:border-y-black px-1 ${
             section.sectionName == selected
               ? "border-y border-y-white dark:border-y dark:border-y-black"
               : ""

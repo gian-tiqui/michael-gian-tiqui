@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { TechStacksInterface } from "../Skills";
-import unk from "../../../../assets/unknown-website.png";
+import unk from "../../../../assets/temp-pic.jpg";
 import Image, { StaticImageData } from "next/image";
 import { AnimatePresence } from "framer-motion";
 import MotionTemplate from "@/app/components/motion/MotionTemplate";
@@ -331,71 +331,6 @@ const projects: ProjectCardProps[] = [
       },
       {
         name: "Javascript",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "Michael Gian Tiqui",
-    description: "Michael Gian Tiqui's Web Portfolio",
-    stacks: [
-      {
-        name: "React",
-      },
-      {
-        name: "TailwindCss",
-      },
-      {
-        name: "NextJS",
-      },
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "Typescript",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "Python Activities",
-    description: "My Python Activities in our Professional Elective 2 Subject",
-    stacks: [
-      {
-        name: "Python",
-      },
-      {
-        name: "Pandas",
-      },
-      {
-        name: "Jupyter",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "C++ Activities",
-    description:
-      "My C++ Activities in our Fundamentals of Programming, Intermediate Programming, and Data Structures and Algorithm",
-    stacks: [
-      {
-        name: "C++",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "Java Activities",
-    description: "My Java Activities in our OOP Subjects",
-    stacks: [
-      {
-        name: "Java",
-      },
-      {
-        name: "Swing",
       },
     ],
     image: unk,
