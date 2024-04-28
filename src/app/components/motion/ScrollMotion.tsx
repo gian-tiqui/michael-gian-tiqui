@@ -1,16 +1,13 @@
 "use client";
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
+import { MotionTemplateProps } from "./MotionTemplate";
 
-export interface MotionTemplateProps {
-  children: ReactNode;
-}
-
-const MotionTemplate: React.FC<MotionTemplateProps> = ({ children }) => {
+const ScrollMotionTemplate: React.FC<MotionTemplateProps> = ({ children }) => {
   return (
     <motion.div
       initial={{ y: 20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      whileInView={{ y: 0, opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
     >
@@ -19,4 +16,4 @@ const MotionTemplate: React.FC<MotionTemplateProps> = ({ children }) => {
   );
 };
 
-export default MotionTemplate;
+export default ScrollMotionTemplate;
