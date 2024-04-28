@@ -4,6 +4,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { FaInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
+import ScrollMotionTemplate from "../motion/ScrollMotion";
 
 export interface IconsRouteInterface {
   icon: ReactNode;
@@ -43,13 +44,15 @@ export const iconsMapping: IconsRouteInterface[] = [
 
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap justify-center md:flex md:justify-start mb-7 px-10 md:px-44 gap-6">
-      {iconsMapping.map((iconMap, index) => (
-        <Link href={iconMap.path} key={index}>
-          <IconContainer>{iconMap.icon}</IconContainer>
-        </Link>
-      ))}
-    </footer>
+    <ScrollMotionTemplate>
+      <footer className="flex flex-wrap justify-center md:flex md:justify-start mb-7 px-10 md:px-44 gap-6">
+        {iconsMapping.map((iconMap, index) => (
+          <Link href={iconMap.path} key={index}>
+            <IconContainer>{iconMap.icon}</IconContainer>
+          </Link>
+        ))}
+      </footer>
+    </ScrollMotionTemplate>
   );
 };
 
