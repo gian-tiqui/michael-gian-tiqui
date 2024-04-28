@@ -51,7 +51,7 @@ import CategorizedTechs from "./components/CategorizedTechs";
 import { FaGolang } from "react-icons/fa6";
 
 export interface TechStacksInterface {
-  icon: ReactNode;
+  icon?: ReactNode;
   name: string;
   category?: string;
 }
