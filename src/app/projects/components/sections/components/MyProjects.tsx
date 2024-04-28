@@ -3,18 +3,8 @@ import React, { useState } from "react";
 import { TechStacksInterface } from "../Skills";
 import unk from "../../../../assets/unknown-website.png";
 import Image, { StaticImageData } from "next/image";
-import { DiFirebase, DiJava, DiReact } from "react-icons/di";
-import { FaHtml5 } from "react-icons/fa";
-import {
-  SiAndroidstudio,
-  SiTailwindcss,
-  SiTensorflow,
-  SiTypescript,
-} from "react-icons/si";
-import { BsBootstrap, BsWordpress } from "react-icons/bs";
 import { AnimatePresence } from "framer-motion";
 import MotionTemplate from "@/app/components/motion/MotionTemplate";
-import { FiFigma } from "react-icons/fi";
 
 interface ProjectCardProps {
   name: string;
@@ -32,27 +22,21 @@ const projects: ProjectCardProps[] = [
     stacks: [
       {
         name: "React",
-        icon: <DiReact className={iconStyle} />,
       },
       {
         name: "TailwindCss",
-        icon: <SiTailwindcss className={iconStyle} />,
       },
       {
         name: "HTML",
-        icon: <FaHtml5 className={iconStyle} />,
       },
       {
         name: "Wordpress",
-        icon: <BsWordpress className={iconStyle} />,
       },
       {
         name: "Typescript",
-        icon: <SiTypescript className={iconStyle} />,
       },
       {
         name: "Figma",
-        icon: <FiFigma className={iconStyle} />,
       },
     ],
     image: unk,
@@ -63,23 +47,18 @@ const projects: ProjectCardProps[] = [
     stacks: [
       {
         name: "Android Studio",
-        icon: <SiAndroidstudio className={iconStyle} />,
       },
       {
         name: "Java",
-        icon: <DiJava className={iconStyle} />,
       },
       {
         name: "Firebase",
-        icon: <DiFirebase className={iconStyle} />,
       },
       {
         name: "Tensorflow",
-        icon: <SiTensorflow className={iconStyle} />,
       },
       {
         name: "Figma",
-        icon: <FiFigma className={iconStyle} />,
       },
     ],
     image: unk,
@@ -90,92 +69,333 @@ const projects: ProjectCardProps[] = [
     stacks: [
       {
         name: "React",
-        icon: <DiReact className={iconStyle} />,
       },
       {
         name: "Bootstrap",
-        icon: <BsBootstrap className={iconStyle} />,
       },
       {
         name: "HTML",
-        icon: <FaHtml5 className={iconStyle} />,
       },
       {
         name: "Firebase",
-        icon: <DiFirebase className={iconStyle} />,
       },
       {
         name: "Typescript",
-        icon: <SiTypescript className={iconStyle} />,
       },
     ],
     image: unk,
   },
   {
-    name: "City Government of Tanauan",
-    description: "City Government of Tanauan Website",
+    name: "Booklist CMS",
+    description: "A Library Website where you can manage Books",
     stacks: [
       {
-        name: "React",
-        icon: <DiReact className={iconStyle} />,
-      },
-      {
-        name: "TailwindCss",
-        icon: <SiTailwindcss className={iconStyle} />,
+        name: "ASP.NET",
       },
       {
         name: "HTML",
-        icon: <FaHtml5 className={iconStyle} />,
       },
       {
-        name: "Wordpress",
-        icon: <BsWordpress className={iconStyle} />,
+        name: "CSS",
+      },
+      {
+        name: "Bootstrap",
+      },
+      {
+        name: "Javascript",
+      },
+      {
+        name: "C#",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "MySQL",
       },
     ],
     image: unk,
   },
   {
-    name: "City Government of Tanauan",
-    description: "City Government of Tanauan Website",
+    name: "Employee CMS",
+    description: "A Website where you can manage Employees",
     stacks: [
       {
-        name: "React",
-        icon: <DiReact className={iconStyle} />,
-      },
-      {
-        name: "TailwindCss",
-        icon: <SiTailwindcss className={iconStyle} />,
+        name: "ASP.NET",
       },
       {
         name: "HTML",
-        icon: <FaHtml5 className={iconStyle} />,
       },
       {
-        name: "Wordpress",
-        icon: <BsWordpress className={iconStyle} />,
+        name: "CSS",
+      },
+      {
+        name: "Bootstrap",
+      },
+      {
+        name: "Javascript",
+      },
+      {
+        name: "C#",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "MySQL",
       },
     ],
     image: unk,
   },
   {
-    name: "City Government of Tanauan",
-    description: "City Government of Tanauan Website",
+    name: "Blog Website",
+    description: "Posts your thoughts in this website",
     stacks: [
       {
         name: "React",
-        icon: <DiReact className={iconStyle} />,
       },
       {
-        name: "TailwindCss",
-        icon: <SiTailwindcss className={iconStyle} />,
+        name: "Bootstrap",
       },
       {
         name: "HTML",
-        icon: <FaHtml5 className={iconStyle} />,
       },
       {
-        name: "Wordpress",
-        icon: <BsWordpress className={iconStyle} />,
+        name: "CSS",
+      },
+      {
+        name: "Firebase",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Todo Web Application",
+    description: "A todo app that is accessible in the web",
+    stacks: [
+      {
+        name: "React",
+      },
+      {
+        name: "ExpressJS",
+      },
+      {
+        name: "MongoDB",
+      },
+      {
+        name: "Bootstrap",
+      },
+      {
+        name: "HTML",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Toys Storage Website",
+    description: "A web app that let you store your toy data",
+    stacks: [
+      {
+        name: "Laravel",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "MySQL",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "Javascript",
+      },
+      {
+        name: "Bootstrap",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Batangas.net",
+    description: "The News Website of Batangas",
+    stacks: [
+      {
+        name: "NextJS",
+      },
+      {
+        name: "React",
+      },
+      {
+        name: "TailwindCss",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "Laravel",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "SQLite",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Batangas.net CMS",
+    description: "The CMS for the News Website of Batangas",
+    stacks: [
+      {
+        name: "NextJS",
+      },
+      {
+        name: "React",
+      },
+      {
+        name: "TailwindCss",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "Laravel",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "SQLite",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Urban Bistro",
+    description: "An Ordering Mobile Application",
+    stacks: [
+      {
+        name: "Android Studio",
+      },
+      {
+        name: "SQLite",
+      },
+      {
+        name: "Java",
+      },
+      {
+        name: "XML",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Locatio",
+    description: "A Travel Mobile App",
+    stacks: [
+      {
+        name: "React-Native",
+      },
+      {
+        name: "Typescript",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Schat",
+    description: "A Simple Chat Application",
+    stacks: [
+      {
+        name: "React",
+      },
+      {
+        name: "Bootstrap",
+      },
+      {
+        name: "Firebase",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "Javascript",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Michael Gian Tiqui",
+    description: "Michael Gian Tiqui's Web Portfolio",
+    stacks: [
+      {
+        name: "React",
+      },
+      {
+        name: "TailwindCss",
+      },
+      {
+        name: "NextJS",
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "Typescript",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Python Activities",
+    description: "My Python Activities in our Professional Elective 2 Subject",
+    stacks: [
+      {
+        name: "Python",
+      },
+      {
+        name: "Pandas",
+      },
+      {
+        name: "Jupyter",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "C++ Activities",
+    description:
+      "My C++ Activities in our Fundamentals of Programming, Intermediate Programming, and Data Structures and Algorithm",
+    stacks: [
+      {
+        name: "C++",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Java Activities",
+    description: "My Java Activities in our OOP Subjects",
+    stacks: [
+      {
+        name: "Java",
+      },
+      {
+        name: "Swing",
       },
     ],
     image: unk,
