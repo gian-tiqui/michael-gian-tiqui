@@ -9,7 +9,7 @@ import { TbApi } from "react-icons/tb";
 import { BsDatabase } from "react-icons/bs";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
-const iconStyle: string = "md:h-10 w-auto text-white dark:text-black";
+const iconStyle: string = "h-10 w-auto text-white dark:text-black";
 
 const expertises: ExpertiseContainerProps[] = [
   {
