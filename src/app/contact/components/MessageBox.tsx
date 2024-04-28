@@ -2,6 +2,7 @@
 import { ModeContext } from "@/app/context-provider/ContextProvider";
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 interface FormFields {
   message: string;
@@ -22,8 +23,15 @@ const MessageBox = () => {
     },
   });
 
+  const { darkMode } = useContext(ModeContext);
+
   const onSubmit = (data: FormFields) => {
-    console.log(data);
+    toast.success("Your message was sent to Gian", {
+      position: "top-center",
+      className: `h-24 ${
+        darkMode ? "bg-white text-black" : "bg-neutral-800 text-white"
+      }`,
+    });
   };
 
   return (
