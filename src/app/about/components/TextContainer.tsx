@@ -23,7 +23,7 @@ const TextContainer: React.FC<TextContainerProps> = ({
       <div className="flex gap-3">
         <Lolipop />
         <div className="mb-10 w-full">
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-5 md:gap-3">
             <h4 className="font-sans text-white dark:text-black font-bold md:text-lg">
               {name}
             </h4>
