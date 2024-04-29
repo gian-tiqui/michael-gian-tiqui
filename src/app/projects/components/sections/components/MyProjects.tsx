@@ -388,11 +388,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 };
 
 const MyProjects = () => {
+  const [shown, setShown] = useState<number>(4);
+
+  const handleClick = () => {
+    if (shown < projects.length) {
+      setShown((prevVal) => prevVal + 4);
+    }
+  };
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
-      {projects.map((project, index) => (
-        <ProjectCard key={index} {...project} />
-      ))}
+    <div className="flex flex-col">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full mb-3 md:mb-10">
+        {projects.slice(0, shown).map((project, index) => (
+          <MotionTemplate key={index}>
+            <ProjectCard {...project} />
+          </MotionTemplate>
+        ))}
+      </div>
+      <button
+        className="mx-auto bg-neutral-800 dark:bg-white shadow-xl hover:bg-neutral-700 dark:hover:bg-gray-100 py-2 px-5 text-white dark:text-neutral-900 rounded-md font-bold font-sans text-lg"
+        onClick={handleClick}
+      >
+        Load more
+      </button>
     </div>
   );
 };
