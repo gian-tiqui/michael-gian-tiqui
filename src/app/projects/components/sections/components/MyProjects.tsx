@@ -13,8 +13,6 @@ interface ProjectCardProps {
   image: StaticImageData;
 }
 
-const iconStyle: string = "text-white dark:text-black h-5 w-auto";
-
 const projects: ProjectCardProps[] = [
   {
     name: "City Government of Tanauan",
@@ -355,7 +353,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         src={image}
         alt={name}
         priority
-        className={`w-full bg-cover bg-center ${isHovered && "opacity-25"}`}
+        className={`w-full bg-cover bg-center pointer-events-none ${
+          isHovered && "opacity-25"
+        }`}
       />
       <AnimatePresence>
         {isHovered && (

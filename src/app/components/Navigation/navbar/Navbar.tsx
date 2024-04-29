@@ -56,15 +56,14 @@ const Navbar = () => {
         scrolledDown && "hidden"
       }`}
     >
-      <div className="rounded-full bg-neutral-800 h-14 flex items-center justify-between gap-5 md:gap-14 px-7 md:px-20 shadow-md hover:shadow-xl dark:bg-white">
+      <div className="rounded-full bg-neutral-800 h-14 flex items-center justify-between gap-2 md:gap-14 px-7 md:px-20 shadow-md hover:shadow-xl dark:bg-white">
         {routesMappingV2.map((route, index) => (
           <Link href={route.path} key={index}>
             <motion.div className="hover:border-y hover:border-y-white dark:hover:border-y dark:hover:border-y-black px-1">
-              <p className="hidden md:block font-sans font-bold text-white text-xl dark:text-black">
+              <p className="font-sans font-bold text-white text-md md:text-xl dark:text-black">
                 {route.name}
               </p>
             </motion.div>
-            <span className="md:hidden">{route.icon}</span>
           </Link>
         ))}
       </div>
