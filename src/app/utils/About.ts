@@ -58,7 +58,7 @@ export const playlist: Playlist[] = [
   {
     name: "Fresh & Chill",
     link: "https://open.spotify.com/playlist/37i9dQZF1DX5CdVP4rz81C?si=b295abfdc9d348ea",
-    content: "Discover your new chill pop songs. Cover: Luke Hemmings",
+    content: "Discover your new chill pop songs.",
   },
   {
     name: "This is Shawn Mendez",

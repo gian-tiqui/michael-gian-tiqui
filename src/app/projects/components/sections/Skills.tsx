@@ -58,11 +58,10 @@ export interface TechStacksInterface {
 
 export const categories: string[] = [
   "Frameworks & Libraries",
-  "Development Tools",
   "Programming Languages",
-  "Design Tool",
-  "Backend-As-A-Service",
+  "Development Tools",
   "Databases",
+  "Design Tool",
   "Microcontroller Platform",
   "Object Relational Mapping",
 ];
@@ -121,11 +120,6 @@ export const techStacks: TechStacksInterface[] = [
     category: "Development Tools",
   },
   {
-    icon: <DiDocker className={iconStyle} />,
-    name: "Docker",
-    category: "Development Tools",
-  },
-  {
     icon: <DiJavascript className={iconStyle} />,
     name: "Javascript",
     category: "Programming Languages",
@@ -133,11 +127,6 @@ export const techStacks: TechStacksInterface[] = [
   {
     icon: <DiRuby className={iconStyle} />,
     name: "Ruby",
-    category: "Programming Languages",
-  },
-  {
-    icon: <FaGolang className={iconStyle} />,
-    name: "Go",
     category: "Programming Languages",
   },
   {
@@ -248,7 +237,7 @@ export const techStacks: TechStacksInterface[] = [
   {
     icon: <DiFirebase className={iconStyle} />,
     name: "Firebase",
-    category: "Backend-As-A-Service",
+    category: "Databases",
   },
   {
     icon: <SiAndroidstudio className={iconStyle} />,

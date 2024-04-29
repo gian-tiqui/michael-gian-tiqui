@@ -10,7 +10,7 @@ const Introduction = () => {
       <div className="flex gap-3 md:gap-7 mb-12">
         <Image
           src={gian}
-          className="rounded-full h-24 w-24 md:h-32 md:w-32 dark:border-2 dark:border-black pointer-events-none"
+          className="rounded-full h-24 w-24 md:h-32 md:w-32 border-2 dark:border-2 border-neutral-200 dark:border-black pointer-events-none"
           alt="Michael Gian M. Tiqui"
           priority
         />
