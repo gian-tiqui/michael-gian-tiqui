@@ -13,6 +13,7 @@ import {
   SiFastapi,
   SiJquery,
   SiKotlin,
+  SiMui,
   SiPandas,
   SiPostman,
   SiPrisma,
@@ -270,7 +271,7 @@ export const techStacks: TechStacksInterface[] = [
     category: "Frameworks & Libraries",
   },
   {
-    icon: <DiMaterializecss className={iconStyle} />,
+    icon: <SiMui className={iconStyle} />,
     name: "Material UI",
     category: "Frameworks & Libraries",
   },
