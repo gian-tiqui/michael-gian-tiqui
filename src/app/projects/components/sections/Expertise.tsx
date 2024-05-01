@@ -39,7 +39,7 @@ const expertises: ExpertiseContainerProps[] = [
   {
     title: "Machine Learning",
     content:
-      "Our chosen Capstone Project made a bridge for me to get ideas on how Machine Learning works throughout the development period of our project.",
+      "Our chosen Capstone Project made a bridge for me to get ideas on how Machine Learning works throughout the development period.",
     icon: <GiArtificialIntelligence className={iconStyle} />,
   },
   {
