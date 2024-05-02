@@ -71,6 +71,66 @@ const iconStyle = "h-5 md:h-7 w-auto text-white dark:text-black";
 
 export const techStacks: TechStacksInterface[] = [
   {
+    icon: <FaReact className={iconStyle} />,
+    name: "React",
+    category: "Frameworks & Libraries",
+  },
+  {
+    icon: <TbBrandNextjs className={iconStyle} />,
+    name: "NextJs",
+    category: "Frameworks & Libraries",
+  },
+  {
+    icon: <SiSpringboot className={iconStyle} />,
+    name: "Spring Boot",
+    category: "Frameworks & Libraries",
+  },
+  {
+    icon: <TbBrandReactNative className={iconStyle} />,
+    name: "React Native",
+    category: "Frameworks & Libraries",
+  },
+  {
+    icon: <SiTailwindcss className={iconStyle} />,
+    name: "Tailwind CSS",
+    category: "Frameworks & Libraries",
+  },
+  {
+    icon: <TbBrandFramerMotion className={iconStyle} />,
+    name: "Framer Motion",
+    category: "Frameworks & Libraries",
+  },
+  {
+    icon: <BsBootstrap className={iconStyle} />,
+    name: "Bootstrap",
+    category: "Frameworks & Libraries",
+  },
+  {
+    icon: <SiTypescript className={iconStyle} />,
+    name: "Typescript",
+    category: "Programming Languages",
+  },
+  {
+    icon: <DiJavascript className={iconStyle} />,
+    name: "Javascript",
+    category: "Programming Languages",
+  },
+  {
+    icon: <DiJava className={iconStyle} />,
+    name: "Java",
+    category: "Programming Languages",
+  },
+  {
+    icon: <DiPhp className={iconStyle} />,
+    name: "Php",
+    category: "Programming Languages",
+  },
+  {
+    icon: <DiPython className={iconStyle} />,
+    name: "Python",
+    category: "Programming Languages",
+  },
+  {
     icon: <SiCplusplus className={iconStyle} />,
     name: "C++",
     category: "Programming Languages",
@@ -81,28 +141,8 @@ export const techStacks: TechStacksInterface[] = [
     category: "Programming Languages",
   },
   {
-    icon: <DiJava className={iconStyle} />,
-    name: "Java",
-    category: "Programming Languages",
-  },
-  {
     icon: <SiKotlin className={iconStyle} />,
     name: "Kotlin",
-    category: "Programming Languages",
-  },
-  {
-    icon: <DiPython className={iconStyle} />,
-    name: "Python",
-    category: "Programming Languages",
-  },
-  {
-    icon: <DiPhp className={iconStyle} />,
-    name: "Php",
-    category: "Programming Languages",
-  },
-  {
-    icon: <SiTypescript className={iconStyle} />,
-    name: "Typescript",
     category: "Programming Languages",
   },
   {
@@ -110,6 +150,7 @@ export const techStacks: TechStacksInterface[] = [
     name: "Google Cloud Console",
     category: "Development Tools",
   },
+
   {
     icon: <SiPostman className={iconStyle} />,
     name: "Postman",
@@ -120,11 +161,7 @@ export const techStacks: TechStacksInterface[] = [
     name: "XAMPP",
     category: "Development Tools",
   },
-  {
-    icon: <DiJavascript className={iconStyle} />,
-    name: "Javascript",
-    category: "Programming Languages",
-  },
+
   {
     icon: <DiRuby className={iconStyle} />,
     name: "Ruby",
@@ -136,8 +173,8 @@ export const techStacks: TechStacksInterface[] = [
     category: "Programming Languages",
   },
   {
-    icon: <FaReact className={iconStyle} />,
-    name: "React",
+    icon: <FaNodeJs className={iconStyle} />,
+    name: "NodeJs",
     category: "Frameworks & Libraries",
   },
   {
@@ -151,18 +188,8 @@ export const techStacks: TechStacksInterface[] = [
     category: "Object Relational Mapping",
   },
   {
-    icon: <TbBrandNextjs className={iconStyle} />,
-    name: "NextJs",
-    category: "Frameworks & Libraries",
-  },
-  {
     icon: <FaLaravel className={iconStyle} />,
     name: "Laravel",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <SiTailwindcss className={iconStyle} />,
-    name: "Tailwind CSS",
     category: "Frameworks & Libraries",
   },
   {
@@ -176,16 +203,6 @@ export const techStacks: TechStacksInterface[] = [
     category: "Development Tools",
   },
   {
-    icon: <TbBrandFramerMotion className={iconStyle} />,
-    name: "Framer Motion",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <SiSpringboot className={iconStyle} />,
-    name: "Spring Boot",
-    category: "Frameworks & Libraries",
-  },
-  {
     icon: <DiDjango className={iconStyle} />,
     name: "Django",
     category: "Frameworks & Libraries",
@@ -193,16 +210,6 @@ export const techStacks: TechStacksInterface[] = [
   {
     icon: <SiFastapi className={iconStyle} />,
     name: "FastAPI",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <FaFlask className={iconStyle} />,
-    name: "Flask",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <SiPandas className={iconStyle} />,
-    name: "Pandas",
     category: "Frameworks & Libraries",
   },
   {
@@ -246,23 +253,8 @@ export const techStacks: TechStacksInterface[] = [
     category: "Development Tools",
   },
   {
-    icon: <TbBrandReactNative className={iconStyle} />,
-    name: "React Native",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <FaNodeJs className={iconStyle} />,
-    name: "NodeJs",
-    category: "Frameworks & Libraries",
-  },
-  {
     icon: <SiExpress className={iconStyle} />,
     name: "ExpressJs",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <BsBootstrap className={iconStyle} />,
-    name: "Bootstrap",
     category: "Frameworks & Libraries",
   },
   {

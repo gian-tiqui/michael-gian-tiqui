@@ -353,7 +353,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         src={image}
         alt={name}
         priority
-        className={`w-full bg-cover bg-center pointer-events-none ${
+        className={`w-full bg-cover h-72 bg-center pointer-events-none ${
           isHovered && "opacity-25"
         }`}
       />
