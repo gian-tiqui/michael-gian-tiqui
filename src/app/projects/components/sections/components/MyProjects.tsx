@@ -388,17 +388,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 };
 
 const MyProjects = () => {
-  const [shown, setShown] = useState<number>(4);
+  const [shown, setShown] = useState<number>(6);
 
   const handleClick = () => {
     if (shown < projects.length) {
-      setShown((prevVal) => prevVal + 4);
+      setShown((prevVal) => prevVal + 6);
     }
   };
 
   return (
     <div className="flex flex-col">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full mb-3 md:mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full mb-3 md:mb-10">
         {projects.slice(0, shown).map((project, index) => (
           <MotionTemplate key={index}>
             <ProjectCard {...project} />

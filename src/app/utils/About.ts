@@ -5,12 +5,6 @@ interface Education {
   content: string;
 }
 
-interface Playlist {
-  name: string;
-  link: string;
-  content: string;
-}
-
 interface Hobby {
   name: string;
   content: string;
@@ -51,35 +45,6 @@ export const education: Education[] = [
     link: "https://www.plmun.edu.ph/",
     content:
       "So this is where everything started for me. In my first year (2020), I was introduced the Programming Subjects specifically Fundamentals of Programming. I had no background of what Programming is and I had no friends in our block. So in our Midterms Exam I didn't do well. But it pushed me to try Programming and I realized that there are a lot of things I can do and that is when I became interested in it. I had a goal in mind to collect a lot of Programming Languages. But in my third year, I realized that it was not a good idea to collect a lot of it due to different learning curves. I had my regrets of doing that and was able to do the proper learning late. But now I know what Tech Stacks to use to create different Applications. But I can also say that learning a lot of languages before helped in improving my Adaptability to different Tech Stacks.",
-  },
-];
-
-export const playlist: Playlist[] = [
-  {
-    name: "Fresh & Chill",
-    link: "https://open.spotify.com/playlist/37i9dQZF1DX5CdVP4rz81C?si=b295abfdc9d348ea",
-    content: "Discover your new chill pop songs.",
-  },
-  {
-    name: "This is Shawn Mendez",
-    link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4mwRSU?si=2be7010fbb854220",
-    content: "This is Shawn Mendez. The essential Tracks, all in one playlist.",
-  },
-  {
-    name: "This is TWICE",
-    link: "https://open.spotify.com/playlist/37i9dQZF1DWYlCv3D85m6m?si=b513985dd89549ab",
-    content: "One in a million! TWICE!",
-  },
-  {
-    name: "This is LE SSERAFIM",
-    link: "https://open.spotify.com/playlist/37i9dQZF1DX7pEH2GWGnSP?si=94376cc188e24b48",
-    content:
-      "Hear all of LE SSERAFIM's biggest and best hits in one playlist.... DODODOK!",
-  },
-  {
-    name: "This is Marshmello",
-    link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3Adu8w?si=cfe6ae8993004214",
-    content: "This is Marshmello. The essential Tracks, all in one playlist.",
   },
 ];
 

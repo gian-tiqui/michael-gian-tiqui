@@ -3,7 +3,6 @@ import React from "react";
 import Introduction from "./components/Introduction";
 import MotionTemplate from "../components/motion/MotionTemplate";
 import Education from "./components/Education";
-import Playlist from "./components/Playlist";
 import Hobbies from "./components/Hobbies";
 import NextButton from "../components/next-button/NextButton";
 
@@ -18,7 +17,6 @@ const About = () => {
       <MotionTemplate>
         <Introduction />
         <Education />
-        <Playlist />
         <Hobbies />
         <NextButton link="/projects" name="See Gian's projects" />
       </MotionTemplate>
