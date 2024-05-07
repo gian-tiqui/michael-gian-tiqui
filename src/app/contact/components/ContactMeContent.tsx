@@ -2,14 +2,16 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import { BiSolidPhoneCall } from "react-icons/bi";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsPhoneFill, BsWhatsapp } from "react-icons/bs";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaMobileScreenButton } from "react-icons/fa6";
+import { FaMapLocation, FaMobileScreenButton } from "react-icons/fa6";
 import { GoLocation } from "react-icons/go";
 import { ContactInfoInterface } from "../page";
 import { IconsRouteInterface } from "@/app/components/footer/Footer";
 import InfoContainer from "./InfoContainer";
 import { SiGmail } from "react-icons/si";
+import { RiWhatsappFill } from "react-icons/ri";
+import { IoLocation } from "react-icons/io5";
 
 const iconsMapping: IconsRouteInterface[] = [
   {
@@ -34,18 +36,18 @@ const iconStyle: string = "dark:text-white text-neutral-800 h-8 w-auto";
 const contactInfo: ContactInfoInterface[] = [
   {
     name: "Gmail",
-    info: "meow@gmail.com",
+    info: "gian.tiqui.dev@gmail.com",
     icon: <SiGmail className={iconStyle} />,
   },
   {
     name: "WhatsApp",
     info: "+63 923-180-3011",
-    icon: <BsWhatsapp className={iconStyle} />,
+    icon: <RiWhatsappFill className={iconStyle} />,
   },
   {
     name: "Phone",
     info: "+63 923-180-3011",
-    icon: <FaMobileScreenButton className={iconStyle} />,
+    icon: <BsPhoneFill className={iconStyle} />,
   },
   {
     name: "Telephone",
@@ -55,7 +57,7 @@ const contactInfo: ContactInfoInterface[] = [
   {
     name: "Location",
     info: "San Pedro, Laguna, Philippines",
-    icon: <GoLocation className={iconStyle} />,
+    icon: <FaMapLocation className={iconStyle} />,
   },
 ];
 
