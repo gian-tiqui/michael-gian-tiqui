@@ -15,7 +15,7 @@ const expertises: ExpertiseContainerProps[] = [
   {
     title: "Front-end Development",
     content:
-      "Over 2 years of development experience with Front-end Libraries/Frameworks like React, NextJS, TailwindCSS, Bootstrap, Framer Motion, Material UI",
+      "Over 1 years of development experience with Front-end Libraries/Frameworks like React, NextJS, TailwindCSS, Bootstrap, Framer Motion, Material UI",
     icon: <DiReact className={iconStyle} />,
   },
   {
@@ -27,7 +27,7 @@ const expertises: ExpertiseContainerProps[] = [
   {
     title: "Database Management",
     content:
-      "Over 2 years of Database Management Activities in Databases like MongoDB, SQLite, MySQL, PostgreSQL",
+      "Over 1 years of Database Management Activities in Databases like MongoDB, SQLite, MySQL, PostgreSQL",
     icon: <BsDatabase className={iconStyle} />,
   },
   {
