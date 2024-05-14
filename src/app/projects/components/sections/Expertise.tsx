@@ -15,25 +15,25 @@ const expertises: ExpertiseContainerProps[] = [
   {
     title: "Front-end Development",
     content:
-      "Over 2 years of development experience with Front-end Libraries/Frameworks like React, NextJS, TailwindCSS, Bootstrap, Framer Motion, Material UI",
+      "Over 1 year of development experience with Front-end Libraries/Frameworks like React, NextJS, TailwindCSS, Bootstrap, Framer Motion, Material UI",
     icon: <DiReact className={iconStyle} />,
   },
   {
     title: "Back-end Development",
     content:
-      "Over 1 year of development experience with Back-end Frameworks like Laravel, Spring boot, Django, PHP, ExpressJS",
+      "Almost 1 year of development experience with Back-end Frameworks like Laravel, Spring boot, Django, PHP, ExpressJS",
     icon: <TbApi className={iconStyle} />,
   },
   {
     title: "Database Management",
     content:
-      "Over 2 years of Database Management Activities in Databases like MongoDB, SQLite, MySQL, PostgreSQL",
+      "Almost 2 years of Database Management Activities in Databases like MongoDB, SQLite, MySQL, PostgreSQL",
     icon: <BsDatabase className={iconStyle} />,
   },
   {
     title: "Mobile Development",
     content:
-      "Over 1 year of development experience using Android Studio and React-Native for developing Mobile Apps",
+      "Almost 1 year of development experience using Android Studio and React-Native for developing Mobile Apps",
     icon: <CiMobile3 className={iconStyle} />,
   },
   {
