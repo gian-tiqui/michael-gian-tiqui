@@ -1,10 +1,8 @@
 import { Metadata } from "next";
 import React from "react";
-import Introduction from "./components/Introduction";
 import MotionTemplate from "../components/motion/MotionTemplate";
-import Education from "./components/Education";
-import Hobbies from "./components/Hobbies";
 import NextButton from "../components/next-button/NextButton";
+import AboutMain from "./components/AboutMain";
 
 export const metadata: Metadata = {
   title: "About • Michael Gian Tiqui",
@@ -15,9 +13,7 @@ const About = () => {
   return (
     <div className="pt-40 md:pt-52 mb-10 px-7 md:px-44">
       <MotionTemplate>
-        <Introduction />
-        <Education />
-        <Hobbies />
+        <AboutMain />
         <NextButton link="/projects" name="See Gian's projects" />
       </MotionTemplate>
     </div>
