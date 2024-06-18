@@ -168,28 +168,6 @@ const projects: ProjectCardProps[] = [
     image: unk,
   },
   {
-    name: "Todo Web Application",
-    description: "A todo app that is accessible in the web",
-    stacks: [
-      {
-        name: "React",
-      },
-      {
-        name: "ExpressJS",
-      },
-      {
-        name: "MongoDB",
-      },
-      {
-        name: "Bootstrap",
-      },
-      {
-        name: "HTML",
-      },
-    ],
-    image: unk,
-  },
-  {
     name: "Toys Storage Website",
     description: "A web app that let you store your toy data",
     stacks: [
@@ -291,19 +269,6 @@ const projects: ProjectCardProps[] = [
       },
       {
         name: "XML",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "Locatio",
-    description: "A Travel Mobile App",
-    stacks: [
-      {
-        name: "React-Native",
-      },
-      {
-        name: "Typescript",
       },
     ],
     image: unk,
