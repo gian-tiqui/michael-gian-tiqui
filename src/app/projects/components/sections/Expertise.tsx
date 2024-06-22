@@ -27,7 +27,7 @@ const expertises: ExpertiseContainerProps[] = [
   {
     title: "Database Management",
     content:
-      "Almost 2 years of Database Management Activities in Databases like MongoDB, SQLite, MySQL, PostgreSQL",
+      "Almost 1 year of Database Management Activities in Databases like MongoDB, SQLite, MySQL, PostgreSQL",
     icon: <BsDatabase className={iconStyle} />,
   },
   {
