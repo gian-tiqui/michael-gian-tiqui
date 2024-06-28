@@ -63,8 +63,6 @@ export const categories: string[] = [
   "Development Tools",
   "Databases",
   "Design Tool",
-  "Microcontroller Platform",
-  "Object Relational Mapping",
 ];
 
 const iconStyle = "h-5 md:h-7 w-auto text-white dark:text-black";
@@ -141,11 +139,6 @@ export const techStacks: TechStacksInterface[] = [
     category: "Programming Languages",
   },
   {
-    icon: <SiKotlin className={iconStyle} />,
-    name: "Kotlin",
-    category: "Programming Languages",
-  },
-  {
     icon: <DiGoogleCloudPlatform className={iconStyle} />,
     name: "Google Cloud Console",
     category: "Development Tools",
@@ -161,12 +154,6 @@ export const techStacks: TechStacksInterface[] = [
     name: "XAMPP",
     category: "Development Tools",
   },
-
-  {
-    icon: <DiRuby className={iconStyle} />,
-    name: "Ruby",
-    category: "Programming Languages",
-  },
   {
     icon: <TbSql className={iconStyle} />,
     name: "SQL",
@@ -181,11 +168,6 @@ export const techStacks: TechStacksInterface[] = [
     icon: <SiJquery className={iconStyle} />,
     name: "JQuery",
     category: "Frameworks & Libraries",
-  },
-  {
-    icon: <SiPrisma className={iconStyle} />,
-    name: "Prisma",
-    category: "Object Relational Mapping",
   },
   {
     icon: <FaLaravel className={iconStyle} />,
@@ -218,16 +200,6 @@ export const techStacks: TechStacksInterface[] = [
     category: "Frameworks & Libraries",
   },
   {
-    icon: <SiArduino className={iconStyle} />,
-    name: "Arduino",
-    category: "Microcontroller Platform",
-  },
-  {
-    icon: <DiMongodb className={iconStyle} />,
-    name: "MongoDB",
-    category: "Databases",
-  },
-  {
     icon: <DiPostgresql className={iconStyle} />,
     name: "Postgre SQL",
     category: "Databases",
@@ -255,11 +227,6 @@ export const techStacks: TechStacksInterface[] = [
   {
     icon: <SiExpress className={iconStyle} />,
     name: "ExpressJs",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <SiElectron className={iconStyle} />,
-    name: "Electron",
     category: "Frameworks & Libraries",
   },
   {
