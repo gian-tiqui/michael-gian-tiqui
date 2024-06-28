@@ -42,12 +42,6 @@ const expertises: ExpertiseContainerProps[] = [
       "Our chosen Capstone Project made a bridge for me to get ideas on how Machine Learning works throughout the development period.",
     icon: <GiArtificialIntelligence className={iconStyle} />,
   },
-  {
-    title: "Software Development",
-    content:
-      "Experienced in functional programming and OOP. Using C#, Java, Python, JS, and TS",
-    icon: <CiMonitor className={iconStyle} />,
-  },
 ];
 
 const Expertise = () => {
