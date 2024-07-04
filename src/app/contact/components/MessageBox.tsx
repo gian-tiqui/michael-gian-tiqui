@@ -106,7 +106,7 @@ const MessageBox = () => {
             />
             {errors.email && (
               <span className="font-sans text-red-500 text-sm">
-                {errors.email.message}
+                {errors.message?.message}
               </span>
             )}
           </div>
