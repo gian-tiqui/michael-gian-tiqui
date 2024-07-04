@@ -115,84 +115,6 @@ const projects: ProjectCardProps[] = [
     image: unk,
   },
   {
-    name: "Employee CMS",
-    description: "A Website where you can manage Employees",
-    stacks: [
-      {
-        name: "ASP.NET",
-      },
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "Bootstrap",
-      },
-      {
-        name: "Javascript",
-      },
-      {
-        name: "C#",
-      },
-      {
-        name: "PHP",
-      },
-      {
-        name: "MySQL",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "Blog Website",
-    description: "Posts your thoughts in this website",
-    stacks: [
-      {
-        name: "React",
-      },
-      {
-        name: "Bootstrap",
-      },
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "Firebase",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "Toys Storage Website",
-    description: "A web app that let you store your toy data",
-    stacks: [
-      {
-        name: "Laravel",
-      },
-      {
-        name: "HTML",
-      },
-      {
-        name: "MySQL",
-      },
-      {
-        name: "PHP",
-      },
-      {
-        name: "Javascript",
-      },
-      {
-        name: "Bootstrap",
-      },
-    ],
-    image: unk,
-  },
-  {
     name: "Batangas.net",
     description: "The News Website of Batangas",
     stacks: [
@@ -269,31 +191,6 @@ const projects: ProjectCardProps[] = [
       },
       {
         name: "XML",
-      },
-    ],
-    image: unk,
-  },
-  {
-    name: "Schat",
-    description: "A Simple Chat Application",
-    stacks: [
-      {
-        name: "React",
-      },
-      {
-        name: "Bootstrap",
-      },
-      {
-        name: "Firebase",
-      },
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "Javascript",
       },
     ],
     image: unk,
