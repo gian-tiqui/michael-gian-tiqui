@@ -15,32 +15,26 @@ const expertises: ExpertiseContainerProps[] = [
   {
     title: "Front-end Development",
     content:
-      "Over 1 year of development experience with Front-end Libraries/Frameworks like React, NextJS, TailwindCSS, Bootstrap, Framer Motion, Material UI",
+      "Almost 1 year of development experience with Front-end Libraries/Frameworks like React, NextJS, TailwindCSS, Bootstrap, Framer Motion, Material UI",
     icon: <DiReact className={iconStyle} />,
   },
   {
     title: "Back-end Development",
     content:
-      "Almost 1 year of development experience with Back-end Frameworks like Laravel, Spring boot, Django, PHP, ExpressJS",
+      "Almost 1 year of development experience with Back-end Frameworks like Laravel, Spring boot, PHP",
     icon: <TbApi className={iconStyle} />,
   },
   {
     title: "Database Management",
     content:
-      "Almost 1 year of Database Management Activities in Databases like MongoDB, SQLite, MySQL, PostgreSQL",
+      "Almost 1 year of Database Management Activities in Databases like SQLite, MySQL, PostgreSQL",
     icon: <BsDatabase className={iconStyle} />,
   },
   {
     title: "Mobile Development",
     content:
-      "Almost 1 year of development experience using Android Studio and React-Native for developing Mobile Apps",
+      "Almost 1 year of development experience using Android Studio for developing Mobile Apps",
     icon: <CiMobile3 className={iconStyle} />,
-  },
-  {
-    title: "Machine Learning",
-    content:
-      "Our chosen Capstone Project made a bridge for me to get ideas on how Machine Learning works throughout the development period.",
-    icon: <GiArtificialIntelligence className={iconStyle} />,
   },
 ];
 
