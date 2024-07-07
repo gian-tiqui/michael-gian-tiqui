@@ -205,6 +205,11 @@ export const techStacks: TechStacksInterface[] = [
     category: "Databases",
   },
   {
+    icon: <DiMongodb className={iconStyle} />,
+    name: "MongoDB",
+    category: "Databases",
+  },
+  {
     icon: <SiSqlite className={iconStyle} />,
     name: "SQLite",
     category: "Databases",
