@@ -3,20 +3,15 @@ import React, { ReactNode } from "react";
 import { FaFlask, FaLaravel, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiAndroidstudio,
-  SiArduino,
   SiCanva,
   SiCplusplus,
   SiCsharp,
   SiDotnet,
-  SiElectron,
   SiExpress,
   SiFastapi,
   SiJquery,
-  SiKotlin,
   SiMui,
-  SiPandas,
   SiPostman,
-  SiPrisma,
   SiSpringboot,
   SiSqlite,
   SiTailwindcss,
@@ -32,19 +27,16 @@ import {
 } from "react-icons/tb";
 import {
   DiDjango,
-  DiDocker,
   DiFirebase,
   DiGithub,
   DiGoogleCloudPlatform,
   DiJava,
   DiJavascript,
-  DiMaterializecss,
   DiMongodb,
   DiMysql,
   DiPhp,
   DiPostgresql,
   DiPython,
-  DiRuby,
 } from "react-icons/di";
 import { BsBootstrap } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
