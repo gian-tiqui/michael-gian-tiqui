@@ -1,6 +1,6 @@
 import MotionTemplate from "@/app/components/motion/MotionTemplate";
 import React, { ReactNode } from "react";
-import { FaFlask, FaLaravel, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaLaravel, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiAndroidstudio,
   SiCanva,
@@ -41,7 +41,6 @@ import {
 import { BsBootstrap } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
 import CategorizedTechs from "./components/CategorizedTechs";
-import { FaGolang } from "react-icons/fa6";
 
 export interface TechStacksInterface {
   icon?: ReactNode;
@@ -175,21 +174,6 @@ export const techStacks: TechStacksInterface[] = [
     icon: <SiVercel className={iconStyle} />,
     name: "Vercel",
     category: "Development Tools",
-  },
-  {
-    icon: <DiDjango className={iconStyle} />,
-    name: "Django",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <SiFastapi className={iconStyle} />,
-    name: "FastAPI",
-    category: "Frameworks & Libraries",
-  },
-  {
-    icon: <SiDotnet className={iconStyle} />,
-    name: ".Net",
-    category: "Frameworks & Libraries",
   },
   {
     icon: <DiPostgresql className={iconStyle} />,
