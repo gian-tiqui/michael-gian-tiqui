@@ -91,7 +91,7 @@ const MessageBox = () => {
               </span>
             )}
           </div>
-          <div className="flex flex-col gap-2 mb-2  w-full">
+          <div className="flex flex-col gap-2 mb-2 w-full">
             <label
               htmlFor="message"
               className="font-sans dark:text-black text-white"
