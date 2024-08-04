@@ -195,6 +195,48 @@ const projects: ProjectCardProps[] = [
     ],
     image: unk,
   },
+  {
+    name: "Dunkin App CMS",
+    description: "An CMS Application for Dunkin Mobile App",
+    stacks: [
+      {
+        name: "ReactJS",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Dunkin Api",
+    description: "Dunkin API",
+    stacks: [
+      {
+        name: "ExpressJS",
+      },
+      {
+        name: "NodeJS",
+      },
+      {
+        name: "MongoDB",
+      },
+    ],
+    image: unk,
+  },
+  {
+    name: "Dunkin Ordering App",
+    description: "An Ordering Mobile Application for Dunkin",
+    stacks: [
+      {
+        name: "React-Native",
+      },
+    ],
+    image: unk,
+  },
 ];
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
