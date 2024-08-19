@@ -19,17 +19,16 @@ const Introduction = () => {
             Hello there 👋, my name is
           </p>
           <p className="font-sans font-bold text-3xl md:text-6xl text-white dark:text-black">
-            Michael Gian Tiqui
+            Gian
           </p>
         </div>
       </div>
 
       <p className="font-sans md:text-2xl text-justify text-white dark:text-black mb-10">
-        Welcome, I am <span className="font-bold">Gian</span> and I create
-        things on the Web and Mobile. I find it fun learning new concepts,
-        libraries, and frameworks which I can utilize in developing apps. You
-        might catch me playing Online Games, Sports or doing expirements on
-        something through coding. Well, those are just my hobbies.
+        I create things on the web and mobile. I find it fun learning new
+        concepts, libraries, and frameworks which I can utilize in developing
+        apps. You might catch me playing valorant, sports or doing experiments
+        on something through coding. Well, those are just my hobbies.
       </p>
       <NextButton link="/about" name="Know more about Gian" />
     </div>
