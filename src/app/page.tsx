@@ -4,7 +4,11 @@ import MotionTemplate from "./components/motion/MotionTemplate";
 
 // renovation starts here
 
-const Home = () => {
+function HomeV2() {
+  return <main></main>;
+}
+
+export default function Home() {
   return (
     <MotionTemplate>
       <div className="pt-40 pb-5 md:pb-10">
@@ -12,6 +16,4 @@ const Home = () => {
       </div>
     </MotionTemplate>
   );
-};
-
-export default Home;
+}
