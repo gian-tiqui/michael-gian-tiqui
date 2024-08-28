@@ -1,19 +1,19 @@
 import React from "react";
-import Introduction from "./components/introduction/Introduction";
 import MotionTemplate from "./components/motion/MotionTemplate";
+import Main from "./components/v2/Main";
 
-// renovation starts here
-
-function HomeV2() {
-  return <main></main>;
-}
-
-export default function Home() {
+export default function HomeV2() {
   return (
     <MotionTemplate>
-      <div className="pt-40 pb-5 md:pb-10">
-        <Introduction />
-      </div>
+      <Main />
+    </MotionTemplate>
+  );
+}
+
+function Home() {
+  return (
+    <MotionTemplate>
+      <div className="pt-40 pb-5 md:pb-10"></div>
     </MotionTemplate>
   );
 }

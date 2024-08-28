@@ -17,7 +17,7 @@ const IconContainer = ({ children }: { children: ReactNode }) => {
     <motion.div
       animate={animate}
       variants={variants}
-      className="rounded-full shadow-md p-2 bg-white cursor-pointer hover:bg-gray-300 dark:bg-black"
+      className="rounded-full shadow-md p-2 bg-black cursor-pointer hover:opacity-80 dark:bg-white"
       onMouseEnter={float}
       onMouseLeave={rest}
     >
