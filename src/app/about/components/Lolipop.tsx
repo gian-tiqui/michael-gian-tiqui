@@ -6,8 +6,8 @@ import { LuCircle } from "react-icons/lu";
 const Lolipop = () => {
   return (
     <div className="flex flex-col items-center">
-      <LuCircle className="h-5 w-auto text-white dark:text-black" />
-      <div className="border-l border-white dark:border-black h-full"></div>
+      <LuCircle className="h-6 w-auto text-black dark:text-white" />
+      <div className="border border-black dark:border-white h-full -mt-[1px]"></div>
     </div>
   );
 };

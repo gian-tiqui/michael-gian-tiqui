@@ -54,9 +54,10 @@ export const categories: string[] = [
   "Development Tools",
   "Databases",
   "Design Tool",
+  "Personal",
 ];
 
-const iconStyle = "h-5 md:h-7 w-auto text-white dark:text-black";
+const iconStyle = "h-auto md:h-5 w-auto text-black dark:text-white";
 
 export const techStacks: TechStacksInterface[] = [
   {
@@ -225,21 +226,59 @@ export const techStacks: TechStacksInterface[] = [
     name: "Canva",
     category: "Design Tool",
   },
+  {
+    icon: null,
+    name: "Leadership",
+    category: "Personal",
+  },
+  {
+    icon: null,
+    name: "Time Management",
+    category: "Personal",
+  },
+  {
+    icon: null,
+    name: "Adaptability",
+    category: "Personal",
+  },
+  {
+    icon: null,
+    name: "Creative",
+    category: "Personal",
+  },
+  {
+    icon: null,
+    name: "Organized",
+    category: "Personal",
+  },
+  {
+    icon: null,
+    name: "Fast Learner",
+    category: "Personal",
+  },
+  {
+    icon: null,
+    name: "Problem Solving",
+    category: "Personal",
+  },
+  {
+    icon: null,
+    name: "Communication",
+    category: "Personal",
+  },
 ];
 
 const Skills = () => {
   return (
-    <MotionTemplate>
-      <div>
-        {categories.map((category, index) => (
-          <CategorizedTechs
-            category={category}
-            key={index}
-            techStacks={techStacks}
-          />
-        ))}
-      </div>
-    </MotionTemplate>
+    <div>
+      {categories.map((category, index) => (
+        <CategorizedTechs
+          category={category}
+          key={index}
+          techStacks={techStacks}
+        />
+      ))}
+    </div>
   );
 };
 

@@ -16,26 +16,24 @@ const CategorizedTechs: React.FC<CategorizedTechsProps> = ({
   );
 
   return (
-    <ScrollMotionTemplate>
-      <div className="mb-7">
-        <h1 className="md:text-2xl font-sans font-bold text-white dark:text-black mb-4">
-          {category}
-        </h1>
-        <div className="flex flex-wrap gap-2">
-          {categorizedStacks.map((categorizedStack, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-2 py-2 px-4 rounded-full bg-neutral-800 dark:bg-white shadow-xl"
-            >
-              {categorizedStack.icon}
-              <p className="text-white dark:text-black font-sans">
-                {categorizedStack.name}
-              </p>
-            </div>
-          ))}
-        </div>
+    <div className="mb-7 font-serif">
+      <h1 className="md:text-xl font-bold text-black dark:text-white mb-4">
+        {category}
+      </h1>
+      <div className="flex flex-wrap gap-2">
+        {categorizedStacks.map((categorizedStack, index) => (
+          <div
+            key={index}
+            className="flex items-center gap-2 py-2 px-4 rounded-full bg-white dark:bg-black shadow-xl"
+          >
+            {categorizedStack.icon}
+            <p className="text-black dark:text-white text-sm">
+              {categorizedStack.name}
+            </p>
+          </div>
+        ))}
       </div>
-    </ScrollMotionTemplate>
+    </div>
   );
 };
 

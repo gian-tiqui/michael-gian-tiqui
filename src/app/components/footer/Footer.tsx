@@ -12,7 +12,7 @@ export interface IconsRouteInterface {
   name: string;
 }
 
-const iconStyle = "h-5 w-auto dark:text-white";
+const iconStyle = "h-5 w-auto text-white dark:text-black";
 
 export const iconsMapping: IconsRouteInterface[] = [
   {
@@ -44,15 +44,13 @@ export const iconsMapping: IconsRouteInterface[] = [
 
 const Footer = () => {
   return (
-    <ScrollMotionTemplate>
-      <footer className="flex flex-wrap justify-center md:flex md:justify-start mb-7 px-10 md:px-44 gap-6">
-        {iconsMapping.map((iconMap, index) => (
-          <Link href={iconMap.path} key={index}>
-            <IconContainer>{iconMap.icon}</IconContainer>
-          </Link>
-        ))}
-      </footer>
-    </ScrollMotionTemplate>
+    <footer className="flex flex-wrap justify-start mb-20 gap-3">
+      {iconsMapping.map((iconMap, index) => (
+        <Link href={iconMap.path} key={index}>
+          <IconContainer>{iconMap.icon}</IconContainer>
+        </Link>
+      ))}
+    </footer>
   );
 };
 
