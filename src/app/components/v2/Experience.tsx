@@ -10,11 +10,11 @@ export default function Experience({ id }: HtmlAttributes) {
       <div className="flex gap-5">
         <Lolipop />
         <div>
-          <h1 className="text-lg font-bold">Web Developer Intern</h1>
-          <h1 className="text-lg font-bold">
+          <h1 className="md:text-lg font-bold">Web Developer Intern</h1>
+          <h1 className="md:text-lg font-bold">
             Avietho Digital (Feb, 2024 - April, 2024)
           </h1>
-          <ul className="list-disc ps-6 mt-3 text-md w-[530px] mb-6">
+          <ul className="list-disc ps-6 mt-3 text-sm md:w-[530px] mb-6">
             <li>Designed the new website of City Government of Tanauan</li>
             <li>
               Developed and implemented the design of the City Government of
@@ -39,11 +39,11 @@ export default function Experience({ id }: HtmlAttributes) {
       <div className="flex gap-5 -mt-1">
         <Lolipop />
         <div>
-          <h1 className="text-lg font-bold">Web Developer</h1>
-          <h1 className="text-lg font-bold">
+          <h1 className="md:text-lg font-bold">Web Developer</h1>
+          <h1 className="md:text-lg font-bold">
             Freelance (May, 2023 - April, 2024)
           </h1>
-          <ul className="list-disc ps-6 mt-3 text-md w-[530px]">
+          <ul className="list-disc ps-6 mt-3 text-sm md:text-md md:w-[530px]">
             <li>Designed and developed a Barber Appointer Web Application</li>
             <li>
               Desigend and developed a Employee Management Website for managing

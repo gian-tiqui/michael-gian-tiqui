@@ -21,14 +21,14 @@ export default function Contact({ id }: HtmlAttributes) {
   return (
     <section className="w-full font-serif" id={id ? id : ""}>
       <h1 className="text-2xl md:text-3xl font-bold font-sans mb-6">Contact</h1>
-      <div className="w-full flex">
+      <div className="w-full md:flex">
         <div className="w-2/4">
           <p className="w-80">
             Send your ideas, questions or projects you need help with. I will
             try to response as soon as possible.
           </p>
         </div>
-        <div className="w-2/4">
+        <div className="w-2/4 mt-10 md:mt-0">
           <div className="w-80 ms-auto rounded-lg shadow-lg bg-white">
             <form className="p-4" onSubmit={handleSubmit(onSubmit)}>
               <p className="text-lg font-semibold mb-14">Send a message here</p>

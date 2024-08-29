@@ -24,7 +24,7 @@ export default function Main() {
         });
       },
       {
-        threshold: 0.1,
+        threshold: 0.0,
       }
     );
 
@@ -42,8 +42,8 @@ export default function Main() {
   return (
     <main className="flex flex-col gap-32 md:gap-52">
       <Introduction id="introduction" />
-      <Education id="education" />
       <Experience id="experience" />
+      <Education id="education" />
       <SkillsV2 id="skills" />
       <Project id="projects" />
       <Contact id="contact" />

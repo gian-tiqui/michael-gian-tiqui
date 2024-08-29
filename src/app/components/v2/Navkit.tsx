@@ -16,12 +16,12 @@ export default function Navkit() {
       icon: <BiHome className={iconStyle} />,
     },
     {
-      id: "education",
-      icon: <FaSchool className={iconStyle} />,
-    },
-    {
       id: "experience",
       icon: <GiJourney className={iconStyle} />,
+    },
+    {
+      id: "education",
+      icon: <FaSchool className={iconStyle} />,
     },
     {
       id: "skills",
@@ -40,7 +40,7 @@ export default function Navkit() {
   const { id } = useIdStore();
 
   return (
-    <div className="fixed flex flex-col top-[30%] right-0 me-3 gap-3">
+    <div className="fixed flex flex-col top-[30%] z-50 right-0 me-3 gap-3">
       {navItems.map((nav) => (
         <Link
           href={`#${nav.id}`}
