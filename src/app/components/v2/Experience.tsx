@@ -36,9 +36,9 @@ export default function Experience({ id }: HtmlAttributes) {
         </div>
       </div>
 
-      <div className="flex gap-5 -mt-1">
+      <div className="flex gap-5 -mt-[1px]">
         <Lolipop />
-        <div>
+        <div className="mb-7">
           <h1 className="md:text-lg font-bold">Web Developer</h1>
           <h1 className="md:text-lg font-bold">
             Freelance (May, 2023 - April, 2024)
@@ -72,6 +72,19 @@ export default function Experience({ id }: HtmlAttributes) {
               Contributed to a E-Lawyer Management System to add new features
               (chat)
             </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="flex gap-5 -mt-[1px]">
+        <Lolipop />
+        <div>
+          <h1 className="md:text-lg font-bold">IT Programmer</h1>
+          <h1 className="md:text-lg font-bold">
+            Westlake Medical Center (September, 2024 - Present)
+          </h1>
+          <ul className="list-disc ps-6 mt-3 text-sm md:w-[530px] mb-6">
+            <li>Pending</li>
           </ul>
         </div>
       </div>

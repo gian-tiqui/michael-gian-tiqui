@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <ContextProvider>
           <Navkit />
-          <div className="pt-20 md:pt-40 px-8 sm:px-16 md:px-24 lg:px-[350px] w-full">
+          <div className="pt-20 md:pt-72 px-8 sm:px-16 md:px-24 lg:px-[350px] w-full">
             {children}
           </div>
           {/* <ToastContainer />
