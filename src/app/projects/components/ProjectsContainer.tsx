@@ -4,7 +4,7 @@ import Menu from "./menu/Menu";
 import ProjectContext, {
   SelectedSectionContext,
 } from "./context-provider/ProjectContext";
-import ProjectsContent from "./ProjectsContent";
+import Projects from "./sections/Projects";
 
 const ProjectsContainer = () => {
   const { selectedSection, setSelectedSection } = useContext(
@@ -13,11 +13,8 @@ const ProjectsContainer = () => {
 
   return (
     <ProjectContext>
-      <div className="w-full flex flex-col items-center">
-        <Menu setSelectedSection={setSelectedSection} />
-      </div>
       <div className="mb-12">
-        <ProjectsContent selectedSection={selectedSection} />
+        <Projects />
       </div>
     </ProjectContext>
   );
