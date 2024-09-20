@@ -5,7 +5,7 @@ import ScrollMotionTemplate from "@/app/components/motion/ScrollMotion";
 
 interface TextContainerProps {
   name: string;
-  content: string;
+  content: string[];
   link?: string;
   year?: string;
   playlist?: boolean;
@@ -39,9 +39,13 @@ const TextContainer: React.FC<TextContainerProps> = ({
           <p className="font-sans text-white dark:text-black md:text-sm mb-4">
             {year}
           </p>
-          <p className="font-sans text-neutral-300 dark:text-neutral-800">
-            {content}
-          </p>
+          <ul className="font-sans text-neutral-300 dark:text-neutral-800">
+            {content.map((cont, index) => (
+              <li className="list-item list-disc lg:ms-6" key={index}>
+                {cont}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </ScrollMotionTemplate>

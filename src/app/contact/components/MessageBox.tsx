@@ -37,10 +37,10 @@ const MessageBox = () => {
   return (
     <>
       <form
-        className="flex flex-col justify-between p-3 h-[450px] md:h-[550px]"
+        className="flex flex-col justify-between p-3 h-[450px] md:h-[550px] bg-neutral-800 rounded dark:bg-white"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <h1 className="font-sans text-2xl text-white dark:text-black font-bold">
+        <h1 className="font-sans lg:text-2xl text-white dark:text-black font-bold">
           Send me a message here
         </h1>
         <div className="flex flex-col items-start">
