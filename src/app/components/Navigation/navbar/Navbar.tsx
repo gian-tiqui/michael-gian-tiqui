@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { RoutesInterface, routesMapping } from "@/app/utils/Routes";
 import { HiHome } from "react-icons/hi";

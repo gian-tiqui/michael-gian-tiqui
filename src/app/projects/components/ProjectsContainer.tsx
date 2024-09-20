@@ -1,6 +1,5 @@
 "use client";
 import React, { useContext } from "react";
-import Menu from "./menu/Menu";
 import ProjectContext, {
   SelectedSectionContext,
 } from "./context-provider/ProjectContext";

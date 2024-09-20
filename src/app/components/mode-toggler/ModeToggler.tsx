@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import ModeTransition from "../mode-transition/ModeTransition";
 import { ModeContext } from "@/app/context-provider/ContextProvider";
