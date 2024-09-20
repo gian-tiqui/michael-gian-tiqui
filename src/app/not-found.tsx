@@ -1,5 +1,4 @@
 import React from "react";
-import NextButton from "./components/next-button/NextButton";
 import Link from "next/link";
 
 const NotFound = () => {

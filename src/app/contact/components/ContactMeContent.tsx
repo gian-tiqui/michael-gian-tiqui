@@ -5,13 +5,11 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { BsPhoneFill, BsWhatsapp } from "react-icons/bs";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMapLocation, FaMobileScreenButton } from "react-icons/fa6";
-import { GoLocation } from "react-icons/go";
 import { ContactInfoInterface } from "../page";
 import { IconsRouteInterface } from "@/app/components/footer/Footer";
 import InfoContainer from "./InfoContainer";
 import { SiGmail } from "react-icons/si";
 import { RiWhatsappFill } from "react-icons/ri";
-import { IoLocation } from "react-icons/io5";
 
 const iconsMapping: IconsRouteInterface[] = [
   {

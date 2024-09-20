@@ -7,7 +7,6 @@ import { CiMobile3, CiMonitor } from "react-icons/ci";
 import { DiReact } from "react-icons/di";
 import { TbApi } from "react-icons/tb";
 import { BsDatabase } from "react-icons/bs";
-import { GiArtificialIntelligence } from "react-icons/gi";
 
 const iconStyle: string = "h-10 w-auto text-white dark:text-black";
 

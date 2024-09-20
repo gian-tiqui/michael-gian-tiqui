@@ -2,8 +2,6 @@ import React from "react";
 import Introduction from "./components/introduction/Introduction";
 import MotionTemplate from "./components/motion/MotionTemplate";
 
-// renovation starts here
-
 function HomeV2() {
   return <main></main>;
 }
