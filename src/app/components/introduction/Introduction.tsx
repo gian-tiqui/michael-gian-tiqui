@@ -3,10 +3,13 @@ import Image from "next/image";
 import React from "react";
 import gian from "../../assets/michael-gian-tiqui-bg.jpg";
 import NextButton from "../next-button/NextButton";
+import Link from "next/link";
 
 const Introduction = () => {
+  const handleDownloadCvClick = () => {};
+
   return (
-    <div className="px-7 mb-16 md:mb-0 md:px-44 md:pt-14">
+    <div className="px-7 mb-16 md:mb-0 md:px-44 md:pt-10">
       <div className="flex gap-3 md:gap-7 mb-12">
         <Image
           src={gian}
@@ -24,12 +27,27 @@ const Introduction = () => {
         </div>
       </div>
 
-      <p className="font-sans md:text-2xl text-justify text-white dark:text-black mb-10">
+      <p className="font-sans md:text-2xl text-justify text-white dark:text-black mb-5">
         I create things on the web and mobile. I find it fun learning new
         concepts, libraries, and frameworks which I can utilize in developing
         apps. You might catch me playing valorant, sports or doing experiments
         on something through coding. Well, those are just my hobbies.
       </p>
+      <div className="flex justify-start gap-3">
+        <button
+          onClick={handleDownloadCvClick}
+          className="hover:bg-neutral-700 mb-5 w-44 h-12 text-md text-white dark:text-black bg-neutral-800 rounded-full shadow"
+        >
+          Download CV
+        </button>
+        <Link
+          href={"/projects"}
+          className="hover:bg-neutral-700 mb-5 w-44 h-12 grid place-content-center text-md text-white dark:text-black bg-neutral-800 rounded-full shadow"
+        >
+          Projects
+        </Link>
+      </div>
+
       <NextButton link="/about" name="Know more about Gian" />
     </div>
   );
