@@ -14,11 +14,7 @@ const ContactForm = () => {
   }, [darkMode]);
 
   return (
-    <div
-      className={`${
-        delayedDarkMode ? "contact-form-light" : "contact-form"
-      } h-[500px] w-80 md:h-[600px] md:w-[500px]`}
-    >
+    <div className={` h-[500px] w-80 md:h-[600px] md:w-[500px] rounded-lg`}>
       <div className="relative z-10 m-5">
         <MessageBox />
       </div>
