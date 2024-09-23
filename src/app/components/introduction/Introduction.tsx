@@ -36,13 +36,13 @@ const Introduction = () => {
       <div className="flex justify-start gap-3">
         <button
           onClick={handleDownloadCvClick}
-          className="hover:bg-neutral-700 mb-5 w-44 h-12 text-md text-white dark:text-black bg-neutral-800 rounded-full shadow"
+          className="hover:bg-neutral-700 mb-5 w-44 h-12 text-md dark:bg-white text-white dark:text-black bg-neutral-800 rounded-full shadow"
         >
           Download CV
         </button>
         <Link
           href={"/projects"}
-          className="hover:bg-neutral-700 mb-5 w-44 h-12 grid place-content-center text-md text-white dark:text-black bg-neutral-800 rounded-full shadow"
+          className="hover:bg-neutral-700 dark:bg-white mb-5 w-44 h-12 grid place-content-center text-md text-white dark:text-black bg-neutral-800 rounded-full shadow"
         >
           Projects
         </Link>
