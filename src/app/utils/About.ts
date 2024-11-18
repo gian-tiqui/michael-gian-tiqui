@@ -76,7 +76,10 @@ export const experience: Experience[] = [
   },
   {
     name: "Westlake Medical Center - IT Programmer",
-    content: ["none"],
+    content: [
+      "Designed the WMC Intranet",
+      "Developed the WMC Intranet using NextJs, NestJs, and PostgreSQL",
+    ],
     year: "2024 - Present",
     link: "https://westlakemed.com.ph/",
   },
