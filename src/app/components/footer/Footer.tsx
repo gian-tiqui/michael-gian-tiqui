@@ -22,13 +22,8 @@ export const iconsMapping: IconsRouteInterface[] = [
   },
   {
     icon: <FaInstagram className={iconStyle} />,
-    path: "https://www.instagram.com/giantiquiii/",
+    path: "https://www.instagram.com/mchlgntq/",
     name: "Instagram",
-  },
-  {
-    icon: <BsTwitterX className={iconStyle} />,
-    path: "https://twitter.com/gian_tiqui",
-    name: "Twitter",
   },
   {
     icon: <FaLinkedin className={iconStyle} />,

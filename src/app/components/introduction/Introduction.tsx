@@ -30,19 +30,18 @@ const Introduction = () => {
       <p className="font-sans md:text-2xl text-justify text-white dark:text-black mb-5">
         I create things on the web and mobile. I find it fun learning new
         concepts, libraries, and frameworks which I can utilize in developing
-        apps. You might catch me playing valorant, sports or doing experiments
-        on something through coding. Well, those are just my hobbies.
+        different applications.
       </p>
       <div className="flex justify-start gap-3">
         <button
           onClick={handleDownloadCvClick}
-          className="hover:bg-neutral-700 mb-5 w-44 h-12 text-md dark:bg-white text-white dark:text-black bg-neutral-800 rounded-full shadow"
+          className="hover:bg-neutral-700 text-sm mb-5 w-44 h-12 text-md dark:bg-white text-white dark:text-black bg-neutral-800 rounded-full shadow"
         >
           Download CV
         </button>
         <Link
           href={"/projects"}
-          className="hover:bg-neutral-700 dark:bg-white mb-5 w-44 h-12 grid place-content-center text-md text-white dark:text-black bg-neutral-800 rounded-full shadow"
+          className="hover:bg-neutral-700 text-sm dark:bg-white mb-5 w-44 h-12 grid place-content-center text-md text-white dark:text-black bg-neutral-800 rounded-full shadow"
         >
           Projects
         </Link>
