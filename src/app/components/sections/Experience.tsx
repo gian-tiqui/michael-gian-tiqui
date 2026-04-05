@@ -24,10 +24,14 @@ const experience: ExperienceItem[] = [
     title: 'IT Programmer',
     company: 'Westlake Medical Center',
     companyHref: 'https://westlakemed.com.ph/',
-    current: false,
     bullets: [
-      'Designed the WMC Intranet UI',
-      'Developed the intranet using Next.js, NestJS, and PostgreSQL',
+      'Built an internal HR/QM portal for publishing memos, guidelines, and procedure documents with commenting, threaded replies, and real-time notifications',
+      'Implemented dashboard for IT, user and post management, account deactivation for HR, secure login, and forgot password flow',
+      'Built a folder-based document system with public/private post access restricted by department or employee level',
+      'Developed a ticketing platform with automated escalation via cron jobs — overdue tickets notify supervisors, then escalate to managers and executives if unresolved',
+      'Added department-specific dashboards, searchable ticket knowledge base, Excel export, real-time notifications, and comment threads per ticket',
+      'Built a self-service patient kiosk with a cart system and sub-carts per department for ordering diagnostics and medicines',
+      'Integrated hospital directory with room lookup and full queueing system integration to redirect patients to the appropriate queue',
     ],
   },
   {
@@ -93,7 +97,7 @@ function ExperienceRow({ item }: { item: ExperienceItem }) {
               key={i}
               className="flex gap-2 text-[13px] leading-relaxed text-[#8A8A82]"
             >
-              <span className="mt-1.5 shrink-0 text-[#2E2E2B]">—</span>
+              <span className="shrink-0 text-[#2E2E2B]">—</span>
               <span>{b}</span>
             </li>
           ))}
