@@ -1,0 +1,6 @@
+export { ArrowUpRightIcon } from './ArrowUpRightIcon'
+export { DownloadIcon } from './DownloadIcon'
+export { GitHubIcon } from './GitHubIcon'
+export { LinkedInIcon } from './LinkedInIcon'
+export { MailIcon } from './MailIcon'
+export { TwitterIcon } from './TwitterIcon'

@@ -1,0 +1,7 @@
+export { Nav } from './Nav'
+export { Hero } from './Hero'
+export { Work } from './Work'
+export { Stack } from './Stack'
+export { Experience } from './Experience'
+export { Education } from './Education'
+export { Contact } from './Contact'

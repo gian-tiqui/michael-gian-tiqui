@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Base */
+  --color-background: #1a1a18;
+  --color-foreground: #eeeee9;
+  --color-headline: #f2f2ee;
+  --color-subtext: #8a8a82;
+
+  /* Buttons */
+  --color-button-primary: #2563eb;
+  --color-button-primary-hover: #1d4ed8;
+  --color-button-text: white;
+
+  /* Brand — blue replaces purple */
+  --color-primary: #2563eb;
+  --color-highlight: #4a9eff;
+  --color-secondary: #3b82f6;
+  --color-tertiary: #1d4ed8;
+
+  /* Blue tint surfaces */
+  --color-accent-bg: #1e2a3a;
+  --color-accent-border: #2a4060;
+  --color-accent-text: #4a9eff;
+
+  /* Surfaces */
+  --color-main: #252522;
+  --card-bg: #242422;
+  --color-border-primary: #2e2e2b;
+  --color-tbody-background: #222220;
+  --color-input-background: #222220;
+  --color-input-placeholder: #4a6a8a;
+
+  /* Skeleton */
+  --color-skeleton-base: #2a2a27;
+  --color-skeleton-highlight: #323230;
+
+  /* Illustration */
+  --color-illustration-stroke: #eeeee9;
+
+  /* Semantic */
+  --color-danger: theme('colors.red.400');
+  --color-warning: theme('colors.yellow.400');
+  --color-success: theme('colors.green.400');
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --radius-pill: 9999px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  @apply sm:w-1.5;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a18;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2e2b;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a37;
+}
+
+/* Base */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Selection */
+::selection {
+  background: #1e2a3a;
+  color: #4a9eff;
+}

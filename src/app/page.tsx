@@ -1,7 +1,23 @@
-import React from "react";
+import {
+  Nav,
+  Hero,
+  Work,
+  Stack,
+  Experience,
+  Education,
+  Contact,
+} from './components/sections'
 
-const Home = () => {
-  return <div>hi</div>;
-};
-
-export default Home;
+export default function Page() {
+  return (
+    <main className="mx-auto max-w-170 px-6 py-12">
+      <Nav />
+      <Hero />
+      <Work />
+      <Stack />
+      <Experience />
+      <Education />
+      <Contact />
+    </main>
+  )
+}

@@ -1,26 +1,33 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { DM_Sans } from 'next/font/google'
+import './styles/globals.css'
 
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-const inter = Inter({ subsets: ["latin"] });
-
-// renovation starts here
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: "Michael Gian M. Tiqui",
-  description: "Michael Gian Tiqui's Portfolio Website",
-};
+  title: 'Gian — Web & Mobile Developer',
+  description:
+    'I create things on the web and mobile. Focused on building clean, practical applications using modern frameworks and tools.',
+  openGraph: {
+    title: 'Gian — Web & Mobile Developer',
+    description: 'I create things on the web and mobile.',
+    type: 'website',
+  },
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+    <html lang="en" className={dmSans.variable}>
+      <body className={dmSans.className}>{children}</body>
     </html>
-  );
+  )
 }
