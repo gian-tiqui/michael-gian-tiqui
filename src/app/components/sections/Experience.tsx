@@ -63,7 +63,7 @@ const experience: ExperienceItem[] = [
 function ExperienceRow({ item }: { item: ExperienceItem }) {
   return (
     <div className="flex gap-5 border-b border-[#2E2E2B] py-4 last:border-b-0">
-      <span className="min-w-28 shrink-0 pt-0.5 text-[12px] leading-relaxed text-[#8A8A82]">
+      <span className="w-35 shrink-0 pt-0.5 text-[12px] leading-relaxed text-[#8A8A82]">
         {item.date}
       </span>
       <div className="min-w-0 flex-1">
