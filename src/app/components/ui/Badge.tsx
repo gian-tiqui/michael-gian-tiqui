@@ -40,7 +40,7 @@ const dotColors: Record<BadgeVariant, string> = {
   outline: 'bg-[#8A8A82]',
 }
 
-export function Badge({
+const Badge = ({
   variant = 'neutral',
   size = 'sm',
   dot = false,
@@ -48,7 +48,7 @@ export function Badge({
   className,
   children,
   ...props
-}: BadgeProps) {
+}: BadgeProps) => {
   return (
     <span
       className={cn(
@@ -81,3 +81,5 @@ export function Badge({
     </span>
   )
 }
+
+export default Badge

@@ -1,5 +1,5 @@
 import { SectionLabel, ProjectGrid } from '../ui'
-import { Project } from '../ui/ProjectCard'
+import { Project } from '../ui/ProjectGrid/ProjectGrid'
 
 const projects: Project[] = [
   {

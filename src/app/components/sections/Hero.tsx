@@ -12,9 +12,9 @@ export function Hero() {
       </h1>
 
       <p className="mb-7 max-w-125 text-[15px] leading-relaxed text-[#8A8A82]">
-        I create things on the web and mobile. I find it fun learning new
-        concepts, libraries, and frameworks which I can utilize in developing
-        different applications.
+        I create things on the web. I find it fun learning new concepts,
+        libraries, and frameworks which I can utilize in developing different
+        applications.
       </p>
 
       <div className="flex flex-wrap gap-2.5">

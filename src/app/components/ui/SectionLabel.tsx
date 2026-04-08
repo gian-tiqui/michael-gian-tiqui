@@ -5,11 +5,7 @@ interface SectionLabelProps extends HTMLAttributes<HTMLParagraphElement> {
   children: React.ReactNode
 }
 
-export function SectionLabel({
-  children,
-  className,
-  ...props
-}: SectionLabelProps) {
+const SectionLabel = ({ children, className, ...props }: SectionLabelProps) => {
   return (
     <p
       className={cn(
@@ -22,3 +18,5 @@ export function SectionLabel({
     </p>
   )
 }
+
+export default SectionLabel

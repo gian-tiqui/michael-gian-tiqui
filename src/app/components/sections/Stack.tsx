@@ -1,5 +1,5 @@
 import { StackGrid, SectionLabel } from '../ui'
-import { StackItem } from '../ui/StackCard'
+import { StackItem } from '../ui/StackCard/StackCard'
 
 const frameworks: StackItem[] = [
   { name: 'React', type: 'Framework' },

@@ -50,10 +50,7 @@ const sizes: Record<ButtonSize, string> = {
 const base =
   'inline-flex items-center justify-center font-medium border transition-all duration-150 cursor-pointer select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1A1A18] disabled:opacity-40 disabled:pointer-events-none'
 
-export const Button = forwardRef<
-  HTMLButtonElement | HTMLAnchorElement,
-  ButtonProps
->(
+const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
   (
     {
       variant = 'secondary',
@@ -101,3 +98,5 @@ export const Button = forwardRef<
 )
 
 Button.displayName = 'Button'
+
+export default Button

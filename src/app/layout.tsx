@@ -10,11 +10,11 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Gian — Web & Mobile Developer',
+  title: 'Gian — Front-End Developer',
   description:
-    'I create things on the web and mobile. Focused on building clean, practical applications using modern frameworks and tools.',
+    'I create things on the web. Focused on building clean, practical applications using modern frameworks and tools.',
   openGraph: {
-    title: 'Gian — Web & Mobile Developer',
+    title: 'Gian — Front-End Developer',
     description: 'I create things on the web and mobile.',
     type: 'website',
   },

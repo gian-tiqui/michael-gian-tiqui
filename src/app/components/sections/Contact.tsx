@@ -4,7 +4,7 @@ import { SectionLabel } from '../ui'
 const links = [
   {
     label: 'email',
-    href: 'mailto:hello@gian.dev',
+    href: 'mailto:gian.tiqui.dev@gmail.com',
     icon: MailIcon,
   },
   {
