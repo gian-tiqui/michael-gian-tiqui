@@ -10,18 +10,20 @@ const Contact = () => {
         opportunities.
       </p>
       <div className="flex flex-wrap gap-2">
-        {links.map(({ label, href, icon: Icon }) => (
-          <a
-            key={label}
-            href={href}
-            target={href.startsWith('mailto') ? undefined : '_blank'}
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-[#2E2E2B] bg-[#242422] px-3.5 py-2 text-[13px] text-[#8A8A82] transition-all duration-150 hover:border-[#4A4A46] hover:text-[#EEEEE9]"
-          >
-            <Icon className="h-3.5 w-3.5 shrink-0" />
-            {label}
-          </a>
-        ))}
+        {links.map(({ label, href, icon: Icon }) =>
+          label === 'email' ? null : (
+            <a
+              key={label}
+              href={href}
+              target={href.startsWith('mailto') ? undefined : '_blank'}
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-[#2E2E2B] bg-[#242422] px-3.5 py-2 text-[13px] text-[#8A8A82] transition-all duration-150 hover:border-[#4A4A46] hover:text-[#EEEEE9]"
+            >
+              <Icon className="h-3.5 w-3.5 shrink-0" />
+              {label}
+            </a>
+          ),
+        )}
       </div>
     </section>
   )

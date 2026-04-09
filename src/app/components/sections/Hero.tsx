@@ -27,10 +27,10 @@ const Hero = () => {
           View projects
         </Button>
         <Button
-          as="a"
-          href="/cv.pdf"
+          as="button"
           variant="secondary"
           iconRight={<DownloadIcon className="h-3.5 w-3.5" />}
+          disabled
         >
           Download CV
         </Button>
