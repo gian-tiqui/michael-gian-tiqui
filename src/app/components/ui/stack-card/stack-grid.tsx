@@ -1,6 +1,6 @@
 import { cn } from '@/app/lib/utils'
 import { StackCard } from '..'
-import { StackItem } from './StackCard'
+import { StackItem } from './stack-card'
 
 interface StackGridProps {
   items: StackItem[]

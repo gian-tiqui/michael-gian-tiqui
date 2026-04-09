@@ -1,8 +1,12 @@
+import { Project } from '@/app/types'
 import { Badge } from '..'
 import { ArrowUpRightIcon } from '../../icons'
-import { Project } from './ProjectGrid'
 
-const CardInner = ({ project }: { project: Project }) => {
+interface CardInnerProps {
+  project: Project
+}
+
+const CardInner = ({ project }: CardInnerProps) => {
   return (
     <>
       <div className="min-w-0 flex-1">

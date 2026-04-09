@@ -1,7 +1,7 @@
 import { cn } from '@/app/lib/utils'
 import Link from 'next/link'
-import { Project } from './ProjectGrid'
-import CardInner from './CardInner'
+import CardInner from './card-inner'
+import { Project } from '@/app/types'
 
 interface ProjectCardProps {
   project: Project

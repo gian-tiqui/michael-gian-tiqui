@@ -1,7 +1,7 @@
 import { ArrowUpRightIcon, DownloadIcon } from '../icons'
 import { Badge, Button } from '../ui'
 
-export function Hero() {
+const Hero = () => {
   return (
     <section className="mb-16">
       <p className="mb-2 text-[13px] text-[#8A8A82]">
@@ -38,3 +38,5 @@ export function Hero() {
     </section>
   )
 }
+
+export default Hero

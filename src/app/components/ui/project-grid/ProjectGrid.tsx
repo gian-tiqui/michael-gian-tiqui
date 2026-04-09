@@ -1,16 +1,6 @@
 import { cn } from '@/app/lib/utils'
-import Link from 'next/link'
-import { ArrowUpRightIcon } from '../../icons'
-import Badge from '../Badge'
 import { ProjectCard } from '..'
-
-export interface Project {
-  name: string
-  description: string
-  tags: string[]
-  year: string
-  href?: string
-}
+import { Project } from '@/app/types'
 
 interface ProjectGridProps {
   projects: Project[]

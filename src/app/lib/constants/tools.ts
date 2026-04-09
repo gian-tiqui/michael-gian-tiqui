@@ -1,7 +1,6 @@
-import { StackGrid, SectionLabel } from '../ui'
-import { StackItem } from '../ui/StackCard/StackCard'
+import { StackItem } from '@/app/components/ui'
 
-const frameworks: StackItem[] = [
+export const frameworks: StackItem[] = [
   { name: 'React', type: 'Framework' },
   { name: 'Next.js', type: 'Framework' },
   { name: 'React Native', type: 'Framework' },
@@ -17,7 +16,7 @@ const frameworks: StackItem[] = [
   { name: 'NodeJS', type: 'Runtime' },
 ]
 
-const languages: StackItem[] = [
+export const languages: StackItem[] = [
   { name: 'TypeScript', type: 'Language' },
   { name: 'JavaScript', type: 'Language' },
   { name: 'Java', type: 'Language' },
@@ -28,7 +27,7 @@ const languages: StackItem[] = [
   { name: 'SQL', type: 'Language' },
 ]
 
-const databases: StackItem[] = [
+export const databases: StackItem[] = [
   { name: 'PostgreSQL', type: 'Database' },
   { name: 'MongoDB', type: 'Database' },
   { name: 'MySQL', type: 'Database' },
@@ -36,7 +35,7 @@ const databases: StackItem[] = [
   { name: 'Firebase', type: 'Database' },
 ]
 
-const tools: StackItem[] = [
+export const tools: StackItem[] = [
   { name: 'GitHub', type: 'Version control' },
   { name: 'Figma', type: 'Design' },
   { name: 'Android Studio', type: 'IDE' },
@@ -46,31 +45,3 @@ const tools: StackItem[] = [
   { name: 'XAMPP', type: 'Dev server' },
   { name: 'Canva', type: 'Design' },
 ]
-
-interface StackGroupProps {
-  label: string
-  items: StackItem[]
-}
-
-function StackGroup({ label, items }: StackGroupProps) {
-  return (
-    <div className="mb-5 last:mb-0">
-      <p className="mb-2.5 text-[11px] tracking-[0.06em] text-[#4A4A46] uppercase">
-        {label}
-      </p>
-      <StackGrid items={items} />
-    </div>
-  )
-}
-
-export function Stack() {
-  return (
-    <section id="stack" className="mb-14">
-      <SectionLabel>Tools &amp; stack</SectionLabel>
-      <StackGroup label="Frameworks &amp; Libraries" items={frameworks} />
-      <StackGroup label="Languages" items={languages} />
-      <StackGroup label="Databases" items={databases} />
-      <StackGroup label="Dev tools &amp; design" items={tools} />
-    </section>
-  )
-}

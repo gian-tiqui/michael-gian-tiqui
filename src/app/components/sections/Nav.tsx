@@ -1,5 +1,4 @@
 'use client'
-
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -11,7 +10,7 @@ const links = [
   { label: 'contact', href: '#contact' },
 ]
 
-export function Nav() {
+const Nav = () => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -73,3 +72,5 @@ export function Nav() {
     </nav>
   )
 }
+
+export default Nav

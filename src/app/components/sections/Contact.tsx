@@ -1,25 +1,7 @@
-import { MailIcon, GitHubIcon, LinkedInIcon } from '../icons'
+import { links } from '@/app/lib/constants'
 import { SectionLabel } from '../ui'
 
-const links = [
-  {
-    label: 'email',
-    href: 'mailto:gian.tiqui.dev@gmail.com',
-    icon: MailIcon,
-  },
-  {
-    label: 'github',
-    href: 'https://github.com',
-    icon: GitHubIcon,
-  },
-  {
-    label: 'linkedin',
-    href: 'https://linkedin.com',
-    icon: LinkedInIcon,
-  },
-]
-
-export function Contact() {
+const Contact = () => {
   return (
     <section id="contact" className="mb-14">
       <SectionLabel>Contact</SectionLabel>
@@ -44,3 +26,5 @@ export function Contact() {
     </section>
   )
 }
+
+export default Contact
