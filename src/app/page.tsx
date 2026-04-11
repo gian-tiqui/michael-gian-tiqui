@@ -15,25 +15,25 @@ const Page = () => {
     <>
       <Background />
       <main className="relative mx-auto max-w-170 px-6 py-12">
-        <FadeIn delay={0}>
+        <FadeIn>
           <Nav />
         </FadeIn>
-        <FadeIn delay={0.1}>
+        <FadeIn>
           <Hero />
         </FadeIn>
-        <FadeIn delay={0.2}>
+        <FadeIn>
           <Work />
         </FadeIn>
-        <FadeIn delay={0.3}>
+        <FadeIn>
           <Stack />
         </FadeIn>
-        <FadeIn delay={0.4}>
+        <FadeIn>
           <Experience />
         </FadeIn>
-        <FadeIn delay={0.5}>
+        <FadeIn>
           <Education />
         </FadeIn>
-        <FadeIn delay={0.6}>
+        <FadeIn>
           <Contact />
         </FadeIn>
       </main>
