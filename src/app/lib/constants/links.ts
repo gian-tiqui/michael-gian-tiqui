@@ -8,12 +8,12 @@ export const links = [
   },
   {
     label: 'github',
-    href: 'https://github.com',
+    href: 'https://github.com/gian-tiqui',
     icon: GitHubIcon,
   },
   {
     label: 'linkedin',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/michael-gian-tiqui-780344283/',
     icon: LinkedInIcon,
   },
 ]

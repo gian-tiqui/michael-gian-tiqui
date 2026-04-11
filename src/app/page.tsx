@@ -1,3 +1,4 @@
+import { FadeIn } from './components/motion'
 import {
   Nav,
   Hero,
@@ -9,17 +10,35 @@ import {
 } from './components/sections'
 import { Background } from './components/ui'
 
-export default function Page() {
+const Page = () => {
   return (
-    <main className="mx-auto max-w-170 px-6 py-12">
+    <>
       <Background />
-      <Nav />
-      <Hero />
-      <Work />
-      <Stack />
-      <Experience />
-      <Education />
-      <Contact />
-    </main>
+      <main className="relative mx-auto max-w-170 px-6 py-12">
+        <FadeIn delay={0}>
+          <Nav />
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <Hero />
+        </FadeIn>
+        <FadeIn delay={0.2}>
+          <Work />
+        </FadeIn>
+        <FadeIn delay={0.3}>
+          <Stack />
+        </FadeIn>
+        <FadeIn delay={0.4}>
+          <Experience />
+        </FadeIn>
+        <FadeIn delay={0.5}>
+          <Education />
+        </FadeIn>
+        <FadeIn delay={0.6}>
+          <Contact />
+        </FadeIn>
+      </main>
+    </>
   )
 }
+
+export default Page
