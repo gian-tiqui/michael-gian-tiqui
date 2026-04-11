@@ -21,7 +21,11 @@ const StackCard = ({ item, className }: StackCardProps) => {
         className,
       )}
     >
-      {item.icon && <span className="mb-0.5 text-[16px]">{item.icon}</span>}
+      {item.icon && (
+        <span className="mb-1 flex items-center text-[#8A8A82]">
+          {item.icon}
+        </span>
+      )}
       <span className="text-[12px] font-medium text-[#EEEEE9]">
         {item.name}
       </span>
